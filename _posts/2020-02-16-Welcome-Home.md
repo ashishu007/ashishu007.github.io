@@ -59,8 +59,8 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 
 ## Publications
 
-* Upadhyay, Ashish, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431.
-* Tripathi, Shrivishal, Ashish Upadhyay, Shashank Kotyan, and Sandeep Yadav. "Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network." Wireless Personal Communications 104, no. 3 (2019): 1175-1208.
+* Upadhyay, Ashish, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
+* Tripathi, Shrivishal, Ashish Upadhyay, Shashank Kotyan, and Sandeep Yadav. "Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network." Wireless Personal Communications 104, no. 3 (2019): 1175-1208. <a href="https://doi.org/10.1007/s11277-018-6075-9">(DOI)</a>
 
 ## Non-Academic Interests and Achievements
 
