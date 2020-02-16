@@ -3,7 +3,6 @@ layout: post
 title: "Hello World! I am Ashish Upadhyay."
 date: 2019-08-28
 desc: "Welcome to Ashish's personal website."
-<!-- keywords: "Blog, PyTorch, C++, Xeus Cling, Jupyter, Notebook, Libtorch, OpenCV" -->
 categories: [Blog]
 tags: [Blog]
 published: true
@@ -18,8 +17,6 @@ icon: icon-html
 Hello World! I'm Kushashwa Ravi Shrimali, Final Year Undergraduate at International Institute of Information Technology, Naya Raipur with major in Computer Science and Engineering. I've previously worked at the ROSE Labs, NTU Singapore (Object Detection) and with US based Startup, Big Vision LLC and LearnOpenCV under mentorship of Dr. Satya Mallick. I am interested in Computer Vision and Deep Learning with an ink of development. 
 
 I am currently open to 6 Month Internship Opportunities and my near goal is to do a Ph.D. in the field of Computer Vision.
-
-<!-- Please navigate to <a href="https://krshrimali.github.io/pytorch/">PyTorch</a> or <a href="https://krshrimali.github.io/opencv/">OpenCV</a> section of this blog to read my blogs. -->
 
 ## Work Experience
 
