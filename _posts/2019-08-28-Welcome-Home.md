@@ -19,7 +19,7 @@ Hello World! I'm Kushashwa Ravi Shrimali, Final Year Undergraduate at Internatio
 
 I am currently open to 6 Month Internship Opportunities and my near goal is to do a Ph.D. in the field of Computer Vision.
 
-Please navigate to <a href="https://krshrimali.github.io/pytorch/">PyTorch</a> or <a href="https://krshrimali.github.io/opencv/">OpenCV</a> section of this blog to read my blogs.
+<!-- Please navigate to <a href="https://krshrimali.github.io/pytorch/">PyTorch</a> or <a href="https://krshrimali.github.io/opencv/">OpenCV</a> section of this blog to read my blogs. -->
 
 ## Work Experience
 
