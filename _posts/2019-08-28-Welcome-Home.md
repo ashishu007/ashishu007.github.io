@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Hello World. You're with Kushashwa Ravi Shrimali!"
+title: "Hello World! I am Ashish Upadhyay."
 date: 2019-08-28
-desc: "Welcome to Kushashwa's personal blog."
-keywords: "Blog, PyTorch, C++, Xeus Cling, Jupyter, Notebook, Libtorch, OpenCV"
+desc: "Welcome to Ashish's personal website."
+<!-- keywords: "Blog, PyTorch, C++, Xeus Cling, Jupyter, Notebook, Libtorch, OpenCV" -->
 categories: [Blog]
 tags: [Blog]
 published: true
 blog: Home
 images:
-  - url: /assets/Cover-Home.jpg
+  - url: /images/ashish.jpg
 icon: icon-html
 ---
 
