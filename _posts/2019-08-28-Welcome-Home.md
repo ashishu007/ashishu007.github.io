@@ -51,4 +51,4 @@ I am currently open to 6 Month Internship Opportunities and my near goal is to d
 
 ## Non-Academic Interests and Achievements
 
-I involve myself in non-academic activities like Debating, blogging, playing Table Tennis and more. I was also a Scout in my high school. I love World History and love discussing on social and international topics. I've won several competitions in Debates (more about them in my <a href="https://krshrimali.github.io/resume.pdf">CV</a>).
+I involve myself in non-academic activities like Debating, blogging, playing Table Tennis and more. I was also a Scout in my high school. I love World History and love discussing on social and international topics. I've won several competitions in Debates (more about them in my <a href="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf">CV</a>).
