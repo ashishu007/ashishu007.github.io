@@ -18,30 +18,30 @@ avatar: "/images/ashish.PNG"
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: kushashwaravishrimali@gmail.com
+  email: ashish.rgu@gmail.com
   facebook:
   flickr:
-  github: krshrimali
-  instagram: kushashwa
-  linkedin: kushashwa-ravi-shrimali-b6780152
+  github: panditu2015
+  instagram: panditu007
+  linkedin: /in/ashishu007
   pinterest:
   rss: 
-  twitter: kushashwa
-  stackoverflow: users/2218021/kushashwa-ravi-shrimali # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: rvaaau
+  # stackoverflow: users/2218021/kushashwa-ravi-shrimali # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: kushashwa
+disqus: ashish007
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-146662543-1
+# google_analytics: UA-146662543-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://krshrimali.github.io/
+url: http://panditu2015.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
