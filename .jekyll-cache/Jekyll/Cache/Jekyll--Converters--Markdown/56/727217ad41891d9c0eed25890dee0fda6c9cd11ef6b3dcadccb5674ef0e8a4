@@ -1,0 +1,78 @@
+I"z<h2 id="about-me">About Me</h2>
+
+<p>I am Ashish, first year PhD student at the <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, specially finding ways to develop effective NLP systems for business processes with minimal labelled data.</p>
+
+<p>I completed my Bachelor’s in Technology (BTech) majoring in Computer Science and Engineering (CSE) in June 2019 from <a href="https://www.iiitnr.ac.in/">Dr. SPM-International Institute of Information Technology, Naya Raipur</a> (IIIT-NR), Chhattisgarh, India.</p>
+
+<p>Before starting the PhD at RGU, I also worked as an intern during my BTech final semester under the supervision of Dr. Stewart Massie at RGU. During that internship, I worked on the Information Extraction and Requirement Mapping from Regulatory Documents. It was an Scottish Oil and Gas Innovation Centre (OGIC) funded project in collaboration with a Scotland based start-up working on the automation of compliance management in Oil and Gas industry. This project outcome finally led to me getting a PhD offer under the same supervisor at RGU.</p>
+
+<h2 id="work-experience">Work Experience</h2>
+
+<ul>
+  <li><strong>Demonstrator, RGU, UK</strong>
+<strong>(January 2020-Present)</strong>
+    <ul>
+      <li>Helping third year BSc (Computer Science)</li>
+    </ul>
+  </li>
+  <li><strong>NLP/ML Research Intern, RGU, UK</strong> 
+<strong>(December 2018 - June 2019)</strong>
+    <ul>
+      <li>Information Extraction from Oil and Gas regulatory documents.</li>
+      <li>Classifying compliance requirements and mapping them to different taxonomies of people and equipment.</li>
+      <li>Successfully classified highly imbalanced text datasets with high F1 score.</li>
+    </ul>
+  </li>
+  <li><strong>Deep Learning Intern, NIC-Chattisgarh, India</strong>
+<strong>(August 2018 - December 2018)</strong>
+    <ul>
+      <li>Developed a Client-server model for pronunciation matching.</li>
+      <li>Extracted the MFCC features from speech to train a CNN model in Keras.</li>
+      <li>Model to be used by school students of Chhattisgarh.</li>
+    </ul>
+  </li>
+  <li><strong>Machine Learning and Optimisation Intern, RGU, UK</strong>
+<strong>(May 2018 - July 2018)</strong>
+    <ul>
+      <li>Automated the task of creating jobs of picking items from different places in Scotland and minimizing the number of trucks used.</li>
+      <li>Developed an API using Flask and Vue.js.</li>
+    </ul>
+  </li>
+  <li><strong>Indian Institute of Information Technology and Management, Gwalior</strong> 
+<strong>(December 2017)</strong>
+    <ul>
+      <li>Developed an algorithm using A* &amp; Probabilistic Road Map for the coordination of multiple robots on a collision free path using an UAV.</li>
+      <li><a href="https://doi.org/10.1016/j.procs.2018.07.052">Published Paper</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="research-interests">Research Interests</h2>
+
+<ul>
+  <li>Natural Language Processing</li>
+  <li>Case-Based Reasoning</li>
+  <li>Machine (&amp; Deep) Learning</li>
+  <li>Evolutionary Algorithms</li>
+</ul>
+
+<h2 id="skills">Skills</h2>
+
+<ul>
+  <li><strong>Programming Language:</strong> Python, C++, JS, C, Shell Script</li>
+  <li><strong>Tools:</strong> LaTeX, Git, MATLAB, Jupyter</li>
+  <li><strong>Deep Learning Frameworks:</strong> Keras, Tensorflow, PyTorch</li>
+  <li><strong>Python Libraries:</strong> NLTK, SpaCy, PySwarms, SciPy, NumPy, Matplotlib, scikit-learn</li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+
+<ul>
+  <li>Upadhyay, Ashish, Kushashwa Ravi Shrimali, and Anupam Shukla. “UAV-robot relationship for coordination of robots on a collision free path.” Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a></li>
+  <li>Tripathi, Shrivishal, Ashish Upadhyay, Shashank Kotyan, and Sandeep Yadav. “Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network.” Wireless Personal Communications 104, no. 3 (2019): 1175-1208. <a href="https://doi.org/10.1007/s11277-018-6075-9">(DOI)</a></li>
+</ul>
+
+<h2 id="non-academic-interests-and-achievements">Non-Academic Interests and Achievements</h2>
+
+<p>During my Bachelor studies, I was involved into a lot of event organising, to name a few: Connaissance 2016 (Litrature-cum-Cultural Fest, IIIT-NR), Technovate 2018 (Techno-Cultural Fest, IIIT-NR), Industry-Academia Meet, 2017 (IIIT-NR). Before the start of 5th semester, I also used to participate in a lot of Youth Parliaments where once I won the best delegate award as well. I charied a few debates as moderator and speaker (more about them in my <a href="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf">CV</a>).</p>
+:ET

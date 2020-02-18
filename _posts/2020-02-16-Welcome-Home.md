@@ -23,6 +23,11 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 
 ## Work Experience
 
+- **Demonstrator, RGU, UK**
+  **(January 2020 - Present)**
+	- Demonstration for third year BSc (Computer Science) student during spring semester.
+	- Subject: Concurrent Programming with Java.
+
 - **NLP/ML Research Intern, RGU, UK** 
   **(December 2018 - June 2019)**
 	- Information Extraction from Oil and Gas regulatory documents. 
@@ -39,7 +44,7 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 	- Developed an API using Flask and Vue.js.
 - **Indian Institute of Information Technology and Management, Gwalior** 
   **(December 2017)**
-	- Developed an algorithm using A* \& Probabilistic Road Map for the coordination of multiple robots on a collision free path using an UAV. 
+	- Developed an algorithm using A* & Probabilistic Road Map for the coordination of multiple robots on a collision free path using an UAV. 
 	- <a href="https://doi.org/10.1016/j.procs.2018.07.052">Published Paper</a>.
 
 
