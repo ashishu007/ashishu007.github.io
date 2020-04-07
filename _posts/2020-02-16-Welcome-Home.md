@@ -14,7 +14,7 @@ icon: icon-html
 
 ## About Me
 
-I am Ashish, first year PhD student at the <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, especially finding ways to develop effective NLP systems for business processes with minimal labelled data. My research motive is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks.
+I am Ashish, first year PhD student at the <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, especially finding ways to develop effective NLP systems for business processes with minimal labelled data. My research motive is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks.
 
 I completed my Bachelor's in Technology (BTech) majoring in Computer Science and Engineering (CSE) in June 2019 from <a href="https://www.iiitnr.ac.in/">Dr. SPM-International Institute of Information Technology, Naya Raipur</a> (IIIT-NR), Chhattisgarh, India. 
 
