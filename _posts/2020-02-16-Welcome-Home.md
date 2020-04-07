@@ -48,22 +48,25 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 	- Information Extraction from Oil and Gas regulatory documents. 
 	- Classifying compliance requirements and mapping them to different taxonomies of people and equipment.
 	- Successfully classified highly imbalanced text datasets with high F1 score.
+	- Outcome: Offer for a PhD scholarship.
 
 - **Deep Learning Intern, NIC-Chattisgarh, India**
   **(August 2018 - December 2018)**
 	- Developed a Client-server model for pronunciation matching. 
 	- Extracted the MFCC features from speech to train a CNN model in Keras. 
 	- Model to be used by school students of Chhattisgarh.
+	- Outcome: Paper accepted at ICMISC 2020, Hyderabad.
 
 - **Machine Learning Research Intern, RGU, UK**
   **(May 2018 - July 2018)**
 	- Automated the task of creating jobs of picking items from different places in Scotland and minimizing the number of trucks used.
 	- Developed an API using Flask and Vue.js.
+	- Outcome: Offer for a six months internship during final semester.
 
 - **AI Research Intern, IIITM, Gwalior, India** 
   **(December 2017)**
 	- Developed an algorithm using A* & Probabilistic Road Map for the coordination of multiple robots on a collision free path using an UAV. 
-	- <a href="https://doi.org/10.1016/j.procs.2018.07.052">Published Paper</a>.
+	- Outcome: Paper published at RoSMa 2018. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(Published Paper)</a>.
 
 
 ## Technical Skills
