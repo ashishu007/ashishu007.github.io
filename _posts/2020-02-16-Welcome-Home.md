@@ -41,7 +41,7 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 	- Demonstration for third year BSc (Computer Science) student during spring semester.
 	- Subject: Concurrent Programming with Java.
 
-## Research Internships
+## Past Research Internships
 
 - **NLP/ML Research Intern, RGU, UK** 
   **(December 2018 - June 2019)**
@@ -66,7 +66,7 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 	- <a href="https://doi.org/10.1016/j.procs.2018.07.052">Published Paper</a>.
 
 
-## Skills
+## Technical Skills
 	
 * **Programming Language:** Python, C++, JS, C, Shell Script
 * **Tools:** LaTeX, Git, MATLAB, Jupyter
@@ -75,7 +75,12 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 
 ## Publications
 
+* Ashish Upadhyay, Thanh Nguyen, Stewart Massie, John McCall, "WEC: Weighted Ensemble of text Classifiers", IEEE Congress on Computational Intelligence 2020 (19-24 July, Glasgow, UK) (accepted).
+
+* Ashish Upadhyay, Bhupendra Sonwani, Vimal Anand Baghel, Yash Kirti Sinha, A S Patel, and M Ojha, "Pronunciation Similarity Matching using Deep Learning", International Conference on Recent Trends in Machine Learning, IOT, Smart Cities & Applications 2020 (28-29 March 2020, Hyderabad, India) (accepted).
+
 * Upadhyay, Ashish, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
+
 * Tripathi, Shrivishal, Ashish Upadhyay, Shashank Kotyan, and Sandeep Yadav. "Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network." Wireless Personal Communications 104, no. 3 (2019): 1175-1208. <a href="https://doi.org/10.1007/s11277-018-6075-9">(DOI)</a>
 
 ## Non-Academic Interests and Achievements
