@@ -21,7 +21,7 @@ I completed my Bachelor's in Technology (BTech) majoring in Computer Science and
 Before starting the PhD at RGU, I also worked as an intern during my BTech final semester under the supervision of Dr. Stewart Massie at RGU. During that internship, I worked on the Information Extraction and Requirement Mapping from Regulatory Documents. It was an Scottish Oil and Gas Innovation Centre (OGIC) funded project in collaboration with a Scotland based start-up working on the automation of compliance management in Oil and Gas industry. This project outcome finally led to me getting a PhD offer under the same supervisor at RGU.
 
 ## Research Interests
-	
+
 - Natural Language Processing
 - Case-Based Reasoning
 - Machine (& Deep) Learning
@@ -30,7 +30,7 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 
 ## Current Part-Time Positions
 
-- **Research Assistant**
+- **Research Assistant, RGU, UK**
   **(February 2020 - Present)**
 	- Natural language generation for obituaries.
 	- Case-based approach to dynamic templating.
@@ -55,12 +55,12 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 	- Extracted the MFCC features from speech to train a CNN model in Keras. 
 	- Model to be used by school students of Chhattisgarh.
 
-- **Machine Learning and Optimisation Intern, RGU, UK**
+- **Machine Learning Research Intern, RGU, UK**
   **(May 2018 - July 2018)**
 	- Automated the task of creating jobs of picking items from different places in Scotland and minimizing the number of trucks used.
 	- Developed an API using Flask and Vue.js.
 
-- **AI Research Intern, IIITM, Gwalior** 
+- **AI Research Intern, IIITM, Gwalior, India** 
   **(December 2017)**
 	- Developed an algorithm using A* & Probabilistic Road Map for the coordination of multiple robots on a collision free path using an UAV. 
 	- <a href="https://doi.org/10.1016/j.procs.2018.07.052">Published Paper</a>.
