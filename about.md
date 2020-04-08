@@ -74,7 +74,7 @@ icon: icon-html
 
 * ***Ashish Upadhyay***, Bhupendra Sonwani, Vimal Anand Baghel, Yash Kirti Sinha, A S Patel, and M Ojha, "Pronunciation Similarity Matching using Deep Learning", International Conference on Recent Trends in Machine Learning, IOT, Smart Cities & Applications 2020 (28-29 March 2020, Hyderabad, India) (accepted).
 
-* ***Upadhyay Ashish***, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
+* ***Ashish Upadhyay***, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
 
 * Tripathi, Shrivishal, ***Ashish Upadhyay***, Shashank Kotyan, and Sandeep Yadav. "Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network." Wireless Personal Communications 104, no. 3 (2019): 1175-1208. <a href="https://doi.org/10.1007/s11277-018-6075-9">(DOI)</a>
 
