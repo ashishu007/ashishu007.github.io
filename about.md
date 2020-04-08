@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "More about me."
+title: "More about me"
 date: 2020-04-08
 desc: "My previous experience."
 categories: [Blog]

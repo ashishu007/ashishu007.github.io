@@ -8,13 +8,13 @@ tags: [Blog]
 published: true
 blog: Home
 images:
-  - url: /images/ashish.jpg
+  - url: /images/ashish.PNG
 icon: icon-html
 ---
 
 <!-- ## Summary -->
 
-![Figure 1: My Image](/assets/ashish.jpg)
+![Figure 1: My Image](/assets/ashish.PNG)
 
 ### Summary 
 I am Ashish, first year PhD student based at the I am based at the **Smart Data Technologies Lab,** <a href="https://www.rgu.ac.uk/">**Robert Gordon University, Aberdeen, UK**</a> working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, especially finding ways to develop effective NLP systems for business processes with minimal labelled data. 
