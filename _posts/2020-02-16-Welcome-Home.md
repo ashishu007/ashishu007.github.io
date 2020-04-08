@@ -34,7 +34,7 @@ Before starting the PhD at RGU, I also worked as an intern during my BTech final
 
 - **Research Assistant, RGU, UK**
   **(February 2020 - Present)**
-	- Case-based approach to aAutomated generation of obituaries.
+	- Case-based approach to automated generation of obituaries.
 	- Paper submitted to ICCBR-2020.
 
 - **Demonstrator, RGU, UK**
