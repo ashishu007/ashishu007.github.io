@@ -13,7 +13,7 @@ images:
 icon: icon-html
 ---
 
-I read lots of papers about Deep Learning in NLP during the start of my PhD, this blog is a summary of that reading.
+I read many papers about Deep Learning in NLP during the start of my PhD, this blog is a summary of that reading.
 (This blog is under development)
 
 <!--more-->
