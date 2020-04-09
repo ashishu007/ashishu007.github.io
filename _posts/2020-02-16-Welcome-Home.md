@@ -29,7 +29,7 @@ The main goal of my PhD research is to develop hybrid techniques using CBR and D
 
 * **Bachelor's of Technology (BTech) in Computer Science and Engineering (CSE)** _(August 2015 - June 2019)_
 	- Department of Computer Science and Engineering, <a href="https://www.iiitnr.ac.in/">Dr. SPM-International Institute of Information Technology, Naya Raipur</a> (IIIT-NR), Chhattisgarh, India
-	- Thesis Title: Information Extraction and Requirement Mapping in Regulatory Documents 
+	- Thesis Title: Information Extraction and Requirement Mapping from Regulatory Documents 
 
 
 ### Before PhD
