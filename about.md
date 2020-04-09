@@ -34,7 +34,7 @@ icon: icon-html
 
 ## Past Research Internships
 
-- **NLP/ML Research Intern, RGU, UK** 
+1. **NLP/ML Research Intern, RGU, UK** 
   *(December 2018 - June 2019)*
 	- **Information Extraction and Requirement Mapping from Regulatory Documents.**
 		- Classifying compliance requirements and mapping them to different taxonomies of people and equipment.
@@ -43,7 +43,7 @@ icon: icon-html
 			- **Outcome**: Offer for a PhD scholarship.
 
 
-- **Deep Learning Intern, NIC-Chattisgarh, India**
+2. **Deep Learning Intern, NIC-Chattisgarh, India**
   *(August 2018 - December 2018)*
 	- **Pronunciation Similarity Matching using Deep Learning.**
 		- Developed a Client-server model for pronunciation matching. 
@@ -52,7 +52,7 @@ icon: icon-html
 			- **Outcome**: Paper accepted at ICMISC 2020, Hyderabad.
 
 
-- **Machine Learning Research Intern, RGU, UK**
+3. **Machine Learning Research Intern, RGU, UK**
   *(May 2018 - July 2018)*
 	- **Machine Learning and Optimization in Supply-Chain Management.**
 		- Automated the task of creating jobs of picking items from different places in Scotland and minimizing the number of trucks used.
@@ -60,7 +60,7 @@ icon: icon-html
 			- **Outcome**: Offer for a six months internship during final semester.
 
 
-- **AI Research Intern, IIITM, Gwalior, India** 
+4. **AI Research Intern, IIITM, Gwalior, India** 
   *(December 2017)*
 	- **UAV-Robot Relationship for Coordination of Robots on a Collision Free Path.**
 		- Developed an algorithm using A* & Probabilistic Road Map for the coordination of multiple robots on a collision free path using an UAV. 
@@ -69,12 +69,15 @@ icon: icon-html
 
 
 ## Technical Skills
-| **Programming Language:** | Python, C++, Java, JS, C, Shell Script | 
-|----|----:|
-| **Tools:** | LaTeX, Git, MATLAB, Jupyter | 
-| **Deep Learning Frameworks:** | Keras, Tensorflow, PyTorch | 
-| **NLP Libraries:** | SpaCy, NLTK, StanfordNLP, Stanza | 
-| **Data Science Libraries:** | Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms | 
+
+| **Programming Languages**		 | 		    Python, R, Java, JavaScript, C/C++, SQL | 
+| ------------------------------ | -----------------------------------------------: | 
+| **Tools**				    	 |			  			LaTeX, Git, MATLAB, Jupyter | 
+| **Deep Learning Frameworks**   |			   			 Keras, Tensorflow, PyTorch | 
+| **NLP Libraries** 			 | 				   SpaCy, NLTK, StanfordNLP, Stanza | 
+| **Data Science Libraries** 	 | Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms | 
+| **Development Frameworks**     |          Flask, React.js, PostgreSQL, SQLAlchemy |
+
 <!-- * **Programming Language:** Python, C++, Java, JS, C, Shell Script -->
 <!-- * **Tools:** LaTeX, Git, MATLAB, Jupyter -->
 <!-- * **Deep Learning Frameworks:** Keras, Tensorflow, PyTorch -->
@@ -83,13 +86,13 @@ icon: icon-html
 
 ## Publications
 
-* ***Ashish Upadhyay***, Thanh Nguyen, Stewart Massie, John McCall, "WEC: Weighted Ensemble of text Classifiers", IEEE Congress on Computational Intelligence 2020 (19-24 July, Glasgow, UK) (accepted).
+1. ***Ashish Upadhyay***, Thanh Nguyen, Stewart Massie, John McCall, "WEC: Weighted Ensemble of text Classifiers", IEEE Congress on Computational Intelligence 2020 (19-24 July, Glasgow, UK) (accepted).
 
-* ***Ashish Upadhyay***, Bhupendra Sonwani, Vimal Anand Baghel, Yash Kirti Sinha, A S Patel, and M Ojha, "Pronunciation Similarity Matching using Deep Learning", International Conference on Recent Trends in Machine Learning, IOT, Smart Cities & Applications 2020 (28-29 March 2020, Hyderabad, India) (accepted).
+2. ***Ashish Upadhyay***, Bhupendra Sonwani, Vimal Anand Baghel, Yash Kirti Sinha, A S Patel, and M Ojha, "Pronunciation Similarity Matching using Deep Learning", International Conference on Recent Trends in Machine Learning, IOT, Smart Cities & Applications 2020 (28-29 March 2020, Hyderabad, India) (accepted).
 
-* ***Ashish Upadhyay***, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
+3. ***Ashish Upadhyay***, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
 
-* Tripathi, Shrivishal, ***Ashish Upadhyay***, Shashank Kotyan, and Sandeep Yadav. "Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network." Wireless Personal Communications 104, no. 3 (2019): 1175-1208. <a href="https://doi.org/10.1007/s11277-018-6075-9">(DOI)</a>
+4. Tripathi, Shrivishal, ***Ashish Upadhyay***, Shashank Kotyan, and Sandeep Yadav. "Analysis and Comparison of Different Fuzzy Inference Systems Used in Decision Making for Secondary Users in Cognitive Radio Network." Wireless Personal Communications 104, no. 3 (2019): 1175-1208. <a href="https://doi.org/10.1007/s11277-018-6075-9">(DOI)</a>
 
 ## Non-Academic Interests and Achievements
 
