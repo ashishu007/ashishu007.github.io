@@ -47,7 +47,7 @@ icon: icon-html
 2. **Deep Learning Intern, NIC-Chattisgarh, India**
   *(August 2018 - December 2018)*
 	- **Pronunciation Similarity Matching using Deep Learning.**
-	_Guide: Dr. Muneendra Ojha, Assistant Professor, IIIT-Naya Raipur, Chhattisgarh, India_
+	- _Guide: Dr. Muneendra Ojha, Assistant Professor, IIIT-Naya Raipur, Chhattisgarh, India_
 		- Developed a Client-server model for pronunciation matching. 
 		- Extracted the MFCC features from speech to train a CNN model in Keras. 
 		- Model to be used by school students of Chhattisgarh.
