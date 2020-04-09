@@ -70,19 +70,20 @@ icon: icon-html
 
 ## Technical Skills
 
-| **Programming Languages**		 | 		    Python, R, Java, JavaScript, C/C++, SQL | 
-| ------------------------------ | -----------------------------------------------: | 
-| **Tools**				    	 |			  			LaTeX, Git, MATLAB, Jupyter | 
-| **Deep Learning Frameworks**   |			   			 Keras, Tensorflow, PyTorch | 
-| **NLP Libraries** 			 | 				   SpaCy, NLTK, StanfordNLP, Stanza | 
-| **Data Science Libraries** 	 | Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms | 
-| **Development Frameworks**     |          Flask, React.js, PostgreSQL, SQLAlchemy |
+<!-- | **Programming Languages**		 | 		    Python, R, Java, JavaScript, C/C++, SQL |  -->
+<!-- | ------------------------------ | -----------------------------------------------: |  -->
+<!-- | **Tools**				    	 |			  			LaTeX, Git, MATLAB, Jupyter |  -->
+<!-- | **Deep Learning Frameworks**   |			   			 Keras, Tensorflow, PyTorch |  -->
+<!-- | **NLP Libraries** 			 | 				   SpaCy, NLTK, StanfordNLP, Stanza |  -->
+<!-- | **Data Science Libraries** 	 | Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms |  -->
+<!-- | **Development Frameworks**     |          Flask, React.js, PostgreSQL, SQLAlchemy | -->
 
-<!-- * **Programming Language:** Python, C++, Java, JS, C, Shell Script -->
-<!-- * **Tools:** LaTeX, Git, MATLAB, Jupyter -->
-<!-- * **Deep Learning Frameworks:** Keras, Tensorflow, PyTorch -->
-<!-- * **NLP Libraries:** SpaCy, NLTK, StanfordNLP, Stanza -->
-<!-- * **Data Science Libraries:** Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms -->
+* **Programming Language:** Python, R, Java, JavaScript, C/C++, SQL
+* **Tools:** LaTeX, Git, MATLAB, Jupyter
+* **Deep Learning Frameworks:** Keras, Tensorflow, PyTorch
+* **NLP Libraries:** SpaCy, NLTK, StanfordNLP, Stanza
+* **Data Science Libraries:** Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms
+* **Development Frameworks:** Flask, React.js, PostgreSQL, SQLAlchemy 
 
 ## Publications
 
