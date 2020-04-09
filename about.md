@@ -26,6 +26,7 @@ icon: icon-html
 	- Case-based approach to automated generation of obituaries.
 	- Paper submitted to ICCBR-2020.
 
+
 - **Demonstrator, RGU, UK**
   *(January 2020 - Present)*
 	- Demonstration for BSc (Computer Science) students.
@@ -41,6 +42,7 @@ icon: icon-html
 		- Model being used in production by the company.
 			- **Outcome**: Offer for a PhD scholarship.
 
+
 - **Deep Learning Intern, NIC-Chattisgarh, India**
   *(August 2018 - December 2018)*
 	- **Pronunciation Similarity Matching using Deep Learning.**
@@ -49,12 +51,14 @@ icon: icon-html
 		- Model to be used by school students of Chhattisgarh.
 			- **Outcome**: Paper accepted at ICMISC 2020, Hyderabad.
 
+
 - **Machine Learning Research Intern, RGU, UK**
   *(May 2018 - July 2018)*
 	- **Machine Learning and Optimization in Supply-Chain Management.**
 		- Automated the task of creating jobs of picking items from different places in Scotland and minimizing the number of trucks used.
 		- Developed an API using Flask and Vue.js.
 			- **Outcome**: Offer for a six months internship during final semester.
+
 
 - **AI Research Intern, IIITM, Gwalior, India** 
   *(December 2017)*
@@ -63,18 +67,19 @@ icon: icon-html
 			- **Outcome**: Paper published at RoSMa 2018 (<a href="https://doi.org/10.1016/j.procs.2018.07.052">published paper</a>).
 
 
+
 ## Technical Skills
-|----|----:|
 | **Programming Language:** | Python, C++, Java, JS, C, Shell Script | 
+|----|----:|
 | **Tools:** | LaTeX, Git, MATLAB, Jupyter | 
 | **Deep Learning Frameworks:** | Keras, Tensorflow, PyTorch | 
 | **NLP Libraries:** | SpaCy, NLTK, StanfordNLP, Stanza | 
 | **Data Science Libraries:** | Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms | 
-<!-- * **Programming Language:** Python, C++, Java, JS, C, Shell Script
-* **Tools:** LaTeX, Git, MATLAB, Jupyter
-* **Deep Learning Frameworks:** Keras, Tensorflow, PyTorch
-* **NLP Libraries:** SpaCy, NLTK, StanfordNLP, Stanza
-* **Data Science Libraries:** Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms -->
+<!-- * **Programming Language:** Python, C++, Java, JS, C, Shell Script -->
+<!-- * **Tools:** LaTeX, Git, MATLAB, Jupyter -->
+<!-- * **Deep Learning Frameworks:** Keras, Tensorflow, PyTorch -->
+<!-- * **NLP Libraries:** SpaCy, NLTK, StanfordNLP, Stanza -->
+<!-- * **Data Science Libraries:** Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms -->
 
 ## Publications
 
