@@ -40,6 +40,6 @@ Before starting the PhD at RGU, I also worked as an intern here during my BTech 
 
 ### Contact
 
-To get in touch, please send me an e-mail at: **ashish [dot] rgu [at] gmail [dot] com**.
+To get in touch, please send me an e-mail at: **a [dot] upadhyay [at] rgu [dot] ac [dot] uk**.
 
 I try to be as fast as possible in replying a mail, but please pardon me in the case of any delays.
