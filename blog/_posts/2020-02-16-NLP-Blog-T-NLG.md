@@ -9,7 +9,7 @@ tags: [Blog, NLP, Views]
 blog: [Blog]
 excerpt_separator: <!--more-->
 images: 
-    - url: /assets/T-NLG_LM.jpg
+    - url: /assets/tnlg/T-NLG_LM.jpg
 icon: icon-html
 ---
 
