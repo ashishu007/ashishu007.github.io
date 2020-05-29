@@ -17,7 +17,7 @@ icon: icon-html
 ---
 
 <div style="text-align: justify"> 
-Recently, my paper titled **Case-Based Approach to Automated Natural Language Generation for Obituaries** got accepted for oral presentation at ICCBR 2020. The paper presents a case-based approach to automatically generate obituary of a deceased person from the information of that person given as structured input. 
+Recently, my paper titled <b>Case-Based Approach to Automated Natural Language Generation for Obituaries</b> got accepted for oral presentation at ICCBR 2020. The paper presents a case-based approach to automatically generate obituary of a deceased person from the information of that person given as structured input. 
 </div>
 
 **(This blog is under development)**
@@ -26,20 +26,20 @@ Recently, my paper titled **Case-Based Approach to Automated Natural Language Ge
 
 ### Problem
 <div style="text-align: justify"> 
-The problem statement is to automatically generate the obituary of a deceased person from given a set of features, i.e., details about that person. Here, the input is a structured representation given in *attribute --> value* pair and the output is a raw text document/paragraph summarising the input. The paper presents a Case-Based approach that dynamically generate several templates based on the features given for a target problem. The templates are extracted from a case-base developed from similar problems stored in a *problem-solution* pair.
+The problem statement is to automatically generate the obituary of a deceased person from given a set of features, i.e., details about that person. Here, the input is a structured representation given in <i>attribute --> value</i> pair and the output is a raw text document/paragraph summarising the input. The paper presents a Case-Based approach that dynamically generate several templates based on the features given for a target problem. The templates are extracted from a case-base developed from similar problems stored in a <i>>problem-solution</i> pair.
 </div>
 
 ### Natural Language Generation
 <div style="text-align: justify"> 
-Let's start with a small introduction on Natural Language Generation (NLG) before we dive into Automated Obituary Generation. NLG can be broadle categorised into two different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
+Let's start with a small introduction on Natural Language Generation (NLG) before we dive into Automated Obituary Generation. NLG can be broadle categorised into two different clusters: first, <b>text-to-text generation (T2T NLG)</b>; and second, <b>data-to-text generation (D2T NLG)</b>. 
 </div>
 
-- <div style="text-align: justify">As the name suggests, in **T2T NLG** our goal is to generate text from raw textual input. For example, machine translation - here we take a text document in one human language as input and produce the same content in different human language as output (see figure below). </div>
+- <div style="text-align: justify">As the name suggests, in <b>T2T NLG</b> our goal is to generate text from raw textual input. For example, machine translation - here we take a text document in one human language as input and produce the same content in different human language as output (see figure below). </div>
 
 ![Figure 1: T2T NLG](/assets/iccbr/t2tnlg.png)
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation</b></p>
 
-- <div style="text-align: justify">For **D2T NLG**, the input is present in more structured format, i.e., tables, graphs or JSON format. With those structured inputs we generate a textual output summarising the input values. For example, summarising an NFL match - given the scores and other details for input, generate a textual summary as the output (see figure below).</div>
+- <div style="text-align: justify">For <b>D2T NLG</b>, the input is present in more structured format, i.e., tables, graphs or JSON format. With those structured inputs we generate a textual output summarising the input values. For example, summarising an NFL match - given the scores and other details for input, generate a textual summary as the output (see figure below).</div>
 
 <!-- D2T NLG. -->
 ![Figure 2: D2T NLG](/assets/iccbr/d2tnlg.png)
@@ -51,18 +51,17 @@ A lot of things happen in between taking input and producing output, but this is
 
 ## Introduction
 <div style="text-align: justify"> 
-The problem statement for this paper - automated obituary generation comes under the umbrella of *D2T NLG*. The input is a set of *attribute --> value* pairs given in JSON format and the ouput is a raw text both proivding the information about a deceased person.
+The problem statement for this paper - automated obituary generation comes under the umbrella of <i>D2T NLG</i>. The input is a set of <i>attribute --> value</i> pairs given in JSON format and the ouput is a raw text both proivding the information about a deceased person.
 </div>
 
 ![Figure 3: An Obituary](/assets/iccbr/obit.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>An obituary</b></p>
 
-<div style="text-align: justify"> 
-The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data [[1]](#1).
+<div style="text-align: justify"> The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data <cite>[1][#1]</cite>.
 </div>
 
 <div style="text-align: justify"> 
-In this case, **Textual Case-Based Reasoning (TCBR)** provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in *problem --> solution* pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs [[2]](#2):
+In this case, <b>Textual Case-Based Reasoning (TCBR)</b> provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in <i>problem --> solution</i> pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs [[2]](#2):
 </div>
 
 - In first phase, we **retrieve** similar cases to the target problem from a case-base.
