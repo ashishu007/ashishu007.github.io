@@ -10,6 +10,7 @@ blog: [Blog]
 excerpt_separator: <!--more-->
 images: 
     - url: /assets/iccbr/annot.png
+    - url: /assets/iccbr/atts1.png
     - url: /assets/iccbr/d2tnlg.png
     - url: /assets/iccbr/t2tnlg.png
     - url: /assets/iccbr/obit.jpg
@@ -57,15 +58,10 @@ The problem statement for this paper - automated obituary generation comes under
 ![Figure 3: An Obituary](/assets/iccbr/obit.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>An obituary</b></p>
 
-<div style="text-align: justify"> The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data </div>
-
-[1](#1).
-
+<div style="text-align: justify"> The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data [(Reiter, 2019)](https://ehudreiter.com/2019/01/08/deep-learning-prefer-readability/).</div>
 
 <div style="text-align: justify"> 
-In this case, <b>Textual Case-Based Reasoning (TCBR)</b> provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in <i>problem --> solution</i> pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs </div>
-
-[2](#2):
+In this case, <b>Textual Case-Based Reasoning (TCBR)</b> provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in <i>problem --> solution</i> pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs [(Aamodt and Plaza, 1994)](https://www.iiia.csic.es/~enric/papers/AICom.pdf):</div>
 
 - In first phase, we **retrieve** similar cases to the target problem from a case-base.
 - Then, we **reuse** the solution from similar cases and propose a solution for the target problem.
@@ -75,12 +71,49 @@ In this case, <b>Textual Case-Based Reasoning (TCBR)</b> provides a perfect alte
 <!-- So after analysing a lot of obituaries from the website [Funeral-Notices](https://funeral-notices.co.uk/national) and discussing with different professionals I manually labelled 100 samples of obituaries with identified 40+ features. Since, I have only 100 labelled data that too with 40+ features, even a begineer will suggest me not to use deep learning for a generation problem (ofcourse, without transfer learning).  -->
 
 ## Proposed Framework
-### Case Representation
+<div style="text-align: justify">
+Let's discuss the proposed TCBR framework in detail now. First, I'll explain the case-base: what it contains; and how it is generated. Then, I'll explain how the solution for a new target problem is proposed. 
+</div>
 
-![Figure 3: Annotated Case](/assets/iccbr/annot.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+### Case Representation
+<div style="text-align: justify">
+Our case-base contains <b>100 manually annotated</b> cases organised in problem-solution pairs. For each case: in the problem side, the information is stored in JSON format with attribute-values; and in the solution-side, the marked-up obituary is stored. The figure below shows the solution-side of a case, for problem-side you can take the tag-name as attribute and string between the tag will be the value for that attribute.
+</div>
+
+![Figure 3: Annotated Case](/assets/iccbr/annot.png)
 <p style="text-align: center;"><b>An annotated obituary</b></p>
 
+<div style="text-align: justify">
+These obituaries were extracted from [Funeral-Notices](https://funeral-notices.co.uk/), one of the most famous obituary publishing websites in the UK. After reading multiple obituaries, I identified around 40 features to represent an obituary and then annotated around 100 obituaries with those features. The list of identified features is shown in the figure below.
+</div>
+
+![Figure 3: Annotated Case](/assets/iccbr/atts1.png)
+<p style="text-align: center;"><b>Features identified for representation of an obituary</b></p>
+
 ### Similarity Measure for Retrieval
+<div style="text-align: justify">
+Now that we have a case-base containing some previous experience, we will apply a nearest neighbour retrieval to get the solution for similar problems solved in past. CBR works on a basic principle - <b>"similar problems have similar solutions"</b>. Like in real life when we encounter a new problem, we search our memory for the similar problems encountered in past and then we use the solution for that problem to solve the new one. Similarly, we will search for the most similar case in case-base to the new target problem using the problem-side representation. Then we will use the solution side obituary of the most similar case by replacing the tags' values with new target case values.
+
+Thus, for the retrieval of similar cases - we need to have a measure of similarity between cases. The first approach is straight-forward, here we match the number of features in the target problem with number of features in each case from the case-base. The first similarity measure (sim<sub>1</sub>) is defined by the equation below:
+</div>
+
+<img src="http://www.sciweavers.org/tex2img.php?eq=sim_%7B1%7D%20%3D%20%7Cq%20%5Cbigcap%20c%7C&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="sim_{1} = |q \bigcap c|" width="118" height="29" />
+
+<div style="text-align: center;">
+<span class="math">sim<sub>1</sub> = |q &#8898 c|</span>
+</div>
+
+<div style="text-align: center;">
+where <i>q</i> is the list of attributes in target problem and <i>c</i> is the list of attributes in each case from case-base.
+</div>
+
+<div style="text-align: center;">
+There can be a problem with the above equation where the target case has fewer features than the case retrieved from the case-base. Let's take an example where the target case has only 10 attributes out of a possible 40. In that scenario, cases with more than the 10 attributes will also have the same similarity score as cases with the exact 10 features. To counter this problem, we use a different similarity measure (sim<sub>2</sub>), which is the <b>Jaccard Similarity Coefficient (J)</b> described below:
+</div>
+
+<div style="text-align: center;">
+<span class="math">sim<sub>2</sub> = J(q, c) = |q &#8898 c| &frasl; |q &#8899 c| </span>
+</div>
 
 ### Text Reuse
 
@@ -102,10 +135,10 @@ In this case, <b>Textual Case-Based Reasoning (TCBR)</b> provides a perfect alte
 
 ## Conclusion
 
-## References
+<!-- ## References
 
 <a id="1">[1]</a> 
 Ehudreiter: Does deep learning prefer readability over accuracy? (Jan 2019), [https://ehudreiter.com/2019/01/08/deep-learning-prefer-readability/](https://ehudreiter.com/2019/01/08/deep-learning-prefer-readability/).
 
 <a id="2">[2]</a> 
-Aamodt, Agnar, and Enric Plaza. "Case-based reasoning: Foundational issues, methodological variations, and system approaches." AI communications 7.1 (1994): 39-59.
+Aamodt, Agnar, and Enric Plaza. "Case-based reasoning: Foundational issues, methodological variations, and system approaches." AI communications 7.1 (1994): 39-59. -->
