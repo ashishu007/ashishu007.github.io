@@ -22,7 +22,7 @@ icon: icon-html
 Recently, my paper titled <b>Case-Based Approach to Automated Natural Language Generation for Obituaries</b> got accepted for oral presentation at ICCBR 2020. The paper presents a case-based approach to automatically generate obituary of a deceased person from the information of that person given as structured input. 
 <!-- </div> -->
 
-**(This blog is under development)**
+<!-- **(This blog is under development)** -->
 
 <!--more-->
 
@@ -38,13 +38,13 @@ Let's start with a small introduction on Natural Language Generation (NLG) befor
 
 - <div style="text-align: justify">As the name suggests, in <b>T2T NLG</b> our goal is to generate text from raw textual input. For example, machine translation - here we take a text document in one human language as input and produce the same content in different human language as output (see figure below). </div>
 
-![Figure 1: T2T NLG](/assets/iccbr/t2tnlg.jpg)
+![Figure 1: T2T NLG](/assets/iccbr/t2tnlg.jpg){:width="250px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation</b></p>
 
 - <div style="text-align: justify">For <b>D2T NLG</b>, the input is present in more structured format, i.e., tables, graphs or JSON format. With those structured inputs we generate a textual output summarising the input values. For example, summarising an NFL match - given the scores and other details for input, generate a textual summary as the output (see figure below).</div>
 
 <!-- D2T NLG. -->
-![Figure 2: D2T NLG](/assets/iccbr/d2tnlg.jpg)
+![Figure 2: D2T NLG](/assets/iccbr/d2tnlg.jpg){:width="250px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation</b></p>
 
 <!-- <div style="text-align: justify">  -->
@@ -56,7 +56,7 @@ A lot of things happen in between taking input and producing output, but this is
 The problem statement for this paper - automated obituary generation comes under the umbrella of <i>D2T NLG</i>. The input is a set of <i>attribute --> value</i> pairs given in JSON format and the ouput is a raw text both proivding the information about a deceased person.
 <!-- </div> -->
 
-![Figure 3: An Obituary](/assets/iccbr/obit.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+![Figure 3: An Obituary](/assets/iccbr/obit.jpg){:width="400px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>An obituary</b></p>
 
 <!-- <div style="text-align: justify">  -->
@@ -84,14 +84,14 @@ Let's discuss the proposed TCBR framework in detail now. First, I'll explain the
 Our case-base contains <b>100 manually annotated</b> cases organised in problem-solution pairs. For each case: in the problem side, the information is stored in JSON format with attribute-values; and in the solution-side, the marked-up obituary is stored. The figure below shows the solution-side of a case, for problem-side you can take the tag-name as attribute and string between the tag will be the value for that attribute.
 <!-- </div> -->
 
-![Figure 4: Annotated Case](/assets/iccbr/annot.jpg)
+![Figure 4: Annotated Case](/assets/iccbr/annot.jpg){:width="650px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>An annotated obituary</b></p>
 
 <!-- <div style="text-align: justify"> -->
 These obituaries were extracted from [Funeral-Notices](https://funeral-notices.co.uk/), one of the most famous obituary publishing websites in the UK. After reading multiple obituaries, I identified around 40 features to represent an obituary and then annotated around 100 obituaries with those features. The list of identified features is shown in the figure below.
 <!-- </div> -->
 
-![Figure 5: Features](/assets/iccbr/atts1.jpg)
+![Figure 5: Features](/assets/iccbr/atts1.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>Features identified for representation of an obituary</b></p>
 
 ### Similarity Measure for Retrieval
@@ -157,10 +157,10 @@ To tackle the gender problem, we apply a rule-based adaptation process where eac
 <!-- ### Pearson Co-efficient -->
 Since, we have two different similarity measure with two different case-representations for the retrieval of similar cases - we have total four versions of our CBR system. A nomeclature of these four systems is shown in the table below:
 
-|  | **Basic** | **Component** |
-| :---         |     :---:      |          ---: |
-| <span class="math">sim<sub>1</sub></span> | BS1   | CS1   |
-| <span class="math">sim<sub>1</sub></span> | BS2   | CS2   |
+| **Systems**                               | **Basic** | **Component** |
+| ----------------------------------------- | :--------:| ------------: |
+| <span class="math">sim<sub>1</sub></span> | BS1       | CS1           |
+| <span class="math">sim<sub>1</sub></span> | BS2       | CS2           |
 
 An example of texts generated from all four versions for same input is shown in the figure below:
 
