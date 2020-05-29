@@ -16,14 +16,14 @@ images:
 icon: icon-html
 ---
 
-Recently, my paper titled **Case-Based Approach to Automated Natural Language Generation for Obituaries** got accepted for oral presentation at ICCBR 2020. The paper presents a case-based approach to automatically generate obituary of a deceased person from the structured information of that person given as input. 
+Recently, my paper titled **Case-Based Approach to Automated Natural Language Generation for Obituaries** got accepted for oral presentation at ICCBR 2020. The paper presents a case-based approach to automatically generate obituary of a deceased person from the information of that person given as structured input. 
 <!-- The paper is an outcome of the project I am working on part-time during my PhD. Luckily, the project closely aligns to my PhD goal as well.  -->
 
 **(This blog is under development)**
 
 <!--more-->
 ### Problem
-The problem statement is to automatically generate the obituary of a deceased person from given a set of features, i.e., details about that person. Here, the input is a structured representation given in *attribute --> value* pair and the output is a raw text document/paragraph summarising the input. The paper presents a Case-Based approach that dynamically generate several templates based on the features given for a target problem. The templates are extracted from a case-base developed from similar problems stored in a *problem-solution* pair. -->
+The problem statement is to automatically generate the obituary of a deceased person from given a set of features, i.e., details about that person. Here, the input is a structured representation given in *attribute --> value* pair and the output is a raw text document/paragraph summarising the input. The paper presents a Case-Based approach that dynamically generate several templates based on the features given for a target problem. The templates are extracted from a case-base developed from similar problems stored in a *problem-solution* pair.
 
 <!-- ## Introduction -->
 ### Natural Language Generation
@@ -32,7 +32,7 @@ Let's start with a small introduction on Natural Language Generation (NLG) befor
 
 <!-- T2T NLG. -->
 ![Figure 1: T2T NLG](/assets/iccbr/t2tnlg.png)
-->Text-to-Text Natural Language Generation<-
+<p style="text-align: center;"><b>Text-to-Text Natural Language Generation</b></p>
 
 - For **D2T NLG**, the input is present in more structured format, i.e., tables, graphs or JSON format. With those structured inputs we generate a textual output summarising the input values. For example, summarising an NFL match - given the scores and other details for input, generate a textual summary as the output (see figure below).
 
@@ -48,7 +48,7 @@ The problem statement for this paper - automated obituary generation comes under
 ![Figure 3: An Obituary](/assets/iccbr/obit.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 ->An example obituary<-
 
-The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data [1].
+The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data [1].
 
 In this case, **Textual Case-Based Reasoning (TCBR)** provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in *problem --> solution* pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs [2]:
 
