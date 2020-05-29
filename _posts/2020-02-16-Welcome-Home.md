@@ -12,7 +12,7 @@ images:
 icon: icon-html
 ---
 
-![Figure 1: Glasgow's Buchanan Street on New Year's Eve 2019](/images/ashish.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
+![Figure 1: Glasgow's Buchanan Street on New Year's Eve 2019](/images/aberdeen_beach.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
 
 ### Summary 
 I am Ashish, first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">**School of Computing Science and Digital Media**</a>, <a href="https://www.rgu.ac.uk/">**Robert Gordon University**</a>, **Aberdeen, UK** working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, especially finding ways to develop effective NLP systems for business processes with minimal labelled data. 
