@@ -46,9 +46,9 @@ The problem statement for this paper - automated obituary generation comes under
 ![Figure 3: An Obituary](/assets/iccbr/obit.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <p style="text-align: center;"><b>An obituary</b></p>
 
-The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data [1].
+The most basic idea for obituary generation can be a pre-defined generic template with all the attributes available as slots to be filled. But having a single template for every problem is difficult to construct for complex scenarios and result in very repetitive text outputs. On the other hand, Deep Learning (DL) based neural methods will require huge amount of labelled datasets to learn the relation between data and text for good generation. In these applications, labelled datasets can be very expensive and time consuming as they require domain experts to manually annotate the data. Moreover, DL techniques prefer readbility over accuracy and often hallucinate by producing misleading texts which are not supported by the information provided in input data [[1]](#1).
 
-In this case, **Textual Case-Based Reasoning (TCBR)** provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in *problem --> solution* pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs [2]:
+In this case, **Textual Case-Based Reasoning (TCBR)** provides a perfect alternative to generate dynamic templates from smaller datasets (stored in a case-base in *problem --> solution* pairs) which are capable of producing diverse as well as accurate texts from the structured inputs. The TCBR cycle can be easily explained by the popular 4Rs [[2]](#2):
 
 - In first phase, we **retrieve** similar cases to the target problem from a case-base.
 - Then, we **reuse** the solution from similar cases and propose a solution for the target problem.
@@ -88,4 +88,8 @@ In this case, **Textual Case-Based Reasoning (TCBR)** provides a perfect alterna
 </div>
 
 ## References
-[1] Ehudreiter: Does deep learning prefer readability over accuracy? (Jan 2019), *https://ehudreiter.com/2019/01/08/deep-learning-prefer-readability/*.
+<a id="1">[1]</a> 
+Ehudreiter: Does deep learning prefer readability over accuracy? (Jan 2019), [https://ehudreiter.com/2019/01/08/deep-learning-prefer-readability/](https://ehudreiter.com/2019/01/08/deep-learning-prefer-readability/).
+
+<a id="2">[2]</a> 
+Aamodt, Agnar, and Enric Plaza. "Case-based reasoning: Foundational issues, methodological variations, and system approaches." AI communications 7.1 (1994): 39-59.
