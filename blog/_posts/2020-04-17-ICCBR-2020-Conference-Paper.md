@@ -101,7 +101,7 @@ Now that we have a case-base containing some previous experience, we will apply 
 <!-- </div> -->
 
 <!-- <div style="text-align: justify"> -->
-Thus, for the retrieval of similar cases - we need to have a measure of similarity between cases. The first approach is straight-forward, here we match the number of features in the target problem with number of features in each case from the case-base. The first similarity measure (sim<sub>1</sub>) is defined by the equation below:
+Thus, for the retrieval of similar cases - we need to have a measure of similarity between cases. The first approach is straight-forward, here we match the number of features in the target problem with number of features in each case from the case-base. The first <b>similarity measure (sim<sub>1</sub>)</b> is defined by the equation below:
 <!-- </div> -->
 
 <!-- <img src="http://www.sciweavers.org/tex2img.php?eq=sim_%7B1%7D%20%3D%20%7Cq%20%5Cbigcap%20c%7C&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" style="text-align: center;" border="0" alt="sim_{1} = |q \bigcap c|" width="118" height="29" /> -->
@@ -115,7 +115,7 @@ where <i>q</i> is the list of attributes in target problem and <i>c</i> is the l
 <!-- </div> -->
 
 <!-- <div style="text-align: justify;"> -->
-There can be a problem with the above equation where the target case has fewer features than the case retrieved from the case-base. Let's take an example where the target case has only 10 attributes out of a possible 40. In that scenario, cases with more than the 10 attributes will also have the same similarity score as cases with the exact 10 features. To counter this problem, we use a different similarity measure (sim<sub>2</sub>), which is the <b>Jaccard Similarity Coefficient (J)</b> described below:
+There can be a problem with the above equation where the target case has fewer features than the case retrieved from the case-base. Let's take an example where the target case has only 10 attributes out of a possible 40. In that scenario, cases with more than the 10 attributes will also have the same similarity score as cases with the exact 10 features. To counter this problem, we use a different <b>similarity measure (sim<sub>2</sub>)</b>, which is the <b>Jaccard Similarity Coefficient (J)</b> described below:
 <!-- </div> -->
 
 <div style="text-align: center;">
@@ -158,11 +158,12 @@ To tackle the gender problem, we apply a rule-based adaptation process where eac
 <!-- ### Pearson Co-efficient -->
 Since, we have two different similarity measure with two different case-representations for the retrieval of similar cases - we have total four versions of our CBR system. A nomeclature of these four systems is shown in the table below:
 
+<div style="text-align: center;">
 <table role="table">
     <tr>
         <th></th>
-        <th>Basic</th>
-        <th>Component</th>
+        <th>Basic Retrieval</th>
+        <th>Component Retrieval</th>
         <!-- <td><b>Basic</b></td>
         <td><b>Component</b></td> -->
     </tr>
@@ -177,6 +178,7 @@ Since, we have two different similarity measure with two different case-represen
         <td>CS2</td>
     </tr>
 </table>
+</div>
 
 <!-- 
 | | **Basic** | **Component** |
