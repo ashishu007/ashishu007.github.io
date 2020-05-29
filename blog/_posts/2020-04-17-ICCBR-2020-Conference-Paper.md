@@ -160,19 +160,21 @@ Since, we have two different similarity measure with two different case-represen
 
 <table role="table">
     <tr>
-        <td></td>
-        <td><b>Basic</b></td>
-        <td><b>Component</b></td>
+        <th></th>
+        <th>Basic</th>
+        <th>Component</th>
+        <!-- <td><b>Basic</b></td>
+        <td><b>Component</b></td> -->
     </tr>
     <tr>
-        <td><span class="math">sim<sub>1</sub></span></td>
-        <td><b>BS1</b></td>
-        <td><b>CS1</b></td>
+        <th><span class="math">sim<sub>1</sub></span></th>
+        <td>BS1</td>
+        <td>CS1</td>
     </tr>
     <tr>
-        <td><span class="math">sim<sub>2</sub></span></td>
-        <td><b>BS2</b></td>
-        <td><b>CS2</b></td>
+        <th><span class="math">sim<sub>2</sub></span></th>
+        <td>BS2</td>
+        <td>CS2</td>
     </tr>
 </table>
 
