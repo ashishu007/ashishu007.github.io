@@ -97,22 +97,22 @@ Now that we have a case-base containing some previous experience, we will apply 
 Thus, for the retrieval of similar cases - we need to have a measure of similarity between cases. The first approach is straight-forward, here we match the number of features in the target problem with number of features in each case from the case-base. The first similarity measure (sim<sub>1</sub>) is defined by the equation below:
 </div>
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=sim_%7B1%7D%20%3D%20%7Cq%20%5Cbigcap%20c%7C&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="sim_{1} = |q \bigcap c|" width="118" height="29" />
+<img src="http://www.sciweavers.org/tex2img.php?eq=sim_%7B1%7D%20%3D%20%7Cq%20%5Cbigcap%20c%7C&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" style="text-align: center;" border="0" alt="sim_{1} = |q \bigcap c|" width="118" height="29" />
 
 <div style="text-align: center;">
-<span class="math">sim<sub>1</sub> = |q &#8898 c|</span>
+<span class="math">sim<sub>1</sub> = |q &#8898; c|</span>
 </div>
 
-<div style="text-align: center;">
+<div style="text-align: justify;">
 where <i>q</i> is the list of attributes in target problem and <i>c</i> is the list of attributes in each case from case-base.
 </div>
 
-<div style="text-align: center;">
+<div style="text-align: justify;">
 There can be a problem with the above equation where the target case has fewer features than the case retrieved from the case-base. Let's take an example where the target case has only 10 attributes out of a possible 40. In that scenario, cases with more than the 10 attributes will also have the same similarity score as cases with the exact 10 features. To counter this problem, we use a different similarity measure (sim<sub>2</sub>), which is the <b>Jaccard Similarity Coefficient (J)</b> described below:
 </div>
 
 <div style="text-align: center;">
-<span class="math">sim<sub>2</sub> = J(q, c) = |q &#8898 c| &frasl; |q &#8899 c| </span>
+<span class="math">sim<sub>2</sub> = J(q, c) = |q &#8898; c| &frasl; |q &#8899; c| </span>
 </div>
 
 ### Text Reuse
