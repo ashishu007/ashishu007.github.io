@@ -156,14 +156,10 @@ To tackle the gender problem, we apply a rule-based adaptation process where eac
 <!-- ### Pearson Co-efficient -->
 Since, we have two different similarity measure with two different case-representations for the retrieval of similar cases - we have total four versions of our CBR system. A nomeclature of these four systems is shown in the table below:
 
-<div style="text-align: center;">
-
 |  | **Basic** | **Component** |
 | :---         |     :---:      |          ---: |
 | <span class="math">sim<sub>1</sub></span> | BS1   | CS1   |
 | <span class="math">sim<sub>1</sub></span> | BS2   | CS2   |
-
-</div>
 
 ## Conclusion
 
