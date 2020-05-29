@@ -14,6 +14,7 @@ images:
     - url: /assets/iccbr/d2tnlg.jpg
     - url: /assets/iccbr/t2tnlg.jpg
     - url: /assets/iccbr/obit.jpg
+    - url: /assets/iccbr/gens.jpg
 icon: icon-html
 ---
 
@@ -83,14 +84,14 @@ Let's discuss the proposed TCBR framework in detail now. First, I'll explain the
 Our case-base contains <b>100 manually annotated</b> cases organised in problem-solution pairs. For each case: in the problem side, the information is stored in JSON format with attribute-values; and in the solution-side, the marked-up obituary is stored. The figure below shows the solution-side of a case, for problem-side you can take the tag-name as attribute and string between the tag will be the value for that attribute.
 <!-- </div> -->
 
-![Figure 3: Annotated Case](/assets/iccbr/annot.jpg)
+![Figure 4: Annotated Case](/assets/iccbr/annot.jpg)
 <p style="text-align: center;"><b>An annotated obituary</b></p>
 
 <!-- <div style="text-align: justify"> -->
 These obituaries were extracted from [Funeral-Notices](https://funeral-notices.co.uk/), one of the most famous obituary publishing websites in the UK. After reading multiple obituaries, I identified around 40 features to represent an obituary and then annotated around 100 obituaries with those features. The list of identified features is shown in the figure below.
 <!-- </div> -->
 
-![Figure 3: Annotated Case](/assets/iccbr/atts1.jpg)
+![Figure 5: Features](/assets/iccbr/atts1.jpg)
 <p style="text-align: center;"><b>Features identified for representation of an obituary</b></p>
 
 ### Similarity Measure for Retrieval
@@ -161,7 +162,20 @@ Since, we have two different similarity measure with two different case-represen
 | <span class="math">sim<sub>1</sub></span> | BS1   | CS1   |
 | <span class="math">sim<sub>1</sub></span> | BS2   | CS2   |
 
+An example of texts generated from all four versions for same input is shown in the figure below:
+
+![Figure 6: Generation](/assets/iccbr/gens.jpg)
+<p style="text-align: center;"><b>Texts generated from four versions</b></p>
+
+It can be observed that the generations from sim2 measure are quite accurate and include most of the information correctly. On the other hand, it can be observed that the generations from sim1 measure have more tendency of making attribute's related errors such as: in BS1, the two major attributes, age and charity name are missing; while in CS1, the retrieved
+case has some extra attributes which are not present in the target case, observe the sentence *"cherished to and a dear of the family"*. Here after *cherished to*, an extra attribute value is present in the retrieved case which is absent in the target problem and hence during the adaptation process, the value of that attribute is replaced with a blank.
+
+It is also noted that missing the "friends name" and "funeral attire" attributes is common for all the four generations. We can also observe that the component retrieval method is also prone to different punctuation errors such as: ending the sentence with two full stops; or starting a sentence with small-caps letter. This may be due to the mix and match property of text generated from component retrieval methods.
+
 ## Conclusion
+In this paper we presented a TCBR system developed for the automated generation of natural language obituaries from a large set of structured input attributes. The paper introduced two alternative case representation approaches, along with two different measures of similarity used for the retrieval of similar cases from the case-base. The texts generated from the system are quite accurate and also readable.
+
+The possibility of future-work for this project is to measure and introduce more diversity into the set of generated obituaries and to automate the process of marking-up the data to ease the case-base creation process.
 
 ## References
 
