@@ -22,6 +22,8 @@ icon: icon-html
 
 Overview of D2T NLG
 
+<!-- more -->
+
 ## Types of NLG
 
 ### T2T NLG
