@@ -22,7 +22,7 @@ icon: icon-html
 
 Overview of D2T NLG
 
-<!-- more -->
+<!--more-->
 
 ## Types of NLG
 
