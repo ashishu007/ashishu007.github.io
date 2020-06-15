@@ -10,21 +10,22 @@ blog: Home
 images:
   - url: /images/ashish.jpg
   - url: /images/watchers1.jpg
+  - url: /images/1.jpg
 icon: icon-html
 ---
 
-![Figure 1: Glasgow's Buchanan Street on New Year's Eve 2019](/images/watchers1.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+![Figure 1: OTW to Isle of Skye](/images/1.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 
-### Summary 
+### Short-Intro 
 I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">**School of Computing Science and Digital Media**</a>, <a href="https://www.rgu.ac.uk/">**Robert Gordon University**</a>, **Aberdeen, UK** working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, especially finding ways to develop effective NLP systems for business processes with minimal labelled data. 
 
-### Research Goal
-The main goal of my PhD research is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial knowledge base of a structured representation extracted from unlablled texts/documnets.
+### PhD Goal
+The main goal of my PhD is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial case-base of a structured representation extracted from unlablled texts/documnets.
 
 ### Education
 * **Doctor of Philosophy (PhD) in Artificial Intelligence (AI)** _(October 2019 - Ongoing)_
 	- School of Computing Science and Digital Media, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK
-	- Research Goal: Natural Language Generation from Structured Representations in Cold-Start Scenario
+	- Research Goal: Natural Language Generation from Structured Representations
 	- Principal Supervisor: Dr. Stewart Massie, Senior Research Fellow, RGU, Aberdeen, UK
 
 * **Bachelor's of Technology (BTech) in Computer Science and Engineering (CSE)** _(August 2015 - June 2019)_
@@ -38,6 +39,11 @@ The main goal of my PhD research is to develop hybrid techniques using CBR and D
 
 Before starting the PhD at RGU, I also worked as an intern here during my BTech final semester under the supervision of Dr. Stewart Massie. During that internship, I worked on a project of **Information Extraction and Requirement Mapping from Regulatory Documents** which was also my bachelor's thesis. It was an Oil and Gas Innovation Centre (OGIC) funded project in collaboration with an Aberdeen based start-up working on the automation of compliance management in Oil and Gas industry. This project outcome finally led to me getting a PhD offer under the same supervisor at RGU.
 
+<!-- ### Hobbies
+
+I like reading, listening (on YouTube) about world's political history. Its fascinating for me to see how man-made lines on the maps (aka **borders**) change, kingdoms come and go - but the culture remains intact. I come from the beautiful land of India located in the Indian subcontinent consisting seven different countries. Its amazing as well as sad to know that how all these countries have shared cultural and political history, still divided through international borders. 
+
+India, itself is a union of several cultures and stands on the principle of **unity in diversity**. Although, its sad to see that the Indian subcontinent is not a single country, I would love to see these countries forming an union similar to the EU. I know it seems highly unlikely on the basis of today's scenarios, but Europe before WW-II was way worse than the subcontinent today.  -->
 
 ### Contact
 
