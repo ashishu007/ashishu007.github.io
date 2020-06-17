@@ -9,20 +9,22 @@ tags: [Blog, NLP, D2T]
 blog: [Blog]
 excerpt_separator: <!--more-->
 images: 
-    - url: /assets/iccbr/annot.jpg
-    - url: /assets/iccbr/atts1.jpg
     - url: /assets/iccbr/d2tnlg.jpg
     - url: /assets/iccbr/t2tnlg.jpg
-    - url: /assets/iccbr/obit.jpg
-    - url: /assets/iccbr/gens.jpg
 icon: icon-html
 ---
 
 **Under Development**
 
-Overview of D2T NLG
+This blog gives a brief overview of data-to-text generation tasks.
+
+[Figure 2: D2T NLG](/assets/iccbr/d2tnlg.jpg){:width="650px" style="display:block;margin-left:auto;margin-right:auto;"}
+<!-- <p style="text-align: center;"><b>Data-to-Text Natural Language Generation</b></p> -->
+
 
 <!--more-->
+
+It's been 
 
 ## Types of NLG
 

@@ -41,7 +41,7 @@ Before starting the PhD at RGU, I also worked as an intern here during my BTech 
 
 <!-- ### Hobbies
 
-I like reading, listening (on YouTube) about world's political history. Its fascinating for me to see how man-made lines on the maps (aka **borders**) change, kingdoms come and go - but the culture remains intact. I come from the beautiful land of India located in the Indian subcontinent consisting seven different countries. Its amazing as well as sad to know that how all these countries have shared cultural and political history, still divided through international borders. 
+I like reading, watching (on YouTube) about world's political history. It fascinates me - seeing how man-made lines on the globe (aka **borders**) change everytime - but the culture remains intact. I come from the beautiful land of India located in the Indian subcontinent consisting seven different countries. Its amazing as well as sad to know that how all these countries have shared cultural and political history, still divided through international borders. 
 
 India, itself is a union of several cultures and stands on the principle of **unity in diversity**. Although, its sad to see that the Indian subcontinent is not a single country, I would love to see these countries forming an union similar to the EU. I know it seems highly unlikely on the basis of today's scenarios, but Europe before WW-II was way worse than the subcontinent today.  -->
 
