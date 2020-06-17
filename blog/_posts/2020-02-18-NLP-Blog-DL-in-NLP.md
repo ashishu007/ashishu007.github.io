@@ -116,11 +116,11 @@ The output to every time-step is dependent on the input taken at the current tim
 The operations performed in RNN at every time step is given in the equations below:
 
 <div style="text-align: center;">
-<span class="math"><b>h<sub>t</sub> = &sigma;<sub>h</sub> ( W<sub>e</sub>x<sub>t</sub> + W<sub>h</sub>h<sub>t-1</sub> + b<sub>h</sub> )
+<span class="math"><b>h<sub>t</sub> = &sigma;<sub>h</sub> ( W<sub>e</sub>x<sub>t</sub> + W<sub>h</sub>h<sub>t-1</sub> + b<sub>h</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )
+<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )</b></span>
 </div>
 
 <!-- \begin{align}\label{eq:rnn}
@@ -148,27 +148,27 @@ Although, in theory the RNNs are designed to handle the sequence input but in pr
 \end{equation} -->
 
 <div style="text-align: center;">
-<span class="math"><b>f<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )
+<span class="math"><b>f<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>i<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>i</sub>x<sub>t</sub> + U<sub>i</sub>h<sub>t-1</sub> + b<sub>i</sub> )
+<span class="math"><b>i<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>i</sub>x<sub>t</sub> + U<sub>i</sub>h<sub>t-1</sub> + b<sub>i</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>o<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>o</sub>x<sub>t</sub> + U<sub>o</sub>h<sub>t-1</sub> + b<sub>o</sub> )
+<span class="math"><b>o<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>o</sub>x<sub>t</sub> + U<sub>o</sub>h<sub>t-1</sub> + b<sub>o</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>&tilde;c<sub>t</sub> = &sigma;<sub>c</sub> ( W<sub>c</sub>x<sub>t</sub> + U<sub>c</sub>h<sub>t-1</sub> + b<sub>c</sub> )
+<span class="math"><b>&tilde;c<sub>t</sub> = &sigma;<sub>c</sub> ( W<sub>c</sub>x<sub>t</sub> + U<sub>c</sub>h<sub>t-1</sub> + b<sub>c</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>c<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )
+<span class="math"><b>c<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )
+<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )</b></span>
 </div>
 
 
