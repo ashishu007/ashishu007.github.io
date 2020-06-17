@@ -160,15 +160,15 @@ Although, in theory the RNNs are designed to handle the sequence input but in pr
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>&tilde;c<sub>t</sub> = &sigma;<sub>c</sub> ( W<sub>c</sub>x<sub>t</sub> + U<sub>c</sub>h<sub>t-1</sub> + b<sub>c</sub> )</b></span>
+<span class="math"><b>&#265;<sub>t</sub> = &sigma;<sub>c</sub> ( W<sub>c</sub>x<sub>t</sub> + U<sub>c</sub>h<sub>t-1</sub> + b<sub>c</sub> )</b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>c<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )</b></span>
+<span class="math"><b>c<sub>t</sub> = f<sub>t</sub> &#x25CB; c<sub>t-1</sub> + i<sub>t</sub> &#x25CB; &#265; c<sub>t</sub></b></span>
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )</b></span>
+<span class="math"><b>h<sub>t</sub> = o<sub>t</sub> &#x25CB; &sigma;<sub>h</sub>(c<sub>t</sub>)</b></span>
 </div>
 
 
