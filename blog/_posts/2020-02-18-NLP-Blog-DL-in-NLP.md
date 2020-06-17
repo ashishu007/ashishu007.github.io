@@ -18,11 +18,13 @@ icon: icon-html
 
 I read many papers about Deep Learning in Natural Language Processing (NLP) during the starting months of my PhD, this blog is a summary of that reading.
 
+Initially, Deep Learning (DL) outperformed a lot of state-of-the-art (SOTA) algorithms in vision tasks and established itself as the benchmark solutions [[7]](#myfootnote7) [[17]](#myfootnote17). During the past few years with the advancement in computing powers and the availability of large datasets, the **Deep Learning Tsunami** [[12]](#myfootnote12) has taken over NLP as well. 
+
+In this blog I'll try to sequentially talk about the development of deep learning applied in NLP to solve the various tasks.
+
 **(This blog is under development)**
 
 <!--more-->
-
-Initially, Deep Learning (DL) outperformed a lot of state-of-the-art (SOTA) algorithms in vision tasks and established itself as the benchmark solutions [[7]](#myfootnote7) [[17]](#myfootnote17). During the past few years with the advancement in computing powers and the availability of large datasets the **The Deep Learning Tsunami** [[12]](#myfootnote12) has taken over NLP as well. In this blog we will sequentially talk about the development of deep learning applied in NLP to solve the various tasks.
 
 <!-- ### Introduction -->
 <!-- Representation Learning or in common words Deep Learning (DL) can be considered as a subset of machine learning but has gained attention as a different field due to its success in various vision, text and speech tasks. The difference about DL that makes it perform better on various complex problems is that it doesn't require domain expertise to identify the features to represent a problem or case from previous experience. Instead it automatically learns the features during training process using a large set of training data on various iterations.  -->
@@ -104,41 +106,37 @@ The neural language model using Recurrent Neural Networks are able to model all 
 <!-- \subsubsection{Recurrent Neural Networks} \label{sec:rnn} -->
 
 ### Recurrent Neural Networks
-Text is a sequential form of data. To process text and extract information we need a model capable of processing the sequential data. **Recurrent Neural Networks (RNN)** [[6]](#myfootnote6) are the most elementary deep learning architectures that are able to learn from sequential data. RNN, are wide in nature as they unroll through time. These networks will have a _'memory'_ component which can store the information about previous state. They share same set of weights throughout the layers, however, will receive a new input at every layer or time-step. The output to every time-step is dependent on the input taken at the current time-step <span class="math"><b>t<sub>i</sub></b></span> 
-<!-- $t_{i}$  -->
-as well as the information gained from previous time-step <span class="math"><b>t<sub>i-1</sub></b></span>.
-<!-- $t_{i-1}$.  -->
-Specifically, an RNN will maintain a hidden state <span class="math"><b>h<sub>t</sub></b></span> 
-<!-- $h_{t}$  -->
-at every step which is referred as the memory of network. An illustrated diagram of unrolled RNN is shown in figure below 
-<!-- \cref{fig:rnn_unrolled} \footnote{taken from \url{https://colah.github.io/posts/2015-08-Understanding-LSTMs/}}. -->
+Text is a sequential form of data. To process text and extract information we need a model capable of processing the sequential data. **Recurrent Neural Networks (RNN)** [[6]](#myfootnote6) are the most elementary deep learning architectures that are able to learn from sequential data. RNN, are wide in nature as they unroll through time. These networks will have a _'memory'_ component which can store the information about previous state. They share same set of weights throughout the layers, however, will receive a new input at every layer or time-step. 
+
+The output to every time-step is dependent on the input taken at the current time-step <span class="math"><b>t<sub>i</sub></b></span> as well as the information gained from previous time-step <span class="math"><b>t<sub>i-1</sub></b></span>. Specifically, an RNN will maintain a hidden state <span class="math"><b>h<sub>t</sub></b></span> at every step which is referred as the memory of network. An illustrated diagram of unrolled RNN is shown in figure below 
 
 ![RNN](/assets/nlp-dl/rnn.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <div style="text-align: center;"><b>A simple Recurrent Neural Network</b></div>
 
-<!-- \begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{images/RNN-unrolled.png}
-    \caption{RNN Unrolled}
-    \label{fig:rnn_unrolled}
-\end{figure} -->
+The operations performed in RNN at every time step is given in the equations below:
 
-The operations performed in RNN at every time step is given in the \cref{eq:rnn}.
+<div style="text-align: center;">
+<span class="math"><b>h<sub>t</sub> = &sigma;<sub>h</sub> ( W<sub>e</sub>x<sub>t</sub> + W<sub>h</sub>h<sub>t-1</sub> + b<sub>h</sub> )
+</div>
 
-\begin{align}\label{eq:rnn}
+<div style="text-align: center;">
+<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )
+</div>
+
+<!-- \begin{align}\label{eq:rnn}
     \begin{gathered}
         h_{t} = \sigma_{h}(W_{e}x_{t} + W_{h}h_{t-1} + b_{h}) \\
         y_{t} = \sigma_{y}(W_{y}h_{t} + b_{y})
     \end{gathered}
-\end{align}
+\end{align} -->
 
-Here $\sigma_{y}$ and $\sigma_{h}$ are the activation functions. $W_{h}$ is the weight matrix to apply transformation on previous hidden state $h_{t-1}$, $W_{e}$ is the weight matrix to apply transformation on the input $x_{t}$ received over time $t$. Combining these with the bias $b_{h}$ yields hidden state $h_t$ for time $t$. Applying activation on the $h_{t}$ with $W_{y}$ gives the output $y_t$ for every time-step $t$.
+Here <span class="math"><b>&sigma;<sub>y</sub></b></span> and <span class="math"><b>&sigma;<sub>h</sub></b></span> are the activation functions. <span class="math"><b>W<sub>h</sub></b></span> is the weight matrix to apply transformation on previous hidden state <span class="math"><b>h<sub>t-1</sub>, W<sub>e</sub></b></span> is the weight matrix to apply transformation on the input <span class="math"><b>x<sub>t</sub></b></span> received over time **t**. Combining these with the bias <span class="math"><b>b<sub>h</sub></b></span> yields hidden state <span class="math"><b>h<sub>t</sub></b></span> for time **t**. Applying activation on the <span class="math"><b>h<sub>t</sub></b></span> with <span class="math"><b>W<sub>y</sub></b></span> gives the output <span class="math"><b>y<sub>t</sub></b></span> for every time-step **t**.
 
 
-\subsubsection{Long Short-Term Memory Networks}
-Although, in theory the RNNs are designed to handle the sequence input but in practice they lack in storing the long term dependencies because of the problem of exploding and vanishing gradients \cite{bengio1994learning}. Long Short-Term Memory Networks \cite{hochreiter1997long} are the advanced version of RNNs with a slight modification of being capable of deciding what to `remember' and what to `forget' from the input sequence with the help of a series of gates. LSTM has a number of gates, an output gate, an input gate $i_{t}$, forget gate $f_{t}$, $o_{t}$, all of which are the functions of previous hidden state $h_{t}$ and current input $x_{t}$. These gates interact with the previous cell state $c_{t-1}$, the current input $x_{t}$, and the current cell state $c_{t}$ and enable the model to selectively retain or information from the sequence. The full version of LSTM is given in the \cref{eq:lstm}.
+### Long Short-Term Memory Networks
+Although, in theory the RNNs are designed to handle the sequence input but in practice they lack in storing the long term dependencies because of the problem of exploding and vanishing gradients [[4]](#myfootnote4). Long Short-Term Memory Networks [[8]](#myfootnote8) are the advanced version of RNNs with a slight modification of being capable of deciding what to **_'remember'_** and what to ***forget*** from the input sequence with the help of a series of gates. LSTMs have a number of gates: an output gate <span class="math"><b>o<sub>t</sub></b></span>; an input gate <span class="math"><b>i<sub>t</sub></b></span>; a forget gate <span class="math"><b>f<sub>t</sub></b></span> - all of which are the functions of previous hidden state <span class="math"><b>h<sub>t</sub></b></span> and current input <span class="math"><b>x<sub>t</sub></b></span>. These gates interact with the previous cell state <span class="math"><b>c<sub>t-1</sub></b></span>, the current input <span class="math"><b>x<sub>t</sub></b></span>, and the current cell state <span class="math"><b>c<sub>t</sub></b></span> and enable the model to selectively retain or information from the sequence. The full version of LSTM is given in the equation below.
 
-\begin{equation}\label{eq:lstm}
+<!-- \begin{equation}\label{eq:lstm}
     \begin{gathered}    
         f_{t} = \sigma_{g} (W_{f}x_{t} + U_{f}h_{t-1} + b_{f}) \\
         i_{t} = \sigma_{g} (W_{i}x_{t} + U_{i}h_{t-1} + b_{i}) \\
@@ -147,7 +145,32 @@ Although, in theory the RNNs are designed to handle the sequence input but in pr
         c_{t} = f_{t} \circ c_{t-1} + i_{t} \circ \Tilde{c_{t}}\\
         h_{t} = o_{t} \circ \sigma_{h}(c_{t})
     \end{gathered}
-\end{equation}
+\end{equation} -->
+
+<div style="text-align: center;">
+<span class="math"><b>f<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )
+</div>
+
+<div style="text-align: center;">
+<span class="math"><b>i<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>i</sub>x<sub>t</sub> + U<sub>i</sub>h<sub>t-1</sub> + b<sub>i</sub> )
+</div>
+
+<div style="text-align: center;">
+<span class="math"><b>o<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>o</sub>x<sub>t</sub> + U<sub>o</sub>h<sub>t-1</sub> + b<sub>o</sub> )
+</div>
+
+<div style="text-align: center;">
+<span class="math"><b>&tilde;c<sub>t</sub> = &sigma;<sub>c</sub> ( W<sub>c</sub>x<sub>t</sub> + U<sub>c</sub>h<sub>t-1</sub> + b<sub>c</sub> )
+</div>
+
+<div style="text-align: center;">
+<span class="math"><b>c<sub>t</sub> = &sigma;<sub>g</sub> ( W<sub>f</sub>x<sub>t</sub> + U<sub>f</sub>h<sub>t-1</sub> + b<sub>f</sub> )
+</div>
+
+<div style="text-align: center;">
+<span class="math"><b>y<sub>t</sub> = &sigma;<sub>y</sub> ( W<sub>y</sub>h<sub>t</sub> + b<sub>y</sub> )
+</div>
+
 
 where $\sigma_{g}$ is the $sigmoid$ activation function, $\sigma_{c}$ and $\sigma_{h}$ are the $tanh$ activation function, and $\circ$ is element-wise multiplication, also known as \textit{`Hadamard product'}. An illustrated diagram of unrolled RNN is shown in fig \cref{fig:lstm} \footnote{taken from \url{https://colah.github.io/posts/2015-08-Understanding-LSTMs/}}.
 
@@ -375,11 +398,11 @@ BERT improved the fine-tuning based approach of GPT by using a bidirectional tra
 
 ### Acknowledgement
 
-- The blog's organisation is highly inspired by [Dr. Sebestian Ruder's](https://ruder.io/) [PhD thesis](https://ruder.io/thesis/neural_transfer_learning_for_nlp.pdf).
+- The blog's organisation is highly inspired by [Sebestian Ruder's PhD thesis](https://ruder.io/thesis/neural_transfer_learning_for_nlp.pdf).
 
 - I took help of numerous online resources to get better understanding of this field. Some are listed here, if I have missed any blog/resource - sincere apologies for that. Please comment here or write an email, I'll properly acknowledge them.
-    - [Colah's Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-    - [Jay Alammar's blogs](http://jalammar.github.io/).
+    - [Christopher Olah's Blogs](https://colah.github.io/).
+    - [Jay Alammar's Blogs](http://jalammar.github.io/).
     - [Stanford's CS224n Course](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/).
     - [Stanford's CS224u Course](http://web.stanford.edu/class/cs224u/).
 
