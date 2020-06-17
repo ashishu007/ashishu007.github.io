@@ -47,7 +47,12 @@ These representations have a drawback that they fail to take context of a word i
 
 
 ### Language Models
-A language model is a type of system that predicts the probability of possible next words for a given sequence of words as the input. In general terms, for a given sequence of input <span class="math"><b>(x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>t</sub>)</b></span> the probability distribution of next term <span><b>(x<sub>t+1</sub>)</b></span> is computed from a vocabulary **V** of **k** words <span><b>(V = (w<sub>1</sub>, w<sub>1</sub>, ..., w<sub>k</sub>))</b></span>. 
+A language model is a type of system that predicts the probability of possible next words for a given sequence of words as the input. 
+
+![LM](/assets/nlp-dl/lang_model.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+<div style="text-align: center;"><b>A simple Language Model</b></div>
+
+In general terms, for a given sequence of input <span class="math"><b>(x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>t</sub>)</b></span> the probability distribution of next term <span><b>(x<sub>t+1</sub>)</b></span> is computed from a vocabulary **V** of **k** words <span><b>(V = (w<sub>1</sub>, w<sub>1</sub>, ..., w<sub>k</sub>))</b></span> as given below:
 
 <!-- $(x_{1}, x_{2}, \cdots, x_{t})$,  -->
 <!-- $x_{t+1}$ -->
@@ -62,16 +67,17 @@ A language model is a type of system that predicts the probability of possible n
 <span class="math"><b>P(x<sub>t+1</sub>|x<sub>1</sub>, ..., x<sub>t</sub>)</b></span>
 </div>
 
-![LM](/assets/nlp-dl/lang_model.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
-<div style="text-align: center;"><b>A simple Language Model</b></div>
+Earlier the language models were based on statistical approaches where they used to take a window of **n** words as a context from the sentence to predict the next word. This approach is also known as **n-gram** Language Model. It takes an simple approach of calculating the conditional probability of next word in the sentence given the window of **n** words as a context. These **n-gram** probabilities are calculated from counting them in some large corpus of text.
 
-Earlier the language models were based on statistical approaches where they used to take a window of $n$ words as a context from the sentence to predict the next word. This approach is also known as $ngram$ Language Model. It takes an simple approach of calculating the conditional probability of next word in the sentence given the window of $n$ words as a context. These $ngram$ probabilities are calculated from counting them in some large corpus of text.
+<div style="text-align: center;">
+<span class="math"><b>P(x<sub>t+1</sub>|x<sub>1</sub>, ..., x<sub>t</sub>) = P(x<sub>t+1</sub>, x<sub>t</sub>, ..., x<sub>t-n+2</sub>) &frasl; P(x<sub>t</sub>, ..., x<sub>t-n+2</sub>)</b></span>
+</div>
 
-\begin{equation}
+<!-- \begin{equation}
     \label{eq:lm_ngram}
         P(x_{t+1}|x_{1}, \cdots, x_{t}) = 
             \frac {P(x_{t+1}, x_{t}, \cdots, x_{t-n+2})} {P(x_{t}, \cdots, x_{t-n+2})}
-\end{equation}
+\end{equation} -->
 
 or in simpler terms:
 
