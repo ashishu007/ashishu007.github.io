@@ -12,6 +12,7 @@ images:
     - url: assets/nlp-dl/glove_vecs.png
     - url: assets/nlp-dl/lang_model.png
     - url: assets/nlp-dl/lstm.png
+    - url: assets/nlp-dl/rnn.png
 icon: icon-html
 ---
 
@@ -81,25 +82,46 @@ Earlier the language models were based on statistical approaches where they used
 
 or in simpler terms:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>P(w<sub>3</sub>|w<sub>1</sub>, w<sub>2</sub>) = P(w<sub>1</sub>, w<sub>2</sub>, w<sub>3</sub>) &frasl; P(w<sub>1</sub>, w<sub>2</sub>)</b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:lm_count_ngram}
         P(w_{3}|w_{1},w_{2}) = \frac{count(w_{1}, w_{2}, w_{3})}{count(w_{1}, w_{2})}
-\end{equation}
+\end{equation} -->
 
-This statistical approach has mainly two problems. First sparsity, consider the \cref{eq:lm_count_ngram}, what if $w_{1}$, $w_{2}$ and $w_{3}$ never occurred together. The probability of $w_{3}$ will be 0. Also, if $w_{1}$ and $w_{2}$ then there's no way to calculate the probability of $w_{3}$. Second storage, as we increase the value of $n$, the count of all $nrgams$ we see in the corpus increases as well and so does the need of memory to store them.
+This statistical approach has mainly two problems. First, sparsity - consider the above equation, what if <span class="math"><b>w<sub>1</sub>, w<sub>2</sub>, w<sub>3</sub></b></span> never occurred together, the probability of <span class="math"><b>w<sub>3</sub></b></span> will be **0**. Second, storage - as we increase the value of **n**, the count of all **n-grams** we see in the corpus increases as well and so does the need of memory to store them.
 
-The neural language model using Recurrent Neural Networks (\cref{sec:rnn}) were able to model all the words in a sentence without having a need of window to predict the next word at each timestep using hidden state and output from the previous time step combining with the new input at each time step. 
+<!-- $w_{1}$, $w_{2}$ and $w_{3}$  -->
+
+<!-- $w_{3}$  -->
+<!-- Also, if <span class="math"><b>w<sub>1</sub> and w<sub>2</sub></b></span> $w_{1}$ and $w_{2}$ then there's no way to calculate the probability of $w_{3}$.  -->
+
+The neural language model using Recurrent Neural Networks are able to model all the words in a sentence. They don't need a window to predict the next word at each timestep using hidden state and output from the previous time step combining with the new input at each time step. 
 
 
-\subsubsection{Recurrent Neural Networks} \label{sec:rnn}
-Text is a sequential form of data. To process text and extract information we need a model capable of processing the sequential data. \textit{Recurrent Neural Networks} \cite{elman1990finding} are the most elementary deep learning architectures that are able to learn from sequential data. RNN, are wide in nature as they unroll through time. These networks will have a `memory' component which can store the information about previous state. They share same set of weights throughout the layers, however, will receive a new input at every layer or time-step. The output to every time-step is dependent on the input taken at the current time-step $t_{i}$ as well as the information gained from previous time-step $t_{i-1}$. Specifically, an RN Net will maintain a hidden state $h_{t}$ at every step which is referred as the memory of network. An illustrated diagram of unrolled RNN is shown in fig \cref{fig:rnn_unrolled} \footnote{taken from \url{https://colah.github.io/posts/2015-08-Understanding-LSTMs/}}.
+<!-- \subsubsection{Recurrent Neural Networks} \label{sec:rnn} -->
 
-\begin{figure}
+### Recurrent Neural Networks
+Text is a sequential form of data. To process text and extract information we need a model capable of processing the sequential data. **Recurrent Neural Networks (RNN)** [[6]](#myfootnote6) are the most elementary deep learning architectures that are able to learn from sequential data. RNN, are wide in nature as they unroll through time. These networks will have a _'memory'_ component which can store the information about previous state. They share same set of weights throughout the layers, however, will receive a new input at every layer or time-step. The output to every time-step is dependent on the input taken at the current time-step <span class="math"><b>t<sub>i</sub></b></span> 
+<!-- $t_{i}$  -->
+as well as the information gained from previous time-step <span class="math"><b>t<sub>i-1</sub></b></span>.
+<!-- $t_{i-1}$.  -->
+Specifically, an RNN will maintain a hidden state <span class="math"><b>h<sub>t</sub></b></span> 
+<!-- $h_{t}$  -->
+at every step which is referred as the memory of network. An illustrated diagram of unrolled RNN is shown in figure below 
+<!-- \cref{fig:rnn_unrolled} \footnote{taken from \url{https://colah.github.io/posts/2015-08-Understanding-LSTMs/}}. -->
+
+![RNN](/assets/nlp-dl/rnn.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+<div style="text-align: center;"><b>A simple Recurrent Neural Network</b></div>
+
+<!-- \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/RNN-unrolled.png}
     \caption{RNN Unrolled}
     \label{fig:rnn_unrolled}
-\end{figure}
+\end{figure} -->
 
 The operations performed in RNN at every time step is given in the \cref{eq:rnn}.
 
@@ -351,6 +373,17 @@ BERT improved the fine-tuning based approach of GPT by using a bidirectional tra
 % \end{figure}
 
 
+### Acknowledgement
+
+- The blog's organisation is highly inspired by [Dr. Sebestian Ruder's](https://ruder.io/) [PhD thesis](https://ruder.io/thesis/neural_transfer_learning_for_nlp.pdf).
+
+- I took help of numerous online resources to get better understanding of this field. Some are listed here, if I have missed any blog/resource - sincere apologies for that. Please comment here or write an email, I'll properly acknowledge them.
+    - [Colah's Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+    - [Jay Alammar's blogs](http://jalammar.github.io/).
+    - [Stanford's CS224n Course](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/).
+    - [Stanford's CS224u Course](http://web.stanford.edu/class/cs224u/).
+
+
 ## References
 
 <a name="myfootnote1">[1]</a> Ali-Gombe, A. & Elyan, E. (2019), ‘Mfc-gan: class-imbalanced dataset classification using multiple fakeclass generative adversarial network’, Neurocomputing.
@@ -383,7 +416,8 @@ BERT improved the fine-tuning based approach of GPT by using a bidirectional tra
 
 <a name="myfootnote15">[15]</a> Peters, M. E., Neumann, M., Iyyer, M., Gardner, M., Clark, C., Lee, K. & Zettlemoyer, L. (2018), ‘Deep contextualized word representations’,arXiv preprint arXiv:1802.05365.
 
-<a name="myfootnote16">[16]</a> Radford, A., Narasimhan, K., Salimans, T. & Sutskever, I. (2018), ‘Improving language un-derstanding by generative pre-training’,URL https://s3-us-west-2.amazonaws.com/openai-assets/researchcovers/languageunsupervised/language_understanding_paper.pdf.
+<a name="myfootnote16">[16]</a> Radford, A., Narasimhan, K., Salimans, T. & Sutskever, I. (2018), ‘Improving language un-derstanding by generative pre-training’.
+<!-- ,URL https://s3-us-west-2.amazonaws.com/openai-assets/researchcovers/languageunsupervised/language_understanding_paper.pdf. -->
 
 <a name="myfootnote17">[17]</a> Simonyan,K. &Zisserman,A. (2014), ‘Very deep convolutional networks for large-scale image recognition’, arXiv preprint arXiv:1409.1556.
 
