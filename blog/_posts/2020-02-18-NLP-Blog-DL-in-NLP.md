@@ -446,9 +446,9 @@ The success of transformer architecture paved the way for development of new mod
 
 #### OpenAI's Generative Pre-Training (GPT)
 
-One of the earliest works in using Transformers for pre-training of language model was presented in [[16]](#myfootnote16). Following the idea from ELMo [[15]](#myfootnote15), authors proposed a language model using transformer decoder trained on large corpus and then fine-tuned on task specific dataset. The main difference of GPT from ELMo is that ELMo uses two independent LSTM language models to caputre the forwards and backward context whereas in case of GPT, it uses a uni-directional multi-layer transformer language model capable of capturing context due to its attentive nature.
+One of the earliest works in using Transformers for pre-training of language model was presented in [[16]](#myfootnote16). Following the idea from ELMo [[15]](#myfootnote15), authors proposed a **language model** using **transformer decoder** trained on large corpus and then fine-tuned on task specific dataset. The main difference of GPT from ELMo is that ELMo uses two independent LSTM language models to caputre the forwards and backward context whereas in case of GPT, it uses a uni-directional multi-layer transformer language model capable of capturing context due to its attentive nature.
 
-ELMo takes a feature based approach of feeding feature vectors for different tasks into different models, whereas GPT takes a fine-tuning based approach where same language model trained on huge corpus is fine-tuned for downstream tasks without changing the architecture. An illustration of a GPT model used for pre-training is shown in figure below:
+**ELMo** takes a **feature based approach** of generating feature vectors (or contextual representations of the sentences) for different tasks, whereas **GPT** takes a **fine-tuning based approach** where the same language model trained on huge corpus is fine-tuned on task-specific data for downstream tasks. An illustration of a GPT model used for pre-training is shown in figure below:
 
 ![GPT](/assets/nlp-dl/gpt.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <div style="text-align: center;"><b>GPT Model</b></div>
