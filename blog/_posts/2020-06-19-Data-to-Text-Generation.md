@@ -78,7 +78,7 @@ Even after we develop a system for automated generation, it is challenging to au
 
 ## Subtasks in D2T NLG
 
-Let's talk about the subtasks involved in D2T NLG, which can be divided into six different subtasks:
+Let's talk about the subtasks involved in D2T NLG, which can be divided into six different subtasks <sup>[[1]](#myfootnote1)</sup>:
 
 1. ***Content Determination***: deciding which information from the input will be included in the final text;
 
@@ -98,7 +98,15 @@ Let's talk about the subtasks involved in D2T NLG, which can be divided into six
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
 
-Sub-tasks in D2T NLG is illustrated with a simplified example from the neonatal intensive care domain in the above figure. First the system has to decide what the important events are in the data (a,content determination), in this case, occurrences of low heart rate (bradycardias). Then it has to decide in which order it wants to present data to the reader (b, text structuring) and how to express these in individual sentence plans (c, aggregation, lexicalisation, reference). Finally, the resulting sentences are generated (d, linguistic realisation).
+Let's discuss the subtasks in D2T NLG with an example. The figure above illustrates a simplified example from the neonatal intensive care domain. 
+
+> First the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias). 
+
+> Then it has to decide in which order it wants to present data to the reader (b, **text structuring**) and how to express these in individual sentence plans (c, **aggregation**; **lexicalisation**; **reference**). 
+
+> Finally, the resulting sentences are generated (d, **linguistic realisation**).
+
+The specification of these subtasks vary from domain to domain, but the basic idea remains the same. Let's take the NBA match summarisation (the D2T NLG figure shown above) for an example. The generation will happen in the following steps: first, we need to decide what records from the input table will be dispalyed in the final text (or ***what to say?***); second, we'll have to decide in what order those records will be displayed, which will also include the deciding on which records will have separate senetences and which ones will be included in the same sentence (or ***how to say?***); and finally, generating the text by combining all the decisions made in previous steps (or **saying what's decided**).
 
 ## Public Datasets and Evaluation Metrics
 
