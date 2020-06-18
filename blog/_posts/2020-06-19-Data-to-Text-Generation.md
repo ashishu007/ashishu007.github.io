@@ -106,7 +106,12 @@ Let's discuss the subtasks in D2T NLG with an example. The figure above illustra
 
 > Finally, the resulting sentences are generated (d, **linguistic realisation**).
 
-The specification of these subtasks vary from domain to domain, but the basic idea remains the same. Let's take the NBA match summarisation (the D2T NLG figure shown above) for an example. The generation will happen in the following steps: first, we need to decide what records from the input table will be dispalyed in the final text (or ***what to say?***); second, we'll have to decide in what order those records will be displayed, which will also include the deciding on which records will have separate senetences and which ones will be included in the same sentence (or ***how to say?***); and finally, generating the text by combining all the decisions made in previous steps (or **saying what's decided**).
+The specification of these subtasks vary from domain to domain, but the basic idea remains the same. Let's take the NBA match summarisation (the D2T NLG figure shown above) for an example. 
+
+The generation will happen in the following steps:
+- first, we need to decide what records from the input table will be dispalyed in the final text (or ***what to say?***); 
+- second, we'll have to decide in what order those records will be displayed, which will also include the deciding on which records will have separate senetences and which ones will be included in the same sentence (or ***how to say?***); and 
+- finally, generating the text by combining all the decisions made in previous steps (or **saying what's decided**).
 
 ## Public Datasets and Evaluation Metrics
 
