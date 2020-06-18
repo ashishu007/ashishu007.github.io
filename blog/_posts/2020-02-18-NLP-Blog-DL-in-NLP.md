@@ -14,6 +14,8 @@ images:
     - url: assets/nlp-dl/lstm.png
     - url: assets/nlp-dl/rnn.png
     - url: assets/nlp-dl/cnn.png
+    - url: assets/nlp-dl/encoder.png
+    - url: assets/nlp-dl/decoder.png
 icon: icon-html
 ---
 
@@ -251,38 +253,56 @@ This parameter sharing helps the model to incorporate an inductive bias into the
 An illustrated diagram of an CNN architecture for text classification is shown in figure below:
 
 ![CNN](/assets/nlp-dl/cnn.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
-<div style="text-align: center;"><b>A simple Long-Short Term Memory Network</b></div>
+<div style="text-align: center;"><b>A simple CNN for Text Classification</b></div>
 
 **Note**: For a better and deeper understanding please refer to [this lecture of CS224n](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/slides/cs224n-2019-lecture11-convnets.pdf).
 
 ### Sequence-to-Sequence Models
 
-Most of the NLP tasks require sequential output instead of a single output label unlike classification or regression \cite{sutskever2014sequence}. These tasks can be Machine Translation of natural language, Question-Answering or Summary generation systems. These systems take a sequence of input and process it to produce yet another sequence for output. The goal is to take a sequence $(x_{1}, x_{2}, \cdots, x_{n})$ as input and map it to another sequence $(y_{1}, y_{2}, \cdots, y_{n})$ as output.
+Most of the NLP tasks require sequential output instead of a single output label unlike classification or regression. These tasks can be Machine Translation, or Question-Answering, or Named-Entity Recognition. These systems take a sequence of input and process it to produce yet another sequence for output. The goal is to take a sequence <span class="math"><b>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></b></span> as input and map it to another sequence <span class="math"><b>y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>m</sub></b></span> as output.
 
-The architecture used to deal with these kind of problems is known as Sequence to Sequence model or in common terms, seq2seq model. It is a combination of auto-encoders and decoders which works in a sequential manner where encoder is an neural architecture to generate a context vector from input sequence and decoder, another neural architecture taking context vector as input and generating the output sequence.
+The architecture used to deal with these kind of problems is known as **Sequence-to-Sequence** model or in common terms, **seq2seq** model. It is a combination of encoders and decoders which works in a sequential manner, where, encoder is a neural network that generates a context vector from input sequence, and decoder, another neural network taking context vector as input, generates the output sequence.
 
-The encoder takes an input $X$ and maps it to fixed size context vector $Z$ using the formula \cref{eq:enc}
+The encoder takes an input **X** and maps it to fixed size context vector **Z** using the formula given below:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>Z = &sigma;(Wx + b)</b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:enc}
         Z = \sigma(WX + b)
-\end{equation}
+\end{equation} -->
 
-where $\sigma$ is activation function. A decoder then maps the context vector $Z$ to a new form of input $X^{\prime}$ as shown in equation \cref{eq:dec}
+where <span class="math"><b>&sigma;</b></span> is an **activation function**. A decoder then maps the context vector **Z** to a new form of input <span class="math"><b>X&#770;</b></span> as shown in the equation below:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>X' = &sigma;'(W'Z + b')</b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:dec}
         X^{\prime} = \sigma^{\prime}(W^{\prime}Z + b^{\prime})
-\end{equation}
+\end{equation} -->
 
-where $\sigma^{\prime}$ is another activation function. The loss is calculated as the squared error between original and reconstructed input as shown in equation \cref{eq:seq2seq_loss}. An illustrated diagram of seq2seq model is shown in fig \cref{fig:enc_dec} \footnote{Taken from \url{http://web.stanford.edu/class/cs224n/}}.
+where <span class="math"><b>&sigma;'</b></span> is another **activation function**. The loss is calculated as the **squared error** between original and reconstructed input as shown in equation below:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>L = || X - X' ||<sup>2</sup></b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:seq2seq_loss}
         L = ||X-X^{\prime}||^{2}
-\end{equation}
+\end{equation} -->
 
-\begin{figure}
+An illustrated diagram of seq2seq model is shown in the figure below:
+
+![Encoder](/assets/nlp-dl/encoder.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+![Decoder](/assets/nlp-dl/decoder.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+<div style="text-align: center;"><b>An Encoder-Decoder model</b></div>
+
+<!-- \begin{figure}
      \centering
      \begin{subfigure}[b]{0.25\textwidth}
          \centering
@@ -299,7 +319,7 @@ where $\sigma^{\prime}$ is another activation function. The loss is calculated a
      \end{subfigure}
         \caption{Encoder-Decoder architecture using LSTM for seq2seq model}
         \label{fig:enc_dec}
-\end{figure}
+\end{figure} -->
 
 #### Attention 
 
@@ -329,6 +349,8 @@ The attention output $a_{t}$ is then calculated as the weighted sum of encoder h
 \end{equation}
 
 Finally, we concatenate the attention output $a_{t}$ with decoder hidden state $s_{t}$ and proceed to calculate the negative log loss same as the non-attention decoder model.
+
+**Note**: For a better and deeper understanding please refer to [this lecture of CS224n](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/slides/cs224n-2019-lecture08-nmt.pdf).
 
 ### Contextual Word Embeddings
 
