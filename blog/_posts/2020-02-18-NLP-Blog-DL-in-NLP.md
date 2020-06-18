@@ -19,7 +19,7 @@ images:
     - url: assets/nlp-dl/transformer.png
     - url: assets/nlp-dl/bert1.png
     - url: assets/nlp-dl/bert2.png
-    - url: assets/nlp-dl/gpt.png
+    - url: assets/nlp-dl/g.png
 icon: icon-html
 ---
 
@@ -450,7 +450,7 @@ One of the earliest works in using Transformers for pre-training of language mod
 
 **ELMo** takes a **feature based approach** of generating feature vectors (or contextual representations of the sentences) for different tasks, whereas **GPT** takes a **fine-tuning based approach** where the same language model trained on huge corpus is fine-tuned on task-specific data for downstream tasks. An illustration of a GPT model used for pre-training is shown in figure below:
 
-![GPT](/assets/nlp-dl/gpt.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+![GPT](/assets/nlp-dl/g.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
 <div style="text-align: center;"><b>GPT Model</b></div>
 
 <!-- \begin{figure}
