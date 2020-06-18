@@ -53,7 +53,7 @@ As the name suggests, in **T2T NLG**, our goal is to generate text from unstruct
 
 <!-- ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/t2tnlg.jpg" border="2">
+<img src="/assets/d2t/t2tnlg.jpg" style="border:5px solid black">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
@@ -62,7 +62,7 @@ For **D2T NLG**, the input is presented in a structured format, i.e., tablular, 
 
 <!-- ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/d2tnlg.jpg" border="2">
+<img src="/assets/d2t/d2tnlg.jpg" style="border:5px solid black">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation (D2T NLG)</b></p>
 
@@ -94,7 +94,7 @@ Let's talk about the subtasks involved in D2T NLG, which can be divided into six
 
 <!-- ![D2T NLG](/assets/d2t/tasks.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<p><img src="/assets/d2t/tasks.jpg" border="2"></p>
+<img src="/assets/d2t/tasks.jpg" style="border:5px solid black">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
 
