@@ -115,7 +115,7 @@ The generation will happen in the following steps:
 
 ## Public Datasets and Evaluation Metrics
 
-Here I mention some of the publicly available standard datasets and the evaluation metrics used to measure the performance of different methods.
+Now that we know about the expectations in D2T NLG, let's see some of the standard public datasets and evaluation metrics used to measure the performance of different methods on those datasets.
 
 ### RotoWire
 The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
