@@ -402,7 +402,7 @@ ELMo achieved 9% error reduction on the SQuAD (question-answering) dataset compa
 
 ULMFiT [[21]](#myfootnote21) can be considered as the pioneer of applying transfer learning on an NLP task (text classification). It does so in three main steps: first, training a general domain-independent language model on a large corpus of text; second, fine tune the language model on task specific target dataset; and third, again fine tune the fine-tuned language model as classifier by adding a softmax activation on top with target dataset. An illustration of the three steps of ULMFiT is shown in figure below:
 
-![ULMFiT](/assets/nlp-dl/ulmfit.jpg){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+![ULMFiT](/assets/nlp-dl/ulmfit.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
 <div style="text-align: center;"><b>ULMFiT Model</b></div>
 
 ULMFiT achieved better results for text classification on six different datasets ranging from topic classification to sentiment analysis. It did so by learning the general rules of grammar from huge corpus of text and then transferring that learning with fine tuning on a task-specific dataset, providing better results than the then SOTAs.
