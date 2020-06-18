@@ -331,7 +331,7 @@ Let's say we have calculated the encoding hidden states <span class="math"><b>h<
 
 <div style="text-align: center;">
 <a href="https://www.codecogs.com/eqnedit.php?latex=e^{t}&space;=&space;[s^{T}_{t}h_{1},&space;\cdots,&space;s^{T}_{t}h_{n}]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e^{t}&space;=&space;[s^{T}_{t}h_{1},&space;\cdots,&space;s^{T}_{t}h_{n}]" title="e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]" /></a>
-<span class="math"><b>e<sup>t</sup> = [s<sub>t</sub><sup>T</sup>h<sub>1</sub>, ..., s<sub>t</sub><sup>T</sup>h<sub>n</sub>]</b></span>
+<!-- <span class="math"><b>e<sup>t</sup> = [s<sub>t</sub><sup>T</sup>h<sub>1</sub>, ..., s<sub>t</sub><sup>T</sup>h<sub>n</sub>]</b></span> -->
 </div>
 
 <!-- \begin{equation}
@@ -344,7 +344,8 @@ Let's say we have calculated the encoding hidden states <span class="math"><b>h<
 We take the softmax of these scores to get the attention distribution at timestep **t**.
 
 <div style="text-align: center;">
-<span class="math"><b>&prop;<sup>t</sup> = softmax(e<sup>t</sup>)</b></span>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\alpha^{t}&space;=&space;softmax(e^{t})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha^{t}&space;=&space;softmax(e^{t})" title="\alpha^{t} = softmax(e^{t})" /></a>
+<!-- <span class="math"><b>&prop;<sup>t</sup> = softmax(e<sup>t</sup>)</b></span> -->
 </div>
 
 <!-- \begin{equation}
