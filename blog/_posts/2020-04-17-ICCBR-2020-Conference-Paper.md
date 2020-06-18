@@ -6,7 +6,7 @@ desc: "This blog is a brief explanation of my recently accepted paper at ICCBR 2
 keywords: "Blog, NLG, Papers, Textual CBR"
 categories: [Blog, NLP, TCBR, NLG]
 tags: [Blog, NLP, TCBR]
-blog: [Blog]
+blog: []
 excerpt_separator: <!--more-->
 images: 
     - url: /assets/iccbr/annot.jpg
