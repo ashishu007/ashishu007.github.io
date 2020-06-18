@@ -338,6 +338,8 @@ Let's say we have calculated the encoding hidden states <span class="math"><b>h<
         e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]
 \end{equation} -->
 
+$$ {e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]} $$ 
+
 We take the softmax of these scores to get the attention distribution at timestep **t**.
 
 <div style="text-align: center;">
