@@ -34,7 +34,7 @@ By working on this project, I realised that there are many existing problems tha
   * [T2T NLG](#t2t-nlg)
   * [D2T NLG](#d2t-nlg)
 - [Subtasks in D2T NLG](#subtasks-in-d2t-nlg)
-- [Public Datasets & Evaluation Metrics](#public-datasets---evaluation-metrics)
+- [Public Datasets and Evaluation Metrics](#public-datasets-and-evaluation-metrics)
   * [RotoWire](#rotowire)
   * [WebNLG](#webnlg)
   * [Meaning Representations](#meaning-representations)
@@ -51,13 +51,19 @@ Based on the input provided to the system, NLG can be broadly categorised into t
 ### T2T NLG
 As the name suggests, in **T2T NLG**, our goal is to generate text from unstructured textual input. For example, machine translation, where we take a text document in one natural language as input and produce the same content in different natural language as output.
 
-![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
+<!-- ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
+<kbd>
+    <img src="/assets/d2t/t2tnlg.jpg">
+</kbd>
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
 ### D2T NLG
 For **D2T NLG**, the input is presented in a structured format, i.e., tablular, graphical or JSON format. With this structured input, we generate a textual output summarising the input values. For example, summarising NBA match where, for given box- and line-scores as input we have to generate a textual summary of the match as the output.
 
-![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
+<!-- ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
+<kbd>
+    <img src="/assets/d2t/d2tnlg.jpg">
+</kbd>
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation (D2T NLG)</b></p>
 
 As I'm exploring D2T NLG in my PhD, I'll briefly discuss this task in detail in further sections.
@@ -86,12 +92,15 @@ Let's talk about the subtasks involved in D2T NLG, which can be divided into six
 
 6. ***Realisation***: Combining all the words and phrases into well-formed sentences.
 
-![D2T NLG](/assets/d2t/tasks.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
+<!-- ![D2T NLG](/assets/d2t/tasks.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
+<kbd>
+    <img src="/assets/d2t/tasks.jpg">
+</kbd>
 <p style="text-align: center;"><b>Subtasks in D2T NLG</b></p>
 
-Sub-tasks in D2T NLG is illustrated with a simplied example from the neonatal intensive care domain in the above figure. First the system has to decide what the important events are in the data (a,content determination), in this case, occurrences of low heart rate (bradycardias). Then it has to decide in which order it wants to present data to the reader (b, text structuring) and how to express these in individual sentence plans (c, aggregation, lexicalisation, reference). Finally, the resulting sentences are generated (d, linguistic realisation).
+Sub-tasks in D2T NLG is illustrated with a simplified example from the neonatal intensive care domain in the above figure. First the system has to decide what the important events are in the data (a,content determination), in this case, occurrences of low heart rate (bradycardias). Then it has to decide in which order it wants to present data to the reader (b, text structuring) and how to express these in individual sentence plans (c, aggregation, lexicalisation, reference). Finally, the resulting sentences are generated (d, linguistic realisation).
 
-## Public Datasets & Evaluation Metrics
+## Public Datasets and Evaluation Metrics
 
 Here I mention some of the publicly available standard datasets and the evaluation metrics used to measure the performance of different methods.
 
