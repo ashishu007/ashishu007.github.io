@@ -22,6 +22,14 @@ I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/
 ### PhD Goal
 The main goal of my PhD is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial case-base of a structured representation extracted from unlablled texts/documnets.
 
+### Open-Source Contributions
+Here, I'll try to maintain the contributions I have made to the ope-source community (other than my publications).
+
+* **NLP-Progress**
+	- Added a new tasks: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
+	- [Pull Request](https://github.com/sebastianruder/NLP-progress/pull/467).
+
+
 ### Education
 * **Doctor of Philosophy (PhD) in Artificial Intelligence (AI)** _(October 2019 - Ongoing)_
 	- School of Computing Science and Digital Media, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK
