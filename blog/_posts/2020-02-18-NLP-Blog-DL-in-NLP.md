@@ -330,6 +330,7 @@ A solution to this problem was proposed in the work [[2]](#myfootnote2) introduc
 Let's say we have calculated the encoding hidden states <span class="math"><b>h<sub>1</sub>, h<sub>2</sub>, ..., h<sub>n</sub></b></span> for the input sequence <span class="math"><b>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></b></span> during the calculation of context vector **Z**. For a decoder hidden state <span class="math"><b>s<sub>t</sub></b></span> on timestep <span class="math"><b>t</b></span>, we get attention score <span class="math"><b>e<sup>t</sup></b></span> as follows:
 
 <div style="text-align: center;">
+<a href="https://www.codecogs.com/eqnedit.php?latex=e^{t}&space;=&space;[s^{T}_{t}h_{1},&space;\cdots,&space;s^{T}_{t}h_{n}]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e^{t}&space;=&space;[s^{T}_{t}h_{1},&space;\cdots,&space;s^{T}_{t}h_{n}]" title="e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]" /></a>
 <span class="math"><b>e<sup>t</sup> = [s<sub>t</sub><sup>T</sup>h<sub>1</sub>, ..., s<sub>t</sub><sup>T</sup>h<sub>n</sub>]</b></span>
 </div>
 
@@ -338,7 +339,7 @@ Let's say we have calculated the encoding hidden states <span class="math"><b>h<
         e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]
 \end{equation} -->
 
-$$ {e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]} $$ 
+<!-- e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}] -->
 
 We take the softmax of these scores to get the attention distribution at timestep **t**.
 
@@ -354,7 +355,8 @@ We take the softmax of these scores to get the attention distribution at timeste
 The attention output <span class="math"><b>a<sub>t</sub></b></span> is then calculated as the weighted sum of encoder hidden state using <span class="math"><b>&prop;<sup>t</sup></b></span>:
 
 <div style="text-align: center;">
-<span class="math"><b>a<sub>t</sub> = &prop;<sup>t</sup><sub>i</sub>h<sub>i</sub></b></span>
+<!-- <span class="math"><b>a<sub>t</sub> = &prop;<sup>t</sup><sub>i</sub>h<sub>i</sub></b></span> -->
+<a href="https://www.codecogs.com/eqnedit.php?latex=a_{t}&space;=&space;\sum_{i=1}^{n}&space;\alpha_{i}^{t}h_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{t}&space;=&space;\sum_{i=1}^{n}&space;\alpha_{i}^{t}h_{i}" title="a_{t} = \sum_{i=1}^{n} \alpha_{i}^{t}h_{i}" /></a>
 </div>
 
 <!-- \begin{equation}
