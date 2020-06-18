@@ -26,12 +26,12 @@ Recently, my paper titled <b>Case-Based Approach to Automated Natural Language G
 
 <!--more-->
 
-### Problem
+## Problem
 <!-- <div style="text-align: justify">  -->
 The problem statement is to automatically generate the obituary of a deceased person from given a set of features, i.e., details about that person. Here, the input is a structured representation given in <i>attribute --> value</i> pair and the output is a raw text document/paragraph summarising the input. The paper presents a Case-Based approach that dynamically generate several templates based on the features given for a target problem. The templates are extracted from a case-base developed from similar problems stored in a <i>problem-solution</i> pair.
 <!-- </div> -->
 
-### Natural Language Generation
+## Natural Language Generation
 <!-- <div style="text-align: justify">  -->
 Let's start with a small introduction on Natural Language Generation (NLG) before we dive into Automated Obituary Generation. NLG can be broadle categorised into two different clusters: first, <b>text-to-text generation (T2T NLG)</b>; and second, <b>data-to-text generation (D2T NLG)</b>. 
 <!-- </div> -->

@@ -14,23 +14,25 @@ images:
 icon: icon-html
 ---
 
-![Figure 1: OTW to Isle of Skye](/images/ashish.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
+![Myself](/images/ashish.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
 
-### Short-Intro 
-I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">**School of Computing Science and Digital Media**</a>, <a href="https://www.rgu.ac.uk/">**Robert Gordon University**</a>, **Aberdeen, UK** working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of Natural Language Processing (NLP). My research interest includes the use of Case-Based Reasoning (CBR) and Deep Learning (DL) in NLP, especially finding ways to develop effective NLP systems for business processes with minimal labelled data. 
+## Short-Intro 
+I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">School of Computing Science and Digital Media</a>, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a>, Aberdeen, UK, working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of **Natural Language Processing (NLP)**. 
 
-### PhD Goal
-The main goal of my PhD is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial case-base of a structured representation extracted from unlablled texts/documnets.
+My research interest includes the use of **Case-Based Reasoning (CBR)** and **Deep Learning (DL)** in NLP, especially finding ways to develop effective NLG systems for business processes with minimal labelled data. 
 
-### Open-Source Contributions
-Here, I'll try to maintain the contributions I have made to the ope-source community (other than my publications).
+In my PhD, I am interested to develop novel techniques for **data-to-text generation** tasks, with a focus on the data related problems faced by the business processes.
 
-* **NLP-Progress**
-	- Added a new tasks: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
-	- [Pull Request](https://github.com/sebastianruder/NLP-progress/pull/467).
+<!-- ## PhD Goal
+The main goal of my PhD is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial case-base of a structured representation extracted from unlablled texts/documnets. -->
 
+## Research Interests
 
-### Education
+- Natural Language Processing (& Generation)
+- (Textual) Case-Based Reasoning
+- Machine (& Deep) Learning
+
+## Education
 * **Doctor of Philosophy (PhD) in Artificial Intelligence (AI)** _(October 2019 - Ongoing)_
 	- School of Computing Science and Digital Media, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK
 	- Research Goal: Natural Language Generation from Structured Representations
@@ -42,10 +44,18 @@ Here, I'll try to maintain the contributions I have made to the ope-source commu
 	- Thesis Supervisor: Dr. Stewart Massie, Senior Research Fellow, RGU, Aberdeen, UK
 
 
-### Before PhD
+## Open-Source Contributions
+Here, I'll try to maintain the contributions I have made to the ope-source community (other than my [publications]({{ site.baseurl }}/about#publications)).
+
+* **NLP-Progress**
+	- Added a new tasks: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
+	- [Pull Request](https://github.com/sebastianruder/NLP-progress/pull/467).
+
+
+<!-- ### Before PhD -->
 <!-- I completed my Bachelor's in Technology (BTech) majoring in Computer Science and Engineering (CSE) in June 2019 from <a href="https://www.iiitnr.ac.in/">Dr. SPM-International Institute of Information Technology, Naya Raipur</a> (IIIT-NR), Chhattisgarh, India.  -->
 
-Before starting the PhD at RGU, I also worked as an intern here during my BTech final semester under the supervision of Dr. Stewart Massie. During that internship, I worked on a project of **Information Extraction and Requirement Mapping from Regulatory Documents** which was also my bachelor's thesis. It was an Oil and Gas Innovation Centre (OGIC) funded project in collaboration with an Aberdeen based start-up working on the automation of compliance management in Oil and Gas industry. This project outcome finally led to me getting a PhD offer under the same supervisor at RGU.
+<!-- Before starting the PhD at RGU, I also worked as an intern here during my BTech final semester under the supervision of Dr. Stewart Massie. During that internship, I worked on a project of **Information Extraction and Requirement Mapping from Regulatory Documents** which was also my bachelor's thesis. It was an Oil and Gas Innovation Centre (OGIC) funded project in collaboration with an Aberdeen based start-up working on the automation of compliance management in Oil and Gas industry. This project outcome finally led to me getting a PhD offer under the same supervisor at RGU. -->
 
 <!-- ### Hobbies
 
@@ -53,7 +63,7 @@ I like reading, watching (on YouTube) about world's political history. It fascin
 
 India, itself is a union of several cultures and stands on the principle of **unity in diversity**. Although, its sad to see that the Indian subcontinent is not a single country, I would love to see these countries forming an union similar to the EU. I know it seems highly unlikely on the basis of today's scenarios, but Europe before WW-II was way worse than the subcontinent today.  -->
 
-### Contact
+## Contact
 
 To get in touch, please send me an e-mail at: **a [dot] upadhyay [at] rgu [dot] ac [dot] uk**.
 
