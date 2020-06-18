@@ -6,7 +6,7 @@ desc: "A brief overview of Data-to-Text Generation"
 keywords: "Blog, NLG, D2T, Data-to-Text"
 categories: [Blog, NLP, NLG, D2T]
 tags: [Blog, NLP, D2T]
-blog: [Blog]
+blog: []
 excerpt_separator: <!--more-->
 images: 
     - url: /assets/iccbr/d2tnlg.jpg

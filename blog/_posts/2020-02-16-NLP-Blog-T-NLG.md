@@ -21,7 +21,7 @@ Recently, Microsoft announced their new language model named Turing-NLG (T-NLG) 
 
 It's a 78 layers deep Transformer model trained on text from the internet that outperformed state-of-the-arts (SOTA) on various NLP tasks such as Summary Generation and Question Answering. Just for a comparison, previous SOTA (Megatron-LM by Nvidia) has 8B parameters while other recent breakthroughs such as BERT (by Google) and GPT-2 (by Open AI) have 340M and 1.5B parameters respectively.
 
-![Figure 1: Parameters in different NLP breakthroughs](/assets/T-NLG_LM.jpg)
+![Figure 1: Parameters in different NLP breakthroughs](/assets/tnlg/T-NLG_LM.jpg)
 <!-- {:width="500px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 
 Image courtesy: Microsoft.
