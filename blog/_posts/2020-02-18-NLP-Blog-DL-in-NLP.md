@@ -13,6 +13,7 @@ images:
     - url: assets/nlp-dl/lang_model.png
     - url: assets/nlp-dl/lstm.png
     - url: assets/nlp-dl/rnn.png
+    - url: assets/nlp-dl/cnn.png
 icon: icon-html
 ---
 
@@ -48,6 +49,8 @@ These distributed representation of words give a certain amount of semantic unde
 
 These representations have a drawback that they fail to take context of a word into account. For example, the word **_'Scotland'_** will have different meaning in the sentence **_'Scotland is one of the most best places to live on earth'_** than in the sentence **_'Royal Bank of Scotland is one of the top banking firms in the UK'_**. The GloVe or word2vec word embeddings will fail to differentiate the two meanings of **_Scotland_** and will assign same vector in both the cases. These drawbacks are tackled by a new concept of contextual word embeddings discussed in following discussions.
 
+
+**Note**: For a better and deeper understanding please refer to [this lecture of CS224u](http://web.stanford.edu/class/cs224u/materials/cs224u-2020-vsm-handout.pdf).
 
 ### Language Models
 A language model is a type of system that predicts the probability of possible next words for a given sequence of words as the input. 
@@ -103,6 +106,8 @@ This statistical approach has mainly two problems. First, sparsity - consider th
 The neural language model using Recurrent Neural Networks are able to model all the words in a sentence. They don't need a window to predict the next word at each timestep using hidden state and output from the previous time step combining with the new input at each time step. 
 
 
+**Note**: For a better and deeper understanding please refer to [this lecture of CS224n](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/slides/cs224n-2019-lecture06-rnnlm.pdf).
+
 <!-- \subsubsection{Recurrent Neural Networks} \label{sec:rnn} -->
 
 ### Recurrent Neural Networks
@@ -132,6 +137,7 @@ The operations performed in RNN at every time step is given in the equations bel
 
 Here <span class="math"><b>&sigma;<sub>y</sub></b></span> and <span class="math"><b>&sigma;<sub>h</sub></b></span> are the activation functions. <span class="math"><b>W<sub>h</sub></b></span> is the weight matrix to apply transformation on previous hidden state <span class="math"><b>h<sub>t-1</sub>, W<sub>e</sub></b></span> is the weight matrix to apply transformation on the input <span class="math"><b>x<sub>t</sub></b></span> received over time **t**. Combining these with the bias <span class="math"><b>b<sub>h</sub></b></span> yields hidden state <span class="math"><b>h<sub>t</sub></b></span> for time **t**. Applying activation on the <span class="math"><b>h<sub>t</sub></b></span> with <span class="math"><b>W<sub>y</sub></b></span> gives the output <span class="math"><b>y<sub>t</sub></b></span> for every time-step **t**.
 
+**Note**: For a better and deeper understanding please refer to [this lecture of CS224n](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/slides/cs224n-2019-lecture06-rnnlm.pdf).
 
 ### Long Short-Term Memory Networks
 Although, in theory the RNNs are designed to handle the sequence input but in practice they lack in storing the long term dependencies because of the problem of exploding and vanishing gradients [[4]](#myfootnote4). Long Short-Term Memory Networks [[8]](#myfootnote8) are the advanced version of RNNs with a slight modification of being capable of deciding what to **_'remember'_** and what to ***forget*** from the input sequence with the help of a series of gates. LSTMs have a number of gates: an output gate <span class="math"><b>o<sub>t</sub></b></span>; an input gate <span class="math"><b>i<sub>t</sub></b></span>; a forget gate <span class="math"><b>f<sub>t</sub></b></span> - all of which are the functions of previous hidden state <span class="math"><b>h<sub>t</sub></b></span> and current input <span class="math"><b>x<sub>t</sub></b></span>. These gates interact with the previous cell state <span class="math"><b>c<sub>t-1</sub></b></span>, the current input <span class="math"><b>x<sub>t</sub></b></span>, and the current cell state <span class="math"><b>c<sub>t</sub></b></span> and enable the model to selectively retain or information from the sequence. The full version of LSTM is given in the equation below.
@@ -186,46 +192,71 @@ where <span class="math"><b>&sigma;<sub>g</sub></b></span> is the **sigmoid acti
 
 LSTM layers can be stacked on each other to form multi-layer LSTM architecture. One of the most popular LSTM architecture is Bidirectional LSTM (BiLSTM), where two separate LSTMs are ran forward and backward to gain the sequential information in both directions.
 
-\subsubsection{Convolutional Neural Networks}
-Convolutional Neural Networks \cite{lecun1998gradient} are the version of deep neural networks established as state-of-the-art in various computer vision tasks \cite{barbu2019objectnet,ali2019mfc}. After the release of AlexNet \cite{krizhevsky2012imagenet} in ImageNet competition 2012, CNNs have been the benchmark for almost every vision task. Inspired from the popularity of CNN in vision, researchers proposed an CNN architecture for sentence classification which outperformed many benchmarks on various text classification dataset ranging from sentiment analysis to topic classification \cite{kim2014convolutional}. 
+**Note**: For a better and deeper understanding please refer to [this amazing blog from Christopher Olah](https://colah.github.io/posts/2015-08-Understanding-LSTMs/).
 
-\begin{figure}
+
+### Convolutional Neural Networks
+Convolutional Neural Networks [[11]](#myfootnote11) are the version of deep neural networks established as state-of-the-art in various computer vision tasks. For last couple of years, CNNs have been the benchmark for almost every vision task. Inspired from the popularity of CNN in vision, researchers proposed an CNN architecture for sentence classification which outperformed many benchmarks on various text classification dataset ranging from sentiment analysis to topic classification [[9]](#myfootnote9). 
+
+<!-- \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/cnn_text.png}
     \caption{CNN for sentence classification}
     \label{fig:cnn}
-\end{figure}
+\end{figure} -->
 
-CNNs are capable of computing vectors for all possible sub-phrases in a sentence, not just grammatically correct one as done by RNNs. A CNN takes an input sentence of word length $n$ where each word is represented distributively in $d$ dimension. So the input $X_{1:n}$ is a $2D$ matrix of shape $n \times d$  where $x_{i}$ $\epsilon$ $\mathbb{R}^d$. Input $X_{1:n}$ can be represented as \cref{eq:cnn_input}.
+<!-- CNNs are capable of learning vectors for all possible sub-phrases in a sentence, not just grammatically correct one as done by RNNs.  -->
+A CNN takes an input sentence of **n** words, where each word is represented using a vector of dimension **d**. The input <span class="math"><b>X<sub>1:n</sub></b></span> will be a **2D** matrix of shape <span class="math"><b>n &times; d</b></span>, where <span class="math"><b>x<sub>i</sub> &isin; &#x211D; <sup>d</sup> </b></span>. Input <span class="math"><b>X<sub>1:n</sub></b></span> can be represented as:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>X<sub>1:n</sub> = x<sub>1</sub> &oplus;, ..., &oplus; x<sub>n</sub></b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:cnn_input}
     X_{1:n} = x_{1} \oplus x_{2} \oplus \cdots \oplus x_{n}
-\end{equation}
+\end{equation} -->
 
-where $\oplus$ is the concatenation operator. On the input layer, convolution filter $W$  $\epsilon$ $\mathbb{R}^{hd}$ is applied over window of $h$ words to generate a new feature. So, a feature $c_{i}$ is generated from the word window $x_{i:i+h-1}$ with the following operation:
+where <span class="math"><b>&oplus;</b></span> is the concatenation operator. On the input layer, convolution filter <span class="math"><b>W &isin; &#x211D;<sup>hd</sup></b></span> is applied over window of **h** words to generate a new feature. So, a feature <span class="math"><b>c<sub>i</sub></b></span> is generated from the word window <span class="math"><b>x<sub>i:i+h-1</sub></b></span> with the following operation:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>x<sub>i</sub> = &sigma;(Wx<sub>i:i+h-1</sub> + b)</b></span>
+</div>
+<!-- \begin{equation}
     c_{i} = \sigma (Wx_{i:i+h-1} + b)
-\end{equation}
+\end{equation} -->
 
-where $W$ is the weight matrix for the connections, $\sigma$ is the activation function and $b$ $\epsilon$ $\mathbb{R}$ is the bias. Now, this filter is applied to each possible window of words giving an feature map $C$ $\epsilon$ $\mathbb{R}^{n-h+1}$.
+where **W** is the weight matrix for the connections, <span class="math"><b>&sigma;</b></span> is the **activation function** and <span class="math"><b>b &isin; &#x211D;</b></span> is the bias. Now, this filter is applied to each possible window of words giving an feature map <span class="math"><b>C &isin; &#x211D;<sup>n-h+1</sup></b></span>.
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>C = [c<sub>1</sub>, c<sub>2</sub>, ..., c<sub>n-h+1</sub>]</b></span>
+</div>
+
+<!-- \begin{equation}
     C = [c_{1}, c_{2}, \cdots, c_{n-h+1}]
-\end{equation}
+\end{equation} -->
 
-The entries in feature map $C$ are sharing the parameter $W$, where each $c_{i}$ $\epsilon$ $C$ is a result of calculation on small segment of the input. Then a $max-pooling$ operation is applied on these feature maps to capture the most important part.
+The entries in feature map **C** are sharing the parameter **W**, where each <span class="math"><b>c<sub>i</sub> &isin; C</b></span> is a result of calculation on small segment of the input. Then a **max-pooling** operation is applied on these feature maps to capture the most important part.
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>&#264; = max(C)</b></span>
+</div>
+
+<!-- \begin{equation}
     \Tilde{C} = max(C)
-\end{equation}
+\end{equation} -->
 
-This parameter sharing helps the model to incorporate an inductive bias into the model, helping to become learn the location invariant local features. There are $k$ number of filters applied to the input with different window sizes which are then concatenated to form a vector $\textbf{K}$ $\epsilon$ $\mathbb{R}^k$. Which is then fed to next hidden layer or output layer.
+This parameter sharing helps the model to incorporate an inductive bias into the model, helping to become learn the location invariant local features. There are **k** number of filters applied to the input with different window sizes which are then concatenated to form a vector <span class="math"><b>K &isin; &#x211D;<sup>k</sup></b></span>. Which is then fed to next hidden layer or output layer.
 
-An illustrated diagram of an CNN architecture for text classification is shown in fig \cref{fig:cnn} \footnote{taken from \cite{kim2014convolutional}}.
+An illustrated diagram of an CNN architecture for text classification is shown in figure below:
 
-\subsubsection{Sequence  to Sequence Models}
+![CNN](/assets/nlp-dl/cnn.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+<div style="text-align: center;"><b>A simple Long-Short Term Memory Network</b></div>
+
+**Note**: For a better and deeper understanding please refer to [this lecture of CS224n](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/slides/cs224n-2019-lecture11-convnets.pdf).
+
+### Sequence-to-Sequence Models
+
 Most of the NLP tasks require sequential output instead of a single output label unlike classification or regression \cite{sutskever2014sequence}. These tasks can be Machine Translation of natural language, Question-Answering or Summary generation systems. These systems take a sequence of input and process it to produce yet another sequence for output. The goal is to take a sequence $(x_{1}, x_{2}, \cdots, x_{n})$ as input and map it to another sequence $(y_{1}, y_{2}, \cdots, y_{n})$ as output.
 
 The architecture used to deal with these kind of problems is known as Sequence to Sequence model or in common terms, seq2seq model. It is a combination of auto-encoders and decoders which works in a sequential manner where encoder is an neural architecture to generate a context vector from input sequence and decoder, another neural architecture taking context vector as input and generating the output sequence.
@@ -270,7 +301,9 @@ where $\sigma^{\prime}$ is another activation function. The loss is calculated a
         \label{fig:enc_dec}
 \end{figure}
 
-\paragraph{Attention} A problem with general encoder-decoder model is that they give equal importance to all the parts of input sequence. Also, the input sequence is compressed into a single context vector which creates the bottleneck problem, where a long information is tried to be kept into one small representation. 
+#### Attention 
+
+A problem with general encoder-decoder model is that they give equal importance to all the parts of input sequence. Also, the input sequence is compressed into a single context vector which creates the bottleneck problem, where a long information is tried to be kept into one small representation. 
 
 A solution to this problem was proposed in the work \cite{bahdanau2014neural} introducing a new mechanism called Attention. Attention aligns the output at each decoding step to the whole input sequence in order to learn the most important part of the input aligning with the current step output by providing an attentive output.
 
@@ -297,7 +330,8 @@ The attention output $a_{t}$ is then calculated as the weighted sum of encoder h
 
 Finally, we concatenate the attention output $a_{t}$ with decoder hidden state $s_{t}$ and proceed to calculate the negative log loss same as the non-attention decoder model.
 
-\subsubsection{Contextual Word Embeddings}\label{sec:context_we}
+### Contextual Word Embeddings
+
 As discussed in \cref{sec:word_emb}, the word embeddings generated by algorithms like word2vec \cite{mikolov2013distributed} and GloVe \cite{pennington2014glove} lacks the contextual awareness and fail to differentiate a word with different sense. For example, word $get$ has thirty different senses (meaning) in wordnet \footnote{\url{https://wordnet.princeton.edu/}} based on the different contexts. But if we use pre-trained word embeddings to generate the vector representation of $get$, it will be same for all the thirty times and we will loose the semantic information. 
 
 A new trend of transfer learning came in Deep Learning based NLP with the introduction works like ELMo \cite{peters2018deep} and ULMFiT \cite{howard2018universal} where language models are used to learn the nuances of the language grammar and then the pre-trained language model is then fine-tuned on a task specific dataset to achieve better results.
@@ -309,11 +343,17 @@ A new trend of transfer learning came in Deep Learning based NLP with the introd
     \label{fig:elmo}
 \end{figure}
 
-\paragraph{ELMo} stands for Embeddings Learned from Language Models \cite{peters2018deep} uses a bidirectional language model to capture the context of a word in a sentence from both sides (left to right and vice-versa). ELMo uses an character-level CNN to convert raw text into a word vector which is then fed into a bidirectional language model. The ouput of this BiLM is then sent to the next layer of BiLM to form a set of intermediate word vectors. The final output of ELMo is the weighted sum of raw vectors and the intermediate vectors formed from two layers of the BiLMs. The two language models used here are based on LSTM architectures. An illustration of ELMo is shown is \cref{fig:elmo} \footnote{Taken from \url{https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/}}.
+#### ELMo 
+
+stands for Embeddings Learned from Language Models \cite{peters2018deep} uses a bidirectional language model to capture the context of a word in a sentence from both sides (left to right and vice-versa). ELMo uses an character-level CNN to convert raw text into a word vector which is then fed into a bidirectional language model. The ouput of this BiLM is then sent to the next layer of BiLM to form a set of intermediate word vectors. The final output of ELMo is the weighted sum of raw vectors and the intermediate vectors formed from two layers of the BiLMs. The two language models used here are based on LSTM architectures. An illustration of ELMo is shown is \cref{fig:elmo} \footnote{Taken from \url{https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/}}.
 
 ELMo achieved 9\% error reduction on the SQuAD (question-answering) dataset compared to then state-of-the-art, 16\% on Ontonotes SRL dataset, 10\% on Ontonotes coreference dataset and 4\% on CoNLL 2003 dataset. It paved a huge path in the success of contextualized word representations for different tasks in NLP.
 
-\paragraph{ULMFiT} stands for Universal Language Model Fine Tuning, introduced the way of applying transfer learning on text classification problem \cite{howard2018universal}. It does so in three main steps: first, train an general domain language model on large corpus of text (mainly Wikipedia); second, fine tune the language model on task specific target dataset; and third, use the again fine tune the fine-tuned language model as classifier by adding a softmax activation on top with target dataset. An illustration of the three steps of ULMFiT is shown in \cref{fig:ulmfit_steps}.
+### Transfer Learning
+
+#### ULMFiT
+
+stands for Universal Language Model Fine Tuning, introduced the way of applying transfer learning on text classification problem \cite{howard2018universal}. It does so in three main steps: first, train an general domain language model on large corpus of text (mainly Wikipedia); second, fine tune the language model on task specific target dataset; and third, use the again fine tune the fine-tuned language model as classifier by adding a softmax activation on top with target dataset. An illustration of the three steps of ULMFiT is shown in \cref{fig:ulmfit_steps}.
 
 % \begin{figure}
 %     \centering
@@ -351,7 +391,8 @@ ELMo achieved 9\% error reduction on the SQuAD (question-answering) dataset comp
 
 ULMFiT achieved better results for text classification on six different datasets ranging from topic classification to sentiment analysis. It did so by learning the general rules of grammar from huge corpus of text and then transferring that learning with fine tuning on a task-specific dataset providing better results than state-of-the-arts \cite{howard2018universal}.
 
-\subsubsection{Transformers}\label{sec:transformers}
+### Transformers
+
 Almost all of the models we discussed have recurrent behaviour, which can not be trained parallely. This imposes a huge problem of time taken to train a model from scratch. In the work \cite{vaswani2017attention}, authors proposed a new neural architecture called Transformers which uses a combination of self attention and feed-forward network in its encoder-decoder model and doesn't require any recurrent or convolutional elements. This new seq2seq model was a huge success where it gained better performance on various sequential NLP tasks. To name one, it improved the machine translation performance by 10\% on WMT EN-FR and WMT EN-DE datasets. It also reduced the training time by large margin benefiting its non-recurrent nature \cite{vaswani2017attention}.
 
 The success of transformer architecture paved the way for development of new models to solve the sequential tasks. It helped NLP researchers to utilize its non-recurrent nature in transfer learning where the transformer is used for general pre-training of a language model on large corpus of text which can be used for fine-tuning on domain specific dataset for downstream tasks. An encoder-decoder model of Transformer architecture is shown in the \cref{fig:trans}.
@@ -363,7 +404,7 @@ The success of transformer architecture paved the way for development of new mod
     \label{fig:trans}
 \end{figure}
 
-\paragraph{Generative Pre-Training}
+#### Generative Pre-Training
 One of the earliest works in using Transformers for pre-training of language model was presented in \cite{radford2018improving}. Following the idea from ELMo \cite{peters2018deep}, authors proposed a language model using transformer decoder trained on large corpus and then fine-tuned on task specific dataset. The main difference of GPT from ELMo is that ELMo uses two independent LSTM language models to caputre the forwards and backward context whereas in case of GPT, it uses a uni-directional multi-layer transformer language model capable of capturing context due to its attentive nature.
 
 ELMo takes a feature based approach of feeding feature vectors for different tasks into different models, whereas GPT takes a fine-tuning based approach where same language model trained on huge corpus is fine-tuned for downstream tasks without changing the architecture. An illustration of a GPT model used for pre-training is shown in \cref{fig:gpt} \footnote{Taken from \url{https://openai.com/blog/language-unsupervised/}}.
@@ -375,7 +416,7 @@ ELMo takes a feature based approach of feeding feature vectors for different tas
     \label{fig:gpt}
 \end{figure}
 
-\paragraph{Bidirectional Encoder Representation from Transformers}
+#### Bidirectional Encoder Representation from Transformers
 BERT \cite{devlin2018bert} is another example of the success of transfer learning in NLP. BERT is a bidirectional transformer language model trained on a large text corpus that can be fine-tuned on any domain specific dataset for the downstream tasks like text classification or named entity recognition. BERT mainly differs from other models like GPT and ELMo because of the pre-training tasks used during the unsupervised training of language model. It involves two tasks; first, Masked Language Model (MLM) \cite{taylor1953cloze} or prediction of the masked word in a sentence, and second, prediction of next sentence from the corpora.
 
 For the first task of Masked Language Model, let’s say we have a sentence ‘Boris Johnson is the Prime Minister of UK’. So instead of training for prediction of next word in the sentence as a general Language Model, BERT pre-training replaces 15\% of the words with a [MASK] token and learns to predict the correct word at the position of [MASK] token. In the second task of Next Sentence Prediction, the model is trained to learn the relationship between sentences where for a given sentence pair A \& B, the model is asked to predict if the sentence B is actually the next sentence that comes after A or not?
