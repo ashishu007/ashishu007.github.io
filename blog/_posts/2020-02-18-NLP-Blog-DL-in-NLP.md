@@ -164,7 +164,7 @@ Although, in theory the RNNs are designed to handle the sequence input but in pr
 </div>
 
 <div style="text-align: center;">
-<span class="math"><b>c<sub>t</sub> = f<sub>t</sub> &#x25CB; c<sub>t-1</sub> + i<sub>t</sub> &#x25CB; &#265; c<sub>t</sub></b></span>
+<span class="math"><b>c<sub>t</sub> = f<sub>t</sub> &#x25CB; c<sub>t-1</sub> + i<sub>t</sub> &#x25CB; &#265;<sub>t</sub></b></span>
 </div>
 
 <div style="text-align: center;">
@@ -172,16 +172,19 @@ Although, in theory the RNNs are designed to handle the sequence input but in pr
 </div>
 
 
-where $\sigma_{g}$ is the $sigmoid$ activation function, $\sigma_{c}$ and $\sigma_{h}$ are the $tanh$ activation function, and $\circ$ is element-wise multiplication, also known as \textit{`Hadamard product'}. An illustrated diagram of unrolled RNN is shown in fig \cref{fig:lstm} \footnote{taken from \url{https://colah.github.io/posts/2015-08-Understanding-LSTMs/}}.
+where <span class="math"><b>&sigma;<sub>g</sub></b></span> is the **sigmoid activation function**, <span class="math"><b>&sigma;<sub>c</sub></b></span> and <span class="math"><b>&sigma;<sub>h</sub></b></span> are the **tanh activation function**, and <span class="math"><b>&#x25CB;</b></span> is element-wise multiplication, also known as **Hadamard product**. An illustrated diagram of LSTM is shown below:
 
-\begin{figure}
+![LSTM](/assets/nlp-dl/lstm.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
+<div style="text-align: center;"><b>A simple Long-Short Term Memory Network</b></div>
+
+<!-- \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/lstm.png}
     \caption{LSTM}
     \label{fig:lstm}
-\end{figure}
+\end{figure} -->
 
-LSTM layers can be stacked on each other to form multiple layer LSTM architecture. One of the most popular LSTM architecture is Bidirectional LSTM (BiLSTM) \cite{graves2013hybrid}, where two separate LSTMs are ran forward and backward to gain the sequential information in both directions.
+LSTM layers can be stacked on each other to form multi-layer LSTM architecture. One of the most popular LSTM architecture is Bidirectional LSTM (BiLSTM), where two separate LSTMs are ran forward and backward to gain the sequential information in both directions.
 
 \subsubsection{Convolutional Neural Networks}
 Convolutional Neural Networks \cite{lecun1998gradient} are the version of deep neural networks established as state-of-the-art in various computer vision tasks \cite{barbu2019objectnet,ali2019mfc}. After the release of AlexNet \cite{krizhevsky2012imagenet} in ImageNet competition 2012, CNNs have been the benchmark for almost every vision task. Inspired from the popularity of CNN in vision, researchers proposed an CNN architecture for sentence classification which outperformed many benchmarks on various text classification dataset ranging from sentiment analysis to topic classification \cite{kim2014convolutional}. 
