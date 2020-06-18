@@ -323,32 +323,44 @@ An illustrated diagram of seq2seq model is shown in the figure below:
 
 #### Attention 
 
-A problem with general encoder-decoder model is that they give equal importance to all the parts of input sequence. Also, the input sequence is compressed into a single context vector which creates the bottleneck problem, where a long information is tried to be kept into one small representation. 
+A problem with general encoder-decoder model is that they give equal importance to all the parts of input sequence. Also, the input sequence is compressed into a single context vector which creates the bottleneck problem, where a long information is tried to be compress into one small representation.
 
-A solution to this problem was proposed in the work \cite{bahdanau2014neural} introducing a new mechanism called Attention. Attention aligns the output at each decoding step to the whole input sequence in order to learn the most important part of the input aligning with the current step output by providing an attentive output.
+A solution to this problem was proposed in the work [[2]](#myfootnote2) introducing a new mechanism called **Attention**. Attention aligns the output at each decoding step to the whole input sequence in order to learn the most important part of the input aligning with the current step output.
 
-Let's say we have calculated the encoding hidden states $(h_{1},  h_{2}, \cdots, h_{n})$ for the input sequence $(x_{1}, x_{2}, \cdots, x_{n})$ during the calculation of context vector $Z$. For a decoder hidden state $s_{t}$ on timestep $t$, we get attention score $e^{t}$ as follows:
+Let's say we have calculated the encoding hidden states <span class="math"><b>h<sub>1</sub>, h<sub>2</sub>, ..., h<sub>n</sub></b></span> for the input sequence <span class="math"><b>x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub></b></span> during the calculation of context vector **Z**. For a decoder hidden state <span class="math"><b>s<sub>t</sub></b></span> on timestep <span class="math"><b>t</b></span>, we get attention score <span class="math"><b>e<sup>t</sup></b></span> as follows:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>e<sup>t</sup> = [s<sub>t</sub><sup>T</sup>h<sub>1</sub>, ..., s<sub>t</sub><sup>T</sup>h<sub>n</sub>]</b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:att_score}
         e^{t} = [s^{T}_{t}h_{1}, \cdots, s^{T}_{t}h_{n}]
-\end{equation}
+\end{equation} -->
 
-We take the softmax of these scores to get the attention distribution at timestep $t$.
+We take the softmax of these scores to get the attention distribution at timestep **t**.
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>&prop;<sup>t</sup> = softmax(e<sup>t</sup>)</b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:att_dist}
         \alpha^{t} = softmax(e^{t})
-\end{equation}
+\end{equation} -->
 
-The attention output $a_{t}$ is then calculated as the weighted sum of encoder hidden state using $\alpha^{t}$:
+The attention output <span class="math"><b>a<sub>t</sub></b></span> is then calculated as the weighted sum of encoder hidden state using <span class="math"><b>&prop;<sup>t</sup></b></span>:
 
-\begin{equation}
+<div style="text-align: center;">
+<span class="math"><b>a<sub>t</sub> = &prop;<sup>t</sup><sub>i</sub>h<sub>i</sub></b></span>
+</div>
+
+<!-- \begin{equation}
     \label{eq:att_out}
         a_{t} = \sum_{i=1}^{n} \alpha_{i}^{t}h_{i}
-\end{equation}
+\end{equation} -->
 
-Finally, we concatenate the attention output $a_{t}$ with decoder hidden state $s_{t}$ and proceed to calculate the negative log loss same as the non-attention decoder model.
+Finally, we concatenate the attention output <span class="math"><b>a<sup>t</sup></b></span> with decoder hidden state <span class="math"><b>s<sup>t</sup></b></span> and proceed to calculate the negative log loss same as the non-attention decoder model.
 
 **Note**: For a better and deeper understanding please refer to [this lecture of CS224n](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/slides/cs224n-2019-lecture08-nmt.pdf).
 
@@ -477,7 +489,7 @@ BERT improved the fine-tuning based approach of GPT by using a bidirectional tra
 
 <a name="myfootnote1">[1]</a> Ali-Gombe, A. & Elyan, E. (2019), ‘Mfc-gan: class-imbalanced dataset classification using multiple fakeclass generative adversarial network’, Neurocomputing.
 
-<a name="myfootnote2">[2]</a> Bahdanau, D., Cho, K. & Bengio, Y. (2014), ‘Neural machine translation by jointly learning to align andtranslate’,arXiv preprint arXiv:1409.0473.
+<a name="myfootnote2">[2]</a> Bahdanau, D., Cho, K. & Bengio, Y. (2014), ‘Neural machine translation by jointly learning to align and translate’,arXiv preprint arXiv:1409.0473.
 
 <a name="myfootnote3">[3]</a> Barbu, A., Mayo, D., Alverio, J., Luo, W., Wang, C., Gutfreund, D., Tenenbaum, J. & Katz, B. (2019),Objectnet: A large-scale bias-controlled dataset for pushing the limits of object recognition models, in ‘Advances in Neural Information Processing Systems’, pp. 9448–9458.
 
