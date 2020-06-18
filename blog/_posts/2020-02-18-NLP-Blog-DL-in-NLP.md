@@ -23,15 +23,21 @@ images:
 icon: icon-html
 ---
 
-I read many papers about Deep Learning in Natural Language Processing (NLP) during the starting months of my PhD, this blog is a summary of that reading.
-
-Initially, Deep Learning (DL) outperformed a lot of state-of-the-art (SOTA) algorithms in vision tasks and established itself as the benchmark solutions [[7]](#myfootnote7) [[17]](#myfootnote17). During the past few years with the advancement in computing powers and the availability of large datasets, the **Deep Learning Tsunami** [[12]](#myfootnote12) has taken over NLP as well. 
-
-In this blog I'll try to sequentially talk about the development of deep learning applied in NLP to solve the various tasks.
-
-**(This blog is under development)**
+I read many papers about Deep Learning (DL) in Natural Language Processing (NLP) during the starting months of my PhD, this blog is a summary of that reading. In this blog I'll try to sequentially discuss the development of DL methods applied to various NLP tasks.
 
 <!--more-->
+
+## Introduction
+
+First, a little heads-up about the blog. This blog is **not** an in-depth analysis of DL methods applied to NLP tasks, instead, here I have tried to provide a **quick overview** of the development of DL methods for NLP. I'll also **not** discuss any **specific NLP task** here, because, the aim of this blog is to showcase that how the field has evolved in previous coupe of years.
+
+I try to provide an higher level overview of main concepts of DL & NLP, and then, point towards another resource that I used to get the deeper understanding of that concept (other than the main research paper). The main research papers are also cited throughut the blog, so, it'll be easy for the reader to follow-up that paper.
+
+**The reason behind this blog** - when I started my PhD, I was very confused by the broadness of NLP. I knew I wanted to do something in NLP and DL, but wasn't sure what. I started reading papers, blogs, course materials related to NLP (not just DL but other knowledge based methods as well). For my Postgraduate Certification module, I had to submit a research plan just after four months of the start. The reviews that I got were focused on mainly one thing - the literature review was not critical and felt like a tutorial. And that was absolutely right, because, at that point, even though I had read alot about NLP, I had no idea that where to apply those things. So, I wasn't able to critique the works properly. But then I thought why not to share the literature review as a tutorial only, this can benifit many new-comers of NLP. 
+
+So, that's why I wrote this blog. This is a significant part of my literature review that I submitted to the university. Please have a read and do comment your opinion on the quality of my writing and this blog itself. 
+
+<!-- Initially, Deep Learning (DL) outperformed a lot of state-of-the-art (SOTA) algorithms in vision tasks and established itself as the benchmark solutions [[7]](#myfootnote7) [[17]](#myfootnote17). During the past few years with the advancement in computing powers and the availability of large datasets, the **Deep Learning Tsunami** [[12]](#myfootnote12) has taken over NLP as well.  -->
 
 <!-- ### Introduction -->
 <!-- Representation Learning or in common words Deep Learning (DL) can be considered as a subset of machine learning but has gained attention as a different field due to its success in various vision, text and speech tasks. The difference about DL that makes it perform better on various complex problems is that it doesn't require domain expertise to identify the features to represent a problem or case from previous experience. Instead it automatically learns the features during training process using a large set of training data on various iterations.  -->
