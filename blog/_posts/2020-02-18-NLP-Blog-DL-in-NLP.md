@@ -393,6 +393,8 @@ ELMo [[15]](#myfootnote15) uses a **bidirectional language model** to capture th
 
 ELMo achieved 9% error reduction on the SQuAD (question-answering) dataset compared to then SOTA, 16% on Ontonotes SRL dataset, 10% on Ontonotes coreference dataset and 4% on CoNLL 2003 dataset. The fact that these embeddings are contexual and have the knowledge of word senses, helps ELMo and other future models such as: BERT and GPT perform so much better.
 
+**Note**: For a better and deeper understanding please refer to [this amazing blog on Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/).
+
 
 ### Transfer Learning
 
@@ -405,6 +407,7 @@ ULMFiT [[21]](#myfootnote21) can be considered as the pioneer of applying transf
 
 ULMFiT achieved better results for text classification on six different datasets ranging from topic classification to sentiment analysis. It did so by learning the general rules of grammar from huge corpus of text and then transferring that learning with fine tuning on a task-specific dataset, providing better results than the then SOTAs.
 
+**Note**: For a better and deeper understanding please refer to [this amazing blog](https://humboldt-wi.github.io/blog/research/information_systems_1819/group4_ulmfit/).
 
 ### Transformers
 
