@@ -298,9 +298,9 @@ where <span class="math"><b>&sigma;'</b></span> is another **activation function
 
 An illustrated diagram of seq2seq model is shown in the figure below:
 
-![Encoder](/assets/nlp-dl/encoder.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
-![Decoder](/assets/nlp-dl/decoder.png){:width="500px" style="display:block;margin-left:auto;margin-right:auto;"}
-<div style="text-align: center;"><b>An Encoder-Decoder model</b></div>
+![Encoder](/assets/nlp-dl/encoder.png){:width="250px" style="display:block;margin-left:auto;margin-right:auto;"}
+![Decoder](/assets/nlp-dl/decoder.png){:width="250px" style="display:block;margin-left:auto;margin-right:auto;"}
+<div style="text-align: center;"><b>An Encoder-Decoder seq2seq model</b></div>
 
 <!-- \begin{figure}
      \centering
