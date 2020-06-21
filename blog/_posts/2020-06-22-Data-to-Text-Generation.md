@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data-to-Text Generation"
-date: 2020-06-19
+date: 2020-06-22
 desc: "Brief overview of Data-to-Text Generation"
 keywords: "Blog, NLG, Data-to-Text, NLP"
 categories: [Blog, NLP, NLG, D2T]
