@@ -38,6 +38,7 @@ By working on this project, I realised that there are many existing problems tha
   * [RotoWire](#rotowire)
   * [WebNLG](#webnlg)
   * [Meaning Representations](#meaning-representations)
+- [Further Steps](#further-steps)
 <!-- - [References](#references) -->
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -103,7 +104,7 @@ Let's discuss these subtasks with an example. The figure below illustrates a sim
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
 
-The tasks that needs to be performed in order to generate the full textual summary can be described as follows:
+The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows:
 
 > First the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias). 
 
@@ -111,7 +112,10 @@ The tasks that needs to be performed in order to generate the full textual summa
 
 > Finally, the resulting sentences are generated (d, **linguistic realisation**).
 
-The specification of these subtasks vary from domain to domain, but the basic idea remains the same. Let's take another example, the **NBA match summarisation** (the D2T NLG figure shown above) for instance. Here also, the generation will happen in the following steps:
+The specification of these subtasks vary from domain to domain, but the basic idea remains the same. 
+
+Let's take another example, the **NBA match summarisation** (the D2T NLG figure shown above) for instance. Here also, the generation will happen in the following steps:
+
 - first, we need to decide what records from the input table will be dispalyed in the final text (or ***what to say?***); 
 - second, we'll have to decide in what order those records will be displayed, which will also include the deciding on which records will have separate senetences and which ones will be included in the same sentence (or ***how to say?***); and 
 - finally, generating the text by combining all the decisions made in previous steps (or **saying what's decided**).
@@ -176,8 +180,8 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 
 ## Further Steps
 - I would recommend looking at the **data-to-text section** of [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
-- [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of public datasets available for D2T NLG.
-- Have a look at the ACL's Special Interest Group on Natural Language Generation - [ACL SGGEN](https://aclweb.org/aclwiki/SIGGEN).
+- [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of **public datasets** available for D2T NLG.
+- Have a look at the **ACL's Special Interest Group on Natural Language Generation** - [ACL SIGGEN](https://aclweb.org/aclwiki/SIGGEN).
 
 ## References
 <a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. [Survey of the state of the art in natural language generation: core tasks, applications and evaluation](https://www.jair.org/index.php/jair/article/download/11173/26378/). J. Artif. Int. Res. 61, 1 (January 2018), 65–170.
