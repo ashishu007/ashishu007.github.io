@@ -53,7 +53,7 @@ As the name suggests, in **T2T NLG**, our goal is to generate text from unstruct
 
 <!-- ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/t2tnlg.jpg" style="border:5px solid black">
+<img src="/assets/d2t/t2tnlg.jpg" style="border:2px solid black">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
@@ -62,11 +62,11 @@ For **D2T NLG**, the input is presented in a structured format, i.e., tablular, 
 
 <!-- ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/d2tnlg.jpg" style="border:5px solid black">
+<img src="/assets/d2t/d2tnlg.jpg" style="border:2px solid black">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation (D2T NLG)</b></p>
 
-As I'm exploring D2T NLG in my PhD, I'll briefly discuss this task in detail in further sections.
+<!-- As I'm exploring D2T NLG in my PhD, I'll briefly discuss this task in detail in further sections. -->
 
 In general, automatically generating natural language is challenging because **grammar rules** are **very complex**. And also, there can be **several meaning** to **same words** in different context. 
 
@@ -78,7 +78,9 @@ Even after we develop a system for automated generation, it is challenging to au
 
 ## Subtasks in D2T NLG
 
-Let's talk about the subtasks involved in D2T NLG, which can be divided into six different subtasks <sup>[[1]](#myfootnote1)</sup>:
+Data-to-Text generation is a long process. It invovles a lot of things from selecting important insights from the data to finally generating the textual document summarising that data. In literature, the whole pipeline of D2T is broadly divided into six different subtasks <sup>[[1]](#myfootnote1)</sup> shown here:
+
+<!-- Let's talk about the subtasks involved in D2T NLG, which can be divided into six different subtasks : -->
 
 1. ***Content Determination***: deciding which information from the input will be included in the final text;
 
@@ -94,11 +96,14 @@ Let's talk about the subtasks involved in D2T NLG, which can be divided into six
 
 <!-- ![D2T NLG](/assets/d2t/tasks.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/tasks.jpg" style="border:5px solid black">
+
+Let's discuss these subtasks with an example. The figure below illustrates a simplified example from the **neonatal intensive care domain**.
+
+<img src="/assets/d2t/tasks.jpg" style="border:2px solid black">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
 
-Let's discuss the subtasks in D2T NLG with an example. The figure above illustrates a simplified example from the neonatal intensive care domain. 
+The tasks that needs to be performed in order to generate the full textual summary can be described as follows:
 
 > First the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias). 
 
@@ -106,16 +111,16 @@ Let's discuss the subtasks in D2T NLG with an example. The figure above illustra
 
 > Finally, the resulting sentences are generated (d, **linguistic realisation**).
 
-The specification of these subtasks vary from domain to domain, but the basic idea remains the same. Let's take the NBA match summarisation (the D2T NLG figure shown above) for an example. 
-
-The generation will happen in the following steps:
+The specification of these subtasks vary from domain to domain, but the basic idea remains the same. Let's take another example, the **NBA match summarisation** (the D2T NLG figure shown above) for instance. Here also, the generation will happen in the following steps:
 - first, we need to decide what records from the input table will be dispalyed in the final text (or ***what to say?***); 
 - second, we'll have to decide in what order those records will be displayed, which will also include the deciding on which records will have separate senetences and which ones will be included in the same sentence (or ***how to say?***); and 
 - finally, generating the text by combining all the decisions made in previous steps (or **saying what's decided**).
 
 ## Public Datasets and Evaluation Metrics
 
-Now that we know about the expectations in D2T NLG, let's see some of the standard public datasets and evaluation metrics used to measure the performance of different methods on those datasets.
+Now that we know about the expectations in D2T NLG, let's see some of the standard public datasets and evaluation metrics used to measure the performance of different methods on those datasets. Here I describe the three advanced public datasets that have gained attention recently.
+
+To keep track of the **state-of-the-art** in this field, follow this article on [NLP-progress](https://nlpprogress.com/english/data_to_text_generation.html).
 
 ### RotoWire
 The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
@@ -128,11 +133,11 @@ The performance is evaluated on two different automated metrics: first, **BLEU s
 
 3. **Content Ordering (CO)**: normalized Damerau-Levenshtein Distance (DLD%) between the sequences of records extracted from golden text and that extracted from generated text. This measures how well the system orders the records it chooses to discuss.
 
-| **Model**           | **BLEU** | **CS (P% & R%)** | **RG (P% & #)** | **CO (DLD%)** |  **Paper / Source** | **Code** |
+<!-- | **Model**           | **BLEU** | **CS (P% & R%)** | **RG (P% & #)** | **CO (DLD%)** |  **Paper / Source** | **Code** |
 | ------------- | :-----: | :-----: | :-----: | :-----:| --- | --- |
 | **Rebuffel, Clément, et al. (2020)** <sup>[[4]](#myfootnote4)</sup> | 17.50 | 39.47 & 51.64 | 89.46 & 21.17 | 18.90 | [A Hierarchical Model for Data-to-Text Generation](https://link.springer.com/chapter/10.1007/978-3-030-45439-5_5) |[Official](https://github.com/KaijuML/data-to-text-hierarchical) |
 | **Puduppully et al. (2019)** <sup>[[3]](#myfootnote3)</sup> | 16.50 | 34.18 & 51.22 | 87.47 & 34.28 | 18.58 | [Data-to-text generation with content selection and planning](https://www.aaai.org/ojs/index.php/AAAI/article/view/4668) |[Official](https://github.com/ratishsp/data2text-plan-py) |
-| **Wiseman et al. (2017)** <sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) |
+| **Wiseman et al. (2017)** <sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) | -->
 
 ### WebNLG
 The [WebNLG challenge](https://webnlg-challenge.loria.fr/) consists in mapping data to text. The training data consists of Data/Text pairs where the data is a set of triples extracted from DBpedia and the text is a verbalisation of these triples. For example, given the three DBpedia triples (as shown in [a]), the aim is to generate a text (as shown in [b]):
@@ -143,13 +148,14 @@ The [WebNLG challenge](https://webnlg-challenge.loria.fr/) consists in mapping d
 
 The performance is evaluated on the basis of **BLEU, METEOR and TER scores**. The data from WebNLG Challenge 2017 can be downloaded [here](https://gitlab.com/shimorina/webnlg-dataset).
 
-| **Model**           | **BLEU** | **METEOR** | **TER** |  **Paper / Source** | **Code** |
+<!-- | **Model**           | **BLEU** | **METEOR** | **TER** |  **Paper / Source** | **Code** |
 | ------------- | :-----: | :-----: | :-----: | --- | --- |
 | **Kale, Mihir. (2020)** <sup>[[9]](#myfootnote9)</sup> | 57.1 | 0.44 |  | [Text-to-Text Pre-Training for Data-to-Text Tasks](https://arxiv.org/pdf/2005.10433v2.pdf) |  |
 | **Moryossef et al. (2019)** <sup>[[5]](#myfootnote5)</sup> | 47.4 | 0.391 | 0.631 | [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://www.aclweb.org/anthology/N19-1236.pdf) | [Official](https://github.com/AmitMY/chimera) |
-| **Baseline** | 33.24 | 0.235436 | 0.613080 | [Baseline system provided during the challenge](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) |
+| **Baseline** | 33.24 | 0.235436 | 0.613080 | [Baseline system provided during the challenge](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) | -->
 
-**P.S.**: The **test dataset** of WebNLG consists of **total 15 categories**, out of which 10 (**seen**) catgories are used for training while 5 (**unseen**) are not. The results reported here are those obtained on overall test data, i.e., all 15 categories.
+**P.S.**: The **test dataset** of WebNLG consists of **total 15 categories**, out of which 10 (**seen**) catgories are used for training while 5 (**unseen**) are not. 
+<!-- The results reported here are those obtained on overall test data, i.e., all 15 categories. -->
 
 ### Meaning Representations
 
@@ -161,12 +167,17 @@ The dataset was first provided for the [E2E Challenge](http://www.macs.hw.ac.uk/
 
 The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**. The data from E2E Challenge 2017 can be downloaded [here](https://github.com/tuetschek/e2e-dataset/releases/download/v1.0.0/e2e-dataset.zip).
 
-| **Model**           | **BLEU** | **NIST** | **METEOR** | **ROUGE-L** | **CIDEr** |  **Paper / Source** | **Code** |
+<!-- | **Model**           | **BLEU** | **NIST** | **METEOR** | **ROUGE-L** | **CIDEr** |  **Paper / Source** | **Code** |
 | ------------- | :-----: | :-----: |:-----: |:-----: | :-----: | --- | --- |
 | **Shen, Sheng, et al. (2019)** <sup>[[7]](#myfootnote6)</sup> | 68.60 | 8.73 | 45.25 | 70.82 | 2.37 | [Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf) |[Official](https://github.com/sIncerass/prag_generation) |
 | **Elder, Henry, et al. (2019)** <sup>[[8]](#myfootnote8)</sup> | 67.38 | 8.7277 | 45.72 | 71.52 | 2.2995 | [Designing a Symbolic Intermediate Representation for Neural Surface Realization](https://www.aclweb.org/anthology/W19-2308.pdf) | |
 | **Gehrmann, Sebastian, et al. (2018)** <sup>[[6]](#myfootnote7)</sup> | 66.2 | 8.60 | 45.7 | 70.4 | 2.34 | [End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf) |[Official](https://github.com/sebastianGehrmann/diverse_ensembling) |
-| **Baseline** | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline system provided during the challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) |
+| **Baseline** | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline system provided during the challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) | -->
+
+## Further Steps
+- I would recommend looking at the **data-to-text section** of [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
+- [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of public datasets available for D2T NLG.
+- Have a look at the ACL's Special Interest Group on Natural Language Generation - [ACL SGGEN](https://aclweb.org/aclwiki/SIGGEN).
 
 ## References
 <a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. [Survey of the state of the art in natural language generation: core tasks, applications and evaluation](https://www.jair.org/index.php/jair/article/download/11173/26378/). J. Artif. Int. Res. 61, 1 (January 2018), 65–170.
