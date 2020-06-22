@@ -47,7 +47,9 @@ By working on this project, I realised that there are many existing problems tha
 
 First, let's start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input (in some format). 
 
-There are several real-world applications to text generation. For example, take the **Medical Reporting** domain - suppose there's a patient 
+There are several real-world applications to text generation. 
+
+<p><img src="/assets/d2t/med.jpg" style="border:1px solid black;" width="500">Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p>
 
 Based on the input provided to the system, NLG can be broadly categorised into two different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
 
@@ -56,7 +58,7 @@ As the name suggests, in **T2T NLG**, our goal is to generate text from unstruct
 
 <!-- ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/t2tnlg.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 50px" width="850">
+<img src="/assets/d2t/t2tnlg.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="850">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
@@ -65,7 +67,7 @@ For **D2T NLG**, the input is presented in a structured format, i.e., tablular, 
 
 <!-- ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/d2tnlg.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 100px" width="850">
+<img src="/assets/d2t/d2tnlg.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="850">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation (D2T NLG)</b></p>
 
