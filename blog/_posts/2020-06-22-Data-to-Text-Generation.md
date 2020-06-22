@@ -139,8 +139,7 @@ The tasks that needs to be performed in order to generate the full textual summa
 
 
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
-  <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
-
+ 
 <!-- <div class="box">
   <span style="">
     The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows:
@@ -154,14 +153,12 @@ The tasks that needs to be performed in order to generate the full textual summa
       <p>Finally, the resulting sentences are generated (d, <b>linguistic realisation</b>).</p>
     </blockedquote>
   </span>
+  <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle">
 </div> -->
 
-<p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
-
-<div class="row">
+<!-- <div class="row">
   <div class="column">
     <img src="/assets/d2t/tasks.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="100%">
-    <!-- <img src="img_snow.jpg" alt="Snow" style="width:100%"> -->
   </div>
   <div class="column">
     The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows:
@@ -175,8 +172,13 @@ The tasks that needs to be performed in order to generate the full textual summa
       <p>Finally, the resulting sentences are generated (d, <b>linguistic realisation</b>).</p>
     </blockedquote>
   </div>
-</div>
+</div> -->
 
+| ![subtasks](/assets/d2t/tasks.jpg) | 
+|:--:| 
+| The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows: first the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias); then it has to decide in which order it wants to present data to the reader (b, **text structuring**) and how to express these in individual sentence plans (c, **aggregation**; **lexicalisation**; **reference**); finally, the resulting sentences are generated (d, **linguistic realisation**). |
+
+<p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
 
 The specification of these subtasks vary from domain to domain, but the basic idea remains the same. 
 
