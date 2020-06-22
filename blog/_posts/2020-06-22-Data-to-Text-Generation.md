@@ -30,7 +30,7 @@ By working on this project, I realised that there are many existing problems tha
 
 <!-- We published a paper at ICCBR 2020 as an outcome of this project as well. -->
 
-## Table of Contents
+**Table of Contents**
 
 - [Natural Language Generation](#natural-language-generation)
   * [T2T NLG](#t2t-nlg)
