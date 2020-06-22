@@ -47,7 +47,7 @@ By working on this project, I realised that there are many existing problems tha
 
 First, I'll start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input (in some format). 
 
-There are several real-world applications to text generation. Let's discuss some examples. 
+There are several real-world applications to text generation. Here are some examples. 
 
 <!-- <table>
     <tr>
@@ -67,8 +67,8 @@ There are several real-world applications to text generation. Let's discuss some
 <div class="box">
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
   <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
-  <span style=""> Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</span>
-  <img src="/assets/d2t/weather.gif" style="border:1px solid black" width="350">
+  <span style=""> Let's take another example of <b>Weather Forecasting</b> - a textual report about the weather conditions summarising the huge numerical data can be very benificial for a meteorologist. Even for the general public, those reports can be very helpful in providing the weather information breifly.</span>
+  <img src="/assets/d2t/weather.gif" style="border:1px solid black" width="250">
 </div>
 
 <!-- <p><img src="/assets/d2t/med.jpg" style="border:1px solid black;" width="500">Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p> -->
@@ -174,7 +174,9 @@ The tasks that needs to be performed in order to generate the full textual summa
   </div>
 </div> -->
 
-| ![subtasks](/assets/d2t/tasks.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"} | 
+<!-- | ![subtasks](/assets/d2t/tasks.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"} |  -->
+
+| ![subtasks](/assets/d2t/tasks.jpg) | 
 |:--:| 
 | The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows: first the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias); then it has to decide in which order it wants to present data to the reader (b, **text structuring**) and how to express these in individual sentence plans (c, **aggregation**; **lexicalisation**; **reference**); finally, the resulting sentences are generated (d, **linguistic realisation**). |
 
@@ -190,9 +192,9 @@ Let's take another example, the **NBA match summarisation** (the D2T NLG figure 
 
 ## Public Datasets and Evaluation Metrics
 
-Now that we know about the expectations in D2T NLG, let's see some of the standard public datasets and evaluation metrics used to measure the performance of different methods on those datasets. Here I describe the three advanced public datasets that have gained attention recently.
+Now that we know about the expectations in D2T NLG, let's see some of the standard datasets available in public domain and evaluation metrics used to measure the performance of different methods on those datasets. 
 
-To keep track of the **state-of-the-art** in this field, follow this article on [NLP-progress](https://nlpprogress.com/english/data_to_text_generation.html).
+To keep track of the **state-of-the-art** in this field, I would recommend to follow this article on [NLP-progress](https://nlpprogress.com/english/data_to_text_generation.html) or this task category on [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
 
 ### RotoWire
 The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
@@ -247,7 +249,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 | **Baseline** | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline system provided during the challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) | -->
 
 ## Further Steps
-- I would recommend looking at the **data-to-text section** of [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
+<!-- - I would recommend looking at the **data-to-text section** of [Papers with Code](https://paperswithcode.com/task/data-to-text-generation). -->
 - [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of **public datasets** available for D2T NLG.
 - Have a look at the **ACL's Special Interest Group on Natural Language Generation** - [ACL SIGGEN](https://aclweb.org/aclwiki/SIGGEN).
 
