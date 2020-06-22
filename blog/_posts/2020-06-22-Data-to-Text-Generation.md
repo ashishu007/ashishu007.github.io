@@ -192,7 +192,7 @@ Let's take another example, the **NBA match summarisation** (the D2T NLG figure 
 
 ## Public Datasets and Evaluation Metrics
 
-Now that we know about the expectations in D2T NLG, let's see some of the standard datasets available in public domain and evaluation metrics used to measure the performance of different methods on those datasets. 
+Now that we know about the expectations in D2T NLG, let's see some of the standard datasets available in public domain and evaluation metrics used to measure the performance of different methods on these datasets. 
 
 To keep track of the **state-of-the-art** in this field, I would recommend to follow this article on [NLP-progress](https://nlpprogress.com/english/data_to_text_generation.html) or this task category on [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
 
