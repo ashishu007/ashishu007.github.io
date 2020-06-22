@@ -56,9 +56,10 @@ There are several real-world applications to text generation. Let's discuss some
     </tr>
 </table> -->
 
-<div class="box">
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
   <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
+
+<div class="box">
   <img src="/assets/d2t/med.jpg" style="border:1px solid black" width="300">
   <span style=""><p style="text-align:right;">Take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p></span>
 </div>
@@ -137,25 +138,44 @@ The tasks that needs to be performed in order to generate the full textual summa
 > Finally, the resulting sentences are generated (d, **linguistic realisation**). -->
 
 
-<div class="box">
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
   <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
+
+<!-- <div class="box">
   <span style="">
     The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows:
     <blockedquote>
       <p>First the system has to decide what the important events are in the data (a, <b>content determination</b>), in this case, occurrences of low heart rate (bradycardias).</p>
     </blockedquote>
     <blockedquote>
-      <p>>Then it has to decide in which order it wants to present data to the reader (b, <b>text structuring</b>) and how to express these in individual sentence plans (c, <b>aggregation</b>; <b>lexicalisation</b>; <b>reference</b>).</p>
+      <p>Then it has to decide in which order it wants to present data to the reader (b, <b>text structuring</b>) and how to express these in individual sentence plans (c, <b>aggregation</b>; <b>lexicalisation</b>; <b>reference</b>).</p>
     </blockedquote>
     <blockedquote>
       <p>Finally, the resulting sentences are generated (d, <b>linguistic realisation</b>).</p>
     </blockedquote>
   </span>
-  <img src="/assets/d2t/tasks.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="850">
-</div>
+</div> -->
 
 <p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/d2t/tasks.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="100%">
+    <!-- <img src="img_snow.jpg" alt="Snow" style="width:100%"> -->
+  </div>
+  <div class="column">
+    The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows:
+    <blockedquote>
+      <p>First the system has to decide what the important events are in the data (a, <b>content determination</b>), in this case, occurrences of low heart rate (bradycardias).</p>
+    </blockedquote>
+    <blockedquote>
+      <p>Then it has to decide in which order it wants to present data to the reader (b, <b>text structuring</b>) and how to express these in individual sentence plans (c, <b>aggregation</b>; <b>lexicalisation</b>; <b>reference</b>).</p>
+    </blockedquote>
+    <blockedquote>
+      <p>Finally, the resulting sentences are generated (d, <b>linguistic realisation</b>).</p>
+    </blockedquote>
+  </div>
+</div>
 
 
 The specification of these subtasks vary from domain to domain, but the basic idea remains the same. 
