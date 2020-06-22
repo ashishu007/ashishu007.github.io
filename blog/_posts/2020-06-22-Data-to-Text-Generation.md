@@ -15,7 +15,7 @@ images:
 icon: icon-html
 ---
 
-<meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
+<!-- <meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?"> -->
 
 <!-- **Under Development** -->
 
@@ -45,7 +45,7 @@ By working on this project, I realised that there are many existing problems tha
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## 1. Natural Language Generation
+## Natural Language Generation
 
 First, I'll start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input in some format.
 
@@ -101,7 +101,7 @@ There are several real-world applications to automated text generation. Here are
 
 Based on the input provided to the system, NLG can be broadly categorised into two different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
 
-### 1.1. T2T NLG
+### T2T NLG
 As the name suggests, in **text-to-text generation**, our goal is to generate text from unstructured textual input. For example, machine translation, where we take a text document in one natural language as input and produce the same content in different natural language as output.
 
 ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
@@ -110,7 +110,7 @@ As the name suggests, in **text-to-text generation**, our goal is to generate te
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
-### 1.2. D2T NLG
+### D2T NLG
 For **data-to-text generation**, the input is presented in a structured format, i.e., tablular, graphical or JSON format. With this structured input, we generate a textual output summarising the input values. For example, summarising NBA match where, for given box- and line-scores as input we have to generate a textual summary of the match as the output.
 
 ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
@@ -129,7 +129,7 @@ Even after we develop an automated system for text generation, it is challenging
 
 <!-- No data -->
 
-## 2. Subtasks in D2T NLG
+## Subtasks in D2T NLG
 
 Data-to-Text generation is a long process. It invovles a lot of things from selecting important insights from the data to finally generating the textual document summarising that data. In literature, the whole pipeline of D2T is broadly divided into six different subtasks:
 <!-- <sup>[[1]](#myfootnote1)</sup> shown here: -->
@@ -217,13 +217,13 @@ Let's take another example, the **NBA match summarisation** (the D2T NLG figure 
 - second, we'll have to decide in what order those records will be displayed, which will also include the deciding on which records will have separate senetences and which ones will be included in the same sentence (or ***how to say?***); and 
 - finally, generating the text by combining all the decisions made in previous steps (or **saying what's decided**).
 
-## 3. Public Datasets and Evaluation Metrics
+## Public Datasets and Evaluation Metrics
 
 Now that we know about the expectations in D2T NLG, let's see some of the standard datasets available in public domain and evaluation metrics used to measure the performance of different methods on these datasets. 
 
 To keep track of the **state-of-the-art** in this field, I would recommend to follow this article on [NLP-progress](https://nlpprogress.com/english/data_to_text_generation.html) or this task category on [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
 
-### 3.1. RotoWire
+### RotoWire
 The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics. The picture used above for the example of D2T NLG is from this dataset only.
 <!-- <sup>[[2]](#myfootnote2)</sup>. -->
 
@@ -243,7 +243,7 @@ I am not explaining other evaluation metrics here, I'll try to do that in some l
 | **Puduppully et al. (2019)** <sup>[[3]](#myfootnote3)</sup> | 16.50 | 34.18 & 51.22 | 87.47 & 34.28 | 18.58 | [Data-to-text generation with content selection and planning](https://www.aaai.org/ojs/index.php/AAAI/article/view/4668) |[Official](https://github.com/ratishsp/data2text-plan-py) |
 | **Wiseman et al. (2017)** <sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) | -->
 
-### 3.2. WebNLG
+### WebNLG
 The [WebNLG challenge](https://webnlg-challenge.loria.fr/) consists in mapping data to text. The training data consists of Data/Text pairs where the data is a set of triples extracted from DBpedia and the text is a verbalisation of these triples. For example, given the three DBpedia triples (as shown in [a]), the aim is to generate a text (as shown in [b]):
 
 * **[a]**. (John_E_Blaha birthDate 1942_08_26) (John_E_Blaha birthPlace San_Antonio) (John_E_Blaha occupation Fighter_pilot)
@@ -261,7 +261,7 @@ The performance is evaluated on the basis of **BLEU, METEOR and TER scores**. Th
 <!-- **P.S.**: The **test dataset** of WebNLG consists of **total 15 categories**, out of which 10 (**seen**) catgories are used for training while 5 (**unseen**) are not.  -->
 <!-- The results reported here are those obtained on overall test data, i.e., all 15 categories. -->
 
-### 3.3. Meaning Representations
+### Meaning Representations
 
 The dataset was first provided for the [E2E Challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/) in 2017. It is a crowd-sourced data set of 50k instances in the restaurant domain.Each instance consist of a dialogue act-based meaning representations (MR) and up to 5 references in natural language (NL). For example:
 
@@ -278,7 +278,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 | **Gehrmann, Sebastian, et al. (2018)** <sup>[[6]](#myfootnote7)</sup> | 66.2 | 8.60 | 45.7 | 70.4 | 2.34 | [End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf) |[Official](https://github.com/sebastianGehrmann/diverse_ensembling) |
 | **Baseline** | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline system provided during the challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) | -->
 
-## 4. Further Steps
+## Further Steps
 <!-- - I would recommend looking at the **data-to-text section** of [Papers with Code](https://paperswithcode.com/task/data-to-text-generation). -->
 - For a detailed review of the field, I would recommed reading this [survey paper](https://www.jair.org/index.php/jair/article/download/11173/26378/).
 - [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of **public datasets** available for D2T NLG.
@@ -305,5 +305,5 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
  -->
 
  
-<style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'long'};</script>
-<!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>
+<!-- <style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'long'};</script>
+<!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script> -->
