@@ -73,6 +73,10 @@ There are several real-world applications to text generation. Here are some exam
 | :-----: | :-----:|
 | Take another example of **Weather Forecasting** - a textual report about the weather conditions summarising the huge numerical data can be very benificial for a meteorologist. Even for the general public, those reports can be very helpful in providing the weather information breifly. | ![Weather Forecasting](/assets/d2t/weather.gif) |
 
+<img src="/assets/d2t/med.jpg" align="left" style="margin: 0px 10px 0px 0px;"/><p>Take the <b>Medical Reporting</b> domain for instance - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p>
+
+<img src="/assets/d2t/weather.gif" align="right"/><p>Take another example of <b>Weather Forecasting</b> - a textual report about the weather conditions summarising the huge numerical data can be very benificial for a meteorologist. Even for the general public, those reports can be very helpful in providing the weather information breifly.</p>
+
 <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
 <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
 
@@ -182,7 +186,7 @@ The tasks that needs to be performed in order to generate the full textual summa
 
 <!-- | ![subtasks](/assets/d2t/tasks.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"} |  -->
 
-| ![subtasks](/assets/d2t/tasks.jpg) | 
+| ![subtasks](/assets/d2t/tasks.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} |
 |:--:| 
 | The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows: first the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias); then it has to decide in which order it wants to present data to the reader (b, **text structuring**) and how to express these in individual sentence plans (c, **aggregation**; **lexicalisation**; **reference**); finally, the resulting sentences are generated (d, **linguistic realisation**). |
 
