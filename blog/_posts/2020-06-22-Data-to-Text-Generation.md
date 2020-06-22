@@ -15,6 +15,8 @@ images:
 icon: icon-html
 ---
 
+<meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
+
 <!-- **Under Development** -->
 
 <!-- This blog gives a brief overview of **data-to-text generation** tasks in NLG.  -->
@@ -301,3 +303,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 
 <a name="myfootnote9">[9]</a> Kale, Mihir. "[Text-to-Text Pre-Training for Data-to-Text Tasks](https://arxiv.org/pdf/2005.10433v2.pdf)" arXiv preprint arXiv:2005.10433 (2020).
  -->
+
+ 
+<style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'long'};</script>
+<!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>
