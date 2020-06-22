@@ -174,7 +174,7 @@ The tasks that needs to be performed in order to generate the full textual summa
   </div>
 </div> -->
 
-| ![subtasks](/assets/d2t/tasks.jpg) | 
+| ![subtasks](/assets/d2t/tasks.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"} | 
 |:--:| 
 | The tasks that needs to be performed in order to generate the full textual summary from the input data can be described as follows: first the system has to decide what the important events are in the data (a, **content determination**), in this case, occurrences of low heart rate (bradycardias); then it has to decide in which order it wants to present data to the reader (b, **text structuring**) and how to express these in individual sentence plans (c, **aggregation**; **lexicalisation**; **reference**); finally, the resulting sentences are generated (d, **linguistic realisation**). |
 
