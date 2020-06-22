@@ -198,16 +198,18 @@ Now that we know about the expectations in D2T NLG, let's see some of the standa
 To keep track of the **state-of-the-art** in this field, I would recommend to follow this article on [NLP-progress](https://nlpprogress.com/english/data_to_text_generation.html) or this task category on [Papers with Code](https://paperswithcode.com/task/data-to-text-generation).
 
 ### RotoWire
-The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics.
+The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics. The picture used above for the example of D2T NLG is from this dataset only.
 <!-- <sup>[[2]](#myfootnote2)</sup>. -->
 
-The performance is evaluated on two different automated metrics: first, **BLEU score**; and second, a family of **Extractive Evaluations (EE)**. EE contains three different submetrics evaluating three different aspects of the generation:
+The performance is evaluated on two different automated metrics: first, **BLEU score**; and second, a family of **Extractive Evaluations (EE)**. EE contains three different submetrics evaluating three different aspects of the generation. Since EE metrics are comparatively new than others, I'll briefly explain them here:
 
 1. **Content Selection (CS)**: precision (P%) and recall (R%) of unique relations extracted from generated text that are also extracted from golden text. This measures how well the generated document matches the gold document in terms of selecting which records to generate.
 
 2. **Relation Generation (RG)**: precision (P%) and number of unique relations (#) extracted from generated text that also appear in structured input provided. This measures how well the system is able to generate text containing factual (i.e., correct) records.
 
 3. **Content Ordering (CO)**: normalized Damerau-Levenshtein Distance (DLD%) between the sequences of records extracted from golden text and that extracted from generated text. This measures how well the system orders the records it chooses to discuss.
+
+I am not explaining other evaluation metrics here, I'll try to do that in some later post.
 
 <!-- | **Model**           | **BLEU** | **CS (P% & R%)** | **RG (P% & #)** | **CO (DLD%)** |  **Paper / Source** | **Code** |
 | ------------- | :-----: | :-----: | :-----: | :-----:| --- | --- |
