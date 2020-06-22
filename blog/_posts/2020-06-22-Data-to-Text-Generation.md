@@ -45,11 +45,18 @@ By working on this project, I realised that there are many existing problems tha
 
 ## Natural Language Generation
 
-First, let's start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input (in some format). 
+First, I'll start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input (in some format). 
 
 There are several real-world applications to text generation. 
 
-<p><img src="/assets/d2t/med.jpg" style="border:1px solid black;" width="500">Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p>
+<table>
+    <tr>
+        <td><img src="/assets/d2t/med.jpg" style="border:1px solid black;" width="500"></td>
+        <td>Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</td>
+    </tr>
+</table>
+
+<!-- <p><img src="/assets/d2t/med.jpg" style="border:1px solid black;" width="500">Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p> -->
 
 Based on the input provided to the system, NLG can be broadly categorised into two different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
 
@@ -73,7 +80,7 @@ For **D2T NLG**, the input is presented in a structured format, i.e., tablular, 
 
 <!-- As I'm exploring D2T NLG in my PhD, I'll briefly discuss this task in detail in further sections. -->
 
-In my PhD, I'm exploring the **data-to-text generation tasks**. In general, automatic text generation is challenging because **grammar rules** are **very complex**, and also, there can be **several meaning** to **same words** in different context. 
+In general, automated text generation is challenging because **grammar rules** are **very complex**, and also, there can be **several meaning** to **same words** in different context. 
 
 Even after we develop an automated system for text generation, it is challenging to automatically evaluate the texts generated from that system. Unlike most supervised problems, there's **no class knowledge** in form of labels to evaluate the performance. Here the system's goal is to generate **accurate**, **fluent**; and **diverse** texts, not just predicting some label like in most of the other NLP tasks.
 
