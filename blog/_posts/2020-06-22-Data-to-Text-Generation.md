@@ -254,6 +254,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 
 ## Further Steps
 <!-- - I would recommend looking at the **data-to-text section** of [Papers with Code](https://paperswithcode.com/task/data-to-text-generation). -->
+- For a detailed review of the field, I would recommed reading this [survey paper](https://www.jair.org/index.php/jair/article/download/11173/26378/).
 - [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of **public datasets** available for D2T NLG.
 - Have a look at the **ACL's Special Interest Group on Natural Language Generation** - [ACL SIGGEN](https://aclweb.org/aclwiki/SIGGEN).
 
