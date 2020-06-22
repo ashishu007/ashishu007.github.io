@@ -59,7 +59,7 @@ There are several real-world applications to automated text generation. Here are
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
   <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
 
-<div class="box">
+<!-- <div class="box">
   <img src="/assets/d2t/med.jpg" style="border:1px solid black" width="300">
   <span style=""><p style="text-align:right;">Take the <b>Medical Reporting</b> domain for instance - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p></span>
 </div>
@@ -68,6 +68,7 @@ There are several real-world applications to automated text generation. Here are
   <span style=""> Take another example of <b>Weather Forecasting</b> - a textual report about the weather conditions summarising the huge numerical data can be very benificial for a meteorologist. Even for the general public, those reports can be very helpful in providing the weather information breifly.</span>
   <img src="/assets/d2t/weather.gif" style="border:1px solid black" width="350">
 </div>
+ -->
 
 <!-- | ![Medical Domain](/assets/d2t/med.jpg) | Take the **Medical Reporting** domain for instance - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required. |
 | :-----: | :-----:|
@@ -83,14 +84,14 @@ There are several real-world applications to automated text generation. Here are
 <!-- <p><img src="/assets/d2t/med.jpg" style="border:1px solid black;" width="500">Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.</p> -->
 
 <table>
-  <th>
-    <td><img src="/assets/d2t/med.jpg" style="border:1px solid black" width="300"></td>
-    <td><img src="/assets/d2t/weather.gif" style="border:1px solid black" width="350"></td>
-  </th>
+  <tr>
+    <td><img src="/assets/d2t/med.jpg" width="300"></td>
+    <td><img src="/assets/d2t/weather.gif" width="350"></td>
+  </tr>
 </table>
 
-| ![Medical Domain](/assets/d2t/med.jpg) | ![Weather Forecasting](/assets/d2t/weather.gif) |
-| :-----: | :-----:|
+<!-- | ![Medical Domain](/assets/d2t/med.jpg) | ![Weather Forecasting](/assets/d2t/weather.gif) |
+| :-----: | :-----:| -->
 
 > Take the <b>Medical Reporting</b> domain for instance - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required.
 
