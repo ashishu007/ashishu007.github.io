@@ -102,18 +102,18 @@ Based on the input provided to the system, NLG can be broadly categorised into t
 ### T2T NLG
 As the name suggests, in **text-to-text generation**, our goal is to generate text from unstructured textual input. For example, machine translation, where we take a text document in one natural language as input and produce the same content in different natural language as output.
 
-![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
+<!-- ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<!-- <img src="/assets/d2t/t2tnlg.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="850"> -->
+<img src="/assets/d2t/t2tnlg.jpg" style="border:1px solid black;margin-left:auto;margin-right:auto;" width="850">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
 ### D2T NLG
 For **data-to-text generation**, the input is presented in a structured format, i.e., tablular, graphical or JSON format. With this structured input, we generate a textual output summarising the input values. For example, summarising NBA match where, for given box- and line-scores as input we have to generate a textual summary of the match as the output.
 
-![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"}
+<!-- ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<!-- <img src="/assets/d2t/d2tnlg.jpg" style="border:1px solid black;vertical-align:middle;margin:0px 85px" width="850"> -->
+<img src="/assets/d2t/d2tnlg.jpg" style="border:1px solid black;margin-left:auto;margin-right:auto;" width="850">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation (D2T NLG)</b></p>
 
