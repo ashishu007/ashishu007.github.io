@@ -60,6 +60,7 @@ There are several real-world applications to text generation.
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
   <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
   <img src="/assets/d2t/med.jpg" style="border:1px solid black" width="250">
+  <img src="">
   <span style=""> Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required. </span>
 </div>
 
@@ -67,6 +68,7 @@ There are several real-world applications to text generation.
   <!-- <img style="vertical-align:middle" src="https://placehold.it/60x60"> -->
   <!-- <img src="/assets/d2t/med.jpg" style="border:1px solid black;vertical-align:middle"> -->
   <span style=""> Let's take the <b>Medical Reporting</b> domain - suppose there's a doctor who has to analyse the data from some patients different medical test results. The doctor will have to analyse each test's result in order to make a decision on the patient's condition. A summary of these test results in a textual format highlighting the main parts can be very benificial to the doctor and will reduce a lot of their time and effort required. </span>
+  <img src="">
   <img src="/assets/d2t/reg.jpg" style="border:1px solid black" width="450">
 </div>
 
