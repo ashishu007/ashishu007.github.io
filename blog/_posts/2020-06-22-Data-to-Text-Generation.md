@@ -45,16 +45,18 @@ By working on this project, I realised that there are many existing problems tha
 
 ## Natural Language Generation
 
-First, let's start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output using some automated system for a given input. 
+First, let's start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input (in some format). 
 
-Based on the input provided to the system, NLG can be broadly categorised into three different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
+There are several real-world applications to text generation. For example, take the **Medical Reporting** domain - suppose there's a patient 
+
+Based on the input provided to the system, NLG can be broadly categorised into two different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
 
 ### T2T NLG
 As the name suggests, in **T2T NLG**, our goal is to generate text from unstructured textual input. For example, machine translation, where we take a text document in one natural language as input and produce the same content in different natural language as output.
 
 <!-- ![T2T NLG](/assets/d2t/t2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/t2tnlg.jpg" style="border:2px solid black">
+<img src="/assets/d2t/t2tnlg.jpg" style="border:2px solid black" width="500">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Text-to-Text Natural Language Generation (T2T NLG)</b></p>
 
@@ -63,15 +65,15 @@ For **D2T NLG**, the input is presented in a structured format, i.e., tablular, 
 
 <!-- ![D2T NLG](/assets/d2t/d2tnlg.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
-<img src="/assets/d2t/d2tnlg.jpg" style="border:2px solid black">
+<img src="/assets/d2t/d2tnlg.jpg" style="border:2px solid black" width="500">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Data-to-Text Natural Language Generation (D2T NLG)</b></p>
 
 <!-- As I'm exploring D2T NLG in my PhD, I'll briefly discuss this task in detail in further sections. -->
 
-In general, automatically generating natural language is challenging because **grammar rules** are **very complex**. And also, there can be **several meaning** to **same words** in different context. 
+In my PhD, I'm exploring the **data-to-text generation tasks**. In general, automatic text generation is challenging because **grammar rules** are **very complex**, and also, there can be **several meaning** to **same words** in different context. 
 
-Even after we develop a system for automated generation, it is challenging to automatically evaluate the texts generated from that automated system. Unlike most supervised problems, there's **no class knowledge** in form of labels to evaluate the performance. Here the evaluation metric should be capable of measuring: how accurate; how fluent; and how diverse are generated texts from the automated system.
+Even after we develop an automated system for text generation, it is challenging to automatically evaluate the texts generated from that system. Unlike most supervised problems, there's **no class knowledge** in form of labels to evaluate the performance. Here the system's goal is to generate **accurate**, **fluent**; and **diverse** texts, not just predicting some label like in most of the other NLP tasks.
 
 <!-- Apart from all this, the real-world applications (such as the automated obituary generator) suffer from data related problems as well. For starter, you might **not** have **any labelled data** to start building your system. There might be requirement of **a domain expert** to manually label some data, and that may be very expensive. After some-time you might collect some labelled data as a part of your deployment process, that data should be used to refine your system.  -->
 
@@ -100,7 +102,7 @@ Data-to-Text generation is a long process. It invovles a lot of things from sele
 
 Let's discuss these subtasks with an example. The figure below illustrates a simplified example from the **neonatal intensive care domain**.
 
-<img src="/assets/d2t/tasks.jpg" style="border:2px solid black">
+<img src="/assets/d2t/tasks.jpg" style="border:2px solid black" width="500">
 <!-- </kbd> -->
 <p style="text-align: center;"><b>Subtasks in D2T NLG <a href="https://www.jair.org/index.php/jair/article/download/11173/26378/">(source)</a></b></p>
 
