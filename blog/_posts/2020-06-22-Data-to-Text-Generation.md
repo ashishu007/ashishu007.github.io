@@ -136,17 +136,17 @@ Data-to-Text generation is a long process. It invovles a lot of things from sele
 
 <!-- Let's talk about the subtasks involved in D2T NLG, which can be divided into six different subtasks : -->
 
-1. ***Content Determination***: deciding which information from the input will be included in the final text;
+- ***Content Determination***: deciding which information from the input will be included in the final text;
 
-2. ***Text Structuring***: select the ordering of the selected information in the final text output;
+- ***Text Structuring***: select the ordering of the selected information in the final text output;
 
-3. ***Sentence Aggregation***: selecting which information to be presented in a separate sentence and which two (or more) information can be presented in the same sentence;
+- ***Sentence Aggregation***: selecting which information to be presented in a separate sentence and which two (or more) information can be presented in the same sentence;
 
-4. ***Lexicalisation***: finding the correct words and phrases to express the information in a sentence;
+- ***Lexicalisation***: finding the correct words and phrases to express the information in a sentence;
 
-5. ***Referring Expression Generation***: selecting domain-specific words and phrases; and
+- ***Referring Expression Generation***: selecting domain-specific words and phrases; and
 
-6. ***Realisation***: Combining all the words and phrases into well-formed sentences.
+- ***Realisation***: Combining all the words and phrases into well-formed sentences.
 
 <!-- ![D2T NLG](/assets/d2t/tasks.jpg){:width="850px" style="display:block;margin-left:auto;margin-right:auto;"} -->
 <!-- <kbd> -->
@@ -283,6 +283,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 - For a detailed review of the field, I would recommed reading this [survey paper](https://www.jair.org/index.php/jair/article/download/11173/26378/).
 - [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of **public datasets** available for D2T NLG.
 - Have a look at the **ACL's Special Interest Group on Natural Language Generation** - [ACL SIGGEN](https://aclweb.org/aclwiki/SIGGEN).
+- Would recommend to follow [Prof. Ehud Reiter's Blog](https://ehudreiter.com/blog-index/), he write many blogs on the issues of NLG and ML research.
 
 <!-- ## References
 <a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. [Survey of the state of the art in natural language generation: core tasks, applications and evaluation](https://www.jair.org/index.php/jair/article/download/11173/26378/). J. Artif. Int. Res. 61, 1 (January 2018), 65–170.

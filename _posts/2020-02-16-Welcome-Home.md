@@ -48,7 +48,7 @@ The main goal of my PhD is to develop hybrid techniques using CBR and DL for Nat
 Here, I'll try to maintain the contributions I have made to the ope-source community (other than my [publications]({{ site.baseurl }}/about#publications)).
 
 * **NLP-Progress**
-	- Added a new tasks: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
+	- Added a new task: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
 	- [Pull Request](https://github.com/sebastianruder/NLP-progress/pull/467).
 
 
