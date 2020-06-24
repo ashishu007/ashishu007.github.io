@@ -131,7 +131,7 @@ Even after we develop an automated system for text generation, it is challenging
 
 ## Subtasks in D2T NLG
 
-Data-to-Text generation is a long process. It invovles a lot of things from selecting important insights from the data to finally generating the textual document summarising that data. In literature, the whole pipeline of D2T is broadly divided into six different subtasks:
+Data-to-Text generation is a long process. It invovles a lot of things - selecting important insights from the data to finally generating the textual document summarising that data. In general, the whole pipeline of D2T can be broadly categorised into these different subtasks:
 <!-- <sup>[[1]](#myfootnote1)</sup> shown here: -->
 
 <!-- Let's talk about the subtasks involved in D2T NLG, which can be divided into six different subtasks : -->
@@ -229,11 +229,11 @@ The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.t
 
 The performance is evaluated on two different automated metrics: first, **BLEU score**; and second, a family of **Extractive Evaluations (EE)**. EE contains three different submetrics evaluating three different aspects of the generation. Since EE metrics are comparatively new than others, I'll briefly explain them here:
 
-1. **Content Selection (CS)**: precision (P%) and recall (R%) of unique relations extracted from generated text that are also extracted from golden text. This measures how well the generated document matches the gold document in terms of selecting which records to generate.
+- **Content Selection (CS)**: precision (P%) and recall (R%) of unique relations extracted from generated text that are also extracted from golden text. This measures how well the generated document matches the gold document in terms of selecting which records to generate.
 
-2. **Relation Generation (RG)**: precision (P%) and number of unique relations (#) extracted from generated text that also appear in structured input provided. This measures how well the system is able to generate text containing factual (i.e., correct) records.
+- **Relation Generation (RG)**: precision (P%) and number of unique relations (#) extracted from generated text that also appear in structured input provided. This measures how well the system is able to generate text containing factual (i.e., correct) records.
 
-3. **Content Ordering (CO)**: normalized Damerau-Levenshtein Distance (DLD%) between the sequences of records extracted from golden text and that extracted from generated text. This measures how well the system orders the records it chooses to discuss.
+- **Content Ordering (CO)**: normalized Damerau-Levenshtein Distance (DLD%) between the sequences of records extracted from golden text and that extracted from generated text. This measures how well the system orders the records it chooses to discuss.
 
 I am not explaining other evaluation metrics here, I'll try to do that in some later post.
 
