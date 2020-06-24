@@ -47,7 +47,7 @@ By working on this project, I realised that there are many existing problems tha
 
 ## Natural Language Generation
 
-First, I'll start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual output for a given input in some format.
+First, I'll start with a small introduction on Natural Language Generation (NLG). In NLG, the requirement is to generate a textual document (in some natural language) for the given input (in some format).
 
 There are several real-world applications to automated text generation. Here are some examples. 
 
@@ -99,7 +99,7 @@ There are several real-world applications to automated text generation. Here are
 
 > Take another example of <b>Weather Forecasting</b> - a textual report about the weather conditions summarising the huge numerical data can be very benificial for a meteorologist. Even for the general public, those reports can be very helpful in providing the weather information breifly.
 
-Based on the input provided to the system, NLG can be broadly categorised into two different clusters: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
+Based on the input provided to the system, NLG can be broadly categorised into two different categories: first, **text-to-text generation (T2T NLG)**; and second, **data-to-text generation (D2T NLG)**. 
 
 ### T2T NLG
 As the name suggests, in **text-to-text generation**, our goal is to generate text from unstructured textual input. For example, machine translation, where we take a text document in one natural language as input and produce the same content in different natural language as output.
@@ -283,7 +283,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 - For a detailed review of the field, I would recommed reading this [survey paper](https://www.jair.org/index.php/jair/article/download/11173/26378/).
 - [Here](https://aclweb.org/aclwiki/Data_sets_for_NLG) you can find a list of **public datasets** available for D2T NLG.
 - Have a look at the **ACL's Special Interest Group on Natural Language Generation** - [ACL SIGGEN](https://aclweb.org/aclwiki/SIGGEN).
-- Would recommend to follow [Prof. Ehud Reiter's Blog](https://ehudreiter.com/blog-index/), he write many blogs on the issues of NLG and ML research.
+- Would recommend to follow [Prof. Ehud Reiter's Blog](https://ehudreiter.com/blog-index/), he writes a lot on the issues of NLG (alsow w/ ML/DL) research.
 
 <!-- ## References
 <a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. [Survey of the state of the art in natural language generation: core tasks, applications and evaluation](https://www.jair.org/index.php/jair/article/download/11173/26378/). J. Artif. Int. Res. 61, 1 (January 2018), 65–170.
