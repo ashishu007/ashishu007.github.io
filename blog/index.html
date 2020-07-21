@@ -15,7 +15,7 @@ blog: NLP Blogs
 
         {{ post.excerpt }}
                  {% assign image = post.images[0] %}
-      <!-- {% include image.html image=image %} -->
+      {% include image.html image=image %}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
