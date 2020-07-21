@@ -6,7 +6,7 @@ desc: "Brief overview of Evaluation Metrics of NLG Systems"
 keywords: "NLG, Evaluation Metrics"
 categories: [NLP, NLG, Evaluation Metrics]
 tags: [NLG, Evaluation Metrics]
-blog: [Blog]
+blog: []
 excerpt_separator: <!-- more -->
 icon: icon-html
 ---
