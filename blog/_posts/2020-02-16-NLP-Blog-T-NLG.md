@@ -4,9 +4,9 @@ title: "Microsoft's T-NLG: The biggest pre-trained Transformer till now"
 date: 2020-02-16
 desc: "This blog talks about my views on the future of Transfer Learning in NLP"
 keywords: "Blog, NLP, Transfer Learning, Transformers"
-categories: [Blog, NLP]
-tags: [Blog, NLP, Views]
-blog: [Blog]
+categories: [NLP]
+tags: [NLP, Views]
+blog: []
 excerpt_separator: <!--more-->
 images: 
     - url: /assets/tnlg/T-NLG_LM.jpg
