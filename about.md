@@ -12,27 +12,26 @@ images:
 icon: icon-html
 --- -->
 
-## Current Part-Time Positions
-
-- **Research Assistant, RGU, UK**
-  *(February 2020 - Present)*
-	- Case-based approach to automated generation of obituaries.
-	- Paper submitted to ICCBR-2020.
-
+## Part-Time Positions at RGU
 
 - **Demonstrator, RGU, UK**
   *(January 2020 - Present)*
 	- Demonstration for BSc (Computer Science) students.
-	- Subject: Concurrent Programming with Java.
+	- Subject: Concurrent Programming with Java (Spring 2020 Semester).
+
+- **Research Assistant**
+  *(February 2020 - April 2020)*
+	- Case-based approach to automated generation of obituaries.
+	- Paper published to ICCBR-2020.
 
 
 ## Publications
 
 1. ***Ashish Upadhyay***, Stewart Massie, Sean Clogher, "Case-Based Approach to Automated Natural Language Generation for Obituaries", International Conference on Case-Based Reasoning 2020 (08-12 June 2020, Online).
 
-2. ***Ashish Upadhyay***, Thanh Nguyen, Stewart Massie, John McCall, "WEC: Weighted Ensemble of text Classifiers", IEEE Congress on Computational Intelligence 2020 (19-24 July 2020, Glasgow, UK) (accepted).
+2. ***Ashish Upadhyay***, Thanh Nguyen, Stewart Massie, John McCall, "WEC: Weighted Ensemble of text Classifiers", IEEE Congress on Computational Intelligence 2020 (19-24 July 2020, Online).
 
-3. ***Ashish Upadhyay***, Bhupendra Sonwani, Vimal Anand Baghel, Yash Kirti Sinha, A S Patel, and M Ojha, "Pronunciation Similarity Matching using Deep Learning", International Conference on Recent Trends in Machine Learning, IOT, Smart Cities & Applications 2020 (28-29 March 2020, Online) (accepted).
+3. ***Ashish Upadhyay***, Bhupendra Sonwani, Vimal Anand Baghel, Yash Kirti Sinha, A S Patel, and M Ojha, "Pronunciation Similarity Matching using Deep Learning", International Conference on Recent Trends in Machine Learning, IOT, Smart Cities & Applications 2020 (28-29 March 2020, Online).
 
 4. ***Ashish Upadhyay***, Kushashwa Ravi Shrimali, and Anupam Shukla. "UAV-robot relationship for coordination of robots on a collision free path." Procedia Computer Science 133 (2018): 424-431. <a href="https://doi.org/10.1016/j.procs.2018.07.052">(DOI)</a>
 

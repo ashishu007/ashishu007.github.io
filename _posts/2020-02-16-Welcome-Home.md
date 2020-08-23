@@ -16,21 +16,22 @@ icon: icon-html
 
 ![Myself](/images/ashish.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
 
-## Short-Intro 
-I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">School of Computing Science and Digital Media</a>, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a>, Aberdeen, UK, working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of **Natural Language Processing (NLP)**. 
+<!-- ## Short-Intro  -->
+I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">School of Computing</a>, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a>, Aberdeen, UK, working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of **Natural Language Processing (NLP)**. 
 
-My research interest includes the use of **Case-Based Reasoning (CBR)** and **Deep Learning (DL)** in NLP, especially finding ways to develop effective NLG systems for business processes with minimal labelled data. 
+I am interested in developing **Deep Learning** systems for **Natural Language Processing** tasks with a focus on low data requirement for training. In my PhD, I am exploring the possibility of applying **Transfer Learning** and **Weak Supervision** on **Data-to-Text Generation** task. 
 
-In my PhD, I am interested to develop novel techniques for **data-to-text generation** tasks, with a focus on the data related problems faced by the business processes.
+<!-- My research interest includes the use of **Case-Based Reasoning (CBR)** and **Deep Learning (DL)** in NLP, especially finding ways to develop effective NLG systems for business processes with minimal labelled data.  -->
+
+<!-- In my PhD, I am interested to develop novel techniques for **data-to-text generation** tasks, with a focus on the data related problems faced by the business processes. -->
 
 <!-- ## PhD Goal
 The main goal of my PhD is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial case-base of a structured representation extracted from unlablled texts/documnets. -->
-
+<!-- 
 ## Research Interests
 
-- Natural Language Processing (& Generation)
-- (Textual) Case-Based Reasoning
-- Machine (& Deep) Learning
+- Natural Language Processing
+- Machine Learning -->
 
 ## Education
 * **Doctor of Philosophy (PhD) in Artificial Intelligence (AI)** _(October 2019 - Ongoing)_
@@ -45,7 +46,7 @@ The main goal of my PhD is to develop hybrid techniques using CBR and DL for Nat
 
 
 ## Open-Source Contributions
-Here, I'll try to maintain the contributions I have made to the open-source community (other than my [publications]({{ site.baseurl }}/about#publications)).
+Here are some of the contributions I made to the open-source community (other than the [publications]({{ site.baseurl }}/about#publications)).
 
 * **NLP-Progress**
 	- Added a new task: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
@@ -65,6 +66,6 @@ India, itself is a union of several cultures and stands on the principle of **un
 
 ## Contact
 
-To get in touch, please send me an e-mail at: **a [dot] upadhyay [at] rgu [dot] ac [dot] uk**.
+To get in touch, please send me an e-mail at: **ashish [dot] rgu [at] gmail [dot] {you know what to add here}**.
 
 I try to be as fast as possible in replying a mail, but please pardon me in the case of any delays.
