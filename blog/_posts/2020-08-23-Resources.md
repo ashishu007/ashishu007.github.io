@@ -28,3 +28,7 @@ This blog is aimed towards maintaining useful resources related to my research.
 2. Table-to-Text (using GPT-2 Decoder): [Few-Shot NLG with Pre-Trained Language Mode](https://www.aclweb.org/anthology/2020.acl-main.18.pdf)
 
 <embed src="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf" width="600px" height="500px" />
+<embed src="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf" frameborder="0" allowfullscreen />
+<embed src="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf" />
+
+
