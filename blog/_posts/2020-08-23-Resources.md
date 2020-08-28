@@ -6,7 +6,7 @@ desc: "A blog to list some useful resources for my research"
 keywords: "Blog, NLP, Resources, Deep Learning"
 categories: [Blog, NLP, DL]
 tags: [Blog, NLP, Deep Learning, Resources]
-blog: []
+blog: [Blog]
 excerpt_separator: <!--more-->
 images: 
     - url: assets/nlp-dl/ss.png
