@@ -3,10 +3,10 @@ layout: post
 title: "Word Embeddings Tutorial"
 date: 2020-08-28
 desc: "Word Embeddings"
-keywords: "Blog, Deep Learning, NLP"
-categories: [Blog, ML, DL, NLP]
-tags: [Blog, Deep Learning, NLP]
-blog: [Blog]
+keywords: "Deep Learning, NLP"
+categories: [ML, DL, NLP]
+tags: [Deep Learning, NLP]
+blog: []
 excerpt_separator: <!--more-->
 images: 
 icon: icon-html
