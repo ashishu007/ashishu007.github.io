@@ -19,7 +19,7 @@ icon: icon-html
 <!-- ## Short-Intro  -->
 I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">School of Computing</a>, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a>, Aberdeen, UK, working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of **Natural Language Processing (NLP)**. 
 
-I am interested in developing **Deep Learning** systems for **Natural Language Processing** tasks with a focus on low data requirement for training. In my PhD, I am exploring the possibility of applying **Transfer Learning** and **Weak Supervision** on **Data-to-Text Generation** task. 
+I am interested in developing **Deep Learning** systems for **Natural Language Processing** tasks with a focus on low data requirement for training. In my PhD, I am exploring the possibility of developing hybrid **Data-to-Text Generation** systems using Traditional and Deep Learning systems. 
 
 <!-- My research interest includes the use of **Case-Based Reasoning (CBR)** and **Deep Learning (DL)** in NLP, especially finding ways to develop effective NLG systems for business processes with minimal labelled data.  -->
 
@@ -36,7 +36,7 @@ The main goal of my PhD is to develop hybrid techniques using CBR and DL for Nat
 ## Education
 * **Doctor of Philosophy (PhD) in Artificial Intelligence (AI)** _(October 2019 - Ongoing)_
 	- School of Computing Science and Digital Media, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a> (RGU), Aberdeen, UK
-	- Research Goal: Natural Language Generation from Structured Representations
+	- Research Goal: Data-to-Text Generation for Business Processes
 	- Principal Supervisor: Dr. Stewart Massie, Senior Research Fellow, RGU, Aberdeen, UK
 
 * **Bachelor's of Technology (BTech) in Computer Science and Engineering (CSE)** _(August 2015 - June 2019)_
@@ -45,8 +45,15 @@ The main goal of my PhD is to develop hybrid techniques using CBR and DL for Nat
 	- Thesis Supervisor: Dr. Stewart Massie, Senior Research Fellow, RGU, Aberdeen, UK
 
 
-## Open-Source Contributions
-Here are some of the contributions I made to the open-source community (other than the [publications]({{ site.baseurl }}/about#publications)).
+## Open-Source and Voluntary Activities
+
+<!-- Here are some of the contributions I made to the open-source community (other than the [publications]({{ site.baseurl }}/about#publications)). -->
+* **3rd WebNLG Workshop, 2020**
+	- I had an opportunity to serve as a PC member for the [3rd WebNLG Workshop, 2020](https://webnlg-challenge.loria.fr/workshop_2020/), co-organised with [INLG 2020](https://www.inlg2020.org/).
+
+* **NLP Blog**
+	- I share my common research findings through [this blog](https://ashishu007.live/blog/).
+	- Might be useful for beginners in DL & NLP.
 
 * **NLP-Progress**
 	- Added a new task: [Data-to-Text Generation](https://nlpprogress.com/english/data_to_text_generation.html).
