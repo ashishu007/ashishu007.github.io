@@ -17,9 +17,9 @@ icon: icon-html
 ![Myself](/images/ashish.jpg){:width="750px" style="display:block;margin-left:auto;margin-right:auto;"}
 
 <!-- ## Short-Intro  -->
-I am Ashish, a first year PhD student at the <a href="http://www.comp.rgu.ac.uk/">School of Computing</a>, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a>, Aberdeen, UK, working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of **Natural Language Processing (NLP)**. 
+I am Ashish, a PhD student at the <a href="http://www.comp.rgu.ac.uk/">School of Computing</a>, <a href="https://www.rgu.ac.uk/">Robert Gordon University</a>, Aberdeen, UK, working under the supervision of <a href="https://www3.rgu.ac.uk/dmstaff/massie-stewart">Dr. Stewart Massie</a> and <a href="https://www3.rgu.ac.uk/dmstaff/wiratunga-nirmalie">Prof. Nirmalie Wiratunga</a> in the field of **Natural Language Processing (NLP)**. 
 
-I am interested in developing **Deep Learning** systems for **Natural Language Processing** tasks with a focus on low data requirement for training. In my PhD, I am exploring the possibility of developing hybrid **Data-to-Text Generation** systems using Traditional and Deep Learning systems. 
+I am interested in developing **Deep Learning** systems for **Natural Language Processing** tasks with a focus on low data requirement for training. In my PhD, I am exploring the possibility of developing accurate and scalable **Data-to-Text Generation** systems using Hybrid Traditional and Deep Learning systems. 
 
 <!-- My research interest includes the use of **Case-Based Reasoning (CBR)** and **Deep Learning (DL)** in NLP, especially finding ways to develop effective NLG systems for business processes with minimal labelled data.  -->
 
@@ -27,11 +27,11 @@ I am interested in developing **Deep Learning** systems for **Natural Language P
 
 <!-- ## PhD Goal
 The main goal of my PhD is to develop hybrid techniques using CBR and DL for Natural Language Generation (NLG) with a focus on **data-to-text generation** tasks. I am also interested in the reverse engineering aspect of data-to-text generation task, where using different Information Extraction (IE) techniques we need to develop an initial case-base of a structured representation extracted from unlablled texts/documnets. -->
-<!-- 
+
 ## Research Interests
 
 - Natural Language Processing
-- Machine Learning -->
+- Machine Learning
 
 ## Education
 * **Doctor of Philosophy (PhD) in Artificial Intelligence (AI)** _(October 2019 - Ongoing)_
@@ -48,6 +48,7 @@ The main goal of my PhD is to develop hybrid techniques using CBR and DL for Nat
 ## Open-Source and Voluntary Activities
 
 <!-- Here are some of the contributions I made to the open-source community (other than the [publications]({{ site.baseurl }}/about#publications)). -->
+
 * **3rd WebNLG Workshop, 2020**
 	- I had an opportunity to serve as a PC member for the [3rd WebNLG Workshop, 2020](https://webnlg-challenge.loria.fr/workshop_2020/), co-organised with [INLG 2020](https://www.inlg2020.org/).
 

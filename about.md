@@ -22,7 +22,7 @@ icon: icon-html
 - **Research Assistant**
   *(February 2020 - April 2020)*
 	- Case-based approach to automated generation of obituaries.
-	- Paper published to ICCBR-2020.
+	- Paper published in [ICCBR-2020](https://link.springer.com/chapter/10.1007/978-3-030-58342-2_18).
 
 
 ## Publications
@@ -83,18 +83,18 @@ icon: icon-html
 <!-- | **Programming Languages**		 | 		    Python, R, Java, JavaScript, C/C++, SQL |  -->
 <!-- | ------------------------------ | -----------------------------------------------: |  -->
 <!-- | **Tools**				    	 |			  			LaTeX, Git, MATLAB, Jupyter |  -->
-<!-- | **Deep Learning Frameworks**   |			   			 Keras, Tensorflow, PyTorch |  -->
-<!-- | **NLP Libraries** 			 | 				   SpaCy, NLTK, StanfordNLP, Stanza |  -->
+<!-- | **Deep Learning Frameworks**   |			   			 PyTorch, Keras, Tensorflow |  -->
+<!-- | **NLP Libraries** 			 | 				   SpaCy, NLTK |  -->
 <!-- | **Data Science Libraries** 	 | Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms |  -->
 <!-- | **Development Frameworks**     |          Flask, React.js, PostgreSQL, SQLAlchemy | -->
 
 * **Programming Language:** Python, R, Java, JavaScript, C/C++, SQL
 * **Tools:** LaTeX, Git, MATLAB, Jupyter
-* **Deep Learning Frameworks:** Keras, Tensorflow, PyTorch
+* **Deep Learning Frameworks:** PyTorch, Keras, Tensorflow
 * **NLP Libraries:** SpaCy, NLTK, StanfordNLP, Stanza
 * **Data Science Libraries:** Scikit-Learn, SciPy, NumPy, Matplotlib, PySwarms
 * **Development Frameworks:** Flask, React.js, PostgreSQL, SQLAlchemy 
 
 ## Non-Academic Interests and Achievements
 
-During my Bachelor studies, I was involved into a lot of event organising, to name a few: Connaissance 2016 (Litrature-cum-Cultural Fest, IIIT-NR), Technovate 2018 (Techno-Cultural Fest, IIIT-NR), Industry-Academia Meet, 2017 (IIIT-NR). Before 3rd year of my BTech degree, I also used to participate in a lot of Youth Parliaments where once I won the best delegate award as well. I charied a few debates as moderator and speaker (more about them in my <a href="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf">CV</a>).
+During my Bachelor studies, I was involved into a lot of event organising, to name a few: Connaissance 2016 (Litrature-cum-Cultural Fest, IIIT-NR), Technovate 2018 (Techno-Cultural Fest, IIIT-NR), Industry-Academia Meet, 2017 (IIIT-NR). Before 3rd year of my BTech degree, I also used to participate in a lot of Youth Parliaments where once I won the best delegate award as well. I charied a few debates as moderator and speaker (more about them in my <a href="https://panditu2015.github.io/CV_Ashish_Upadhyay.pdf">old CV</a>).
